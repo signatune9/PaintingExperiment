@@ -5,7 +5,7 @@ import random
 import os
 
 # Import settings from params file.
-from params import CONDITION, SUBJECT_ID, HRES, VRES, MONITORNAME, FILEPATH
+from params import CONDITION, SUBJECT_ID, HRES, VRES, EXPHRES, EXPVRES, SCREENDISTANCE, SCREENWIDTH, FILEPATH
 
 # To Do: Instructions, cleaner buttons?
 
@@ -572,10 +572,10 @@ def main():
     """
 
     # Initialize window and mouse objects.
-    my_monitor = monitors.Monitor('test', distance=57, width=30)
-    my_monitor.setSizePix((1024, 768))
-    my_monitor.saveMon()
-    window = visual.Window([HRES, VRES], allowGUI=True, monitor=my_monitor, units='deg', color='white')
+    experiment_monitor = monitors.Monitor('expMonitor', distance=SCREENDISTANCE, width=SCREENWIDTH)
+    experiment_monitor.setSizePix((EXPHRES, EXPVRES))
+    experiment_monitor.saveMon()
+    window = visual.Window([HRES, VRES], allowGUI=True, monitor=experiment_monitor, units='deg', color='white')
     mouse = event.Mouse(visible=True, newPos=None, win=window)
 
     # Read the procedural csv
