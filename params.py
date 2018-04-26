@@ -1,0 +1,8 @@
+CONDITION = 0
+SUBJECT_ID = '002'
+
+HRES = 1920
+VRES = 1080
+
+MONITORNAME = 'testMonitor'
+FILEPATH = ''
