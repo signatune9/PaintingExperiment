@@ -200,9 +200,18 @@ def draw_instructions(window, mouse, instructions_index):
     Returns: None.
     """
 
+    with open('InstructStim.csv', 'rt') as instructions_file:
+        procedural_file_reader = csv.reader(instructions_file, delimiter=',')
+        instructions_file_list = list(procedural_file_reader)
+
+    instruction_path = instructions_file_list[instructions_index][0]
+
+    instruction = visual.ImageStim(window, image=FILEPATH + "images/" + instruction_path, pos=[0.0, 4])
+
     next_button = visual.Rect(window, width=5.0, height=1.0, lineWidth=1.5, lineColor='black', pos=[10.5, -10])
     next_button_text = visual.TextStim(window, text='Next', color='black', pos=[10.5, -10])
 
+    instruction.draw()
     next_button.draw()
     next_button_text.draw()
 
@@ -587,10 +596,10 @@ def main():
     if new_session != 1:
         status = get_results_status()
         current_status = status[0]
-        instructions_index = status[1]
+        instructions_index = status[1] + 1
     else:
         current_status = 0
-        instructions_index = 0
+        instructions_index = 1
 
     # Start the experiment's clock.
     experiment_clock = start_experiment_clock()
