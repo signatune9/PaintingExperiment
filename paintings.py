@@ -7,7 +7,8 @@ import os
 # Import settings from params file.
 from params import CONDITION, SUBJECT_ID, HRES, VRES, EXPHRES, EXPVRES, SCREENDISTANCE, SCREENWIDTH, FILEPATH
 
-# To Do: Instructions, cleaner buttons?
+# To Do: Cleaner buttons, keyboard input
+# 8 7 6 1 2 3
 
 
 def read_procedural_csv():
