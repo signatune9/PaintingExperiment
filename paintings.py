@@ -89,10 +89,10 @@ def start_experiment_clock():
     """
     Creates and starts a monotonic clock for the experiment, to be used for recording timings.
     Inputs: None.
-    Returns: The MonotonicClock object.
+    Returns: The Clock object.
     """
 
-    experiment_clock = core.MonotonicClock()
+    experiment_clock = core.Clock()
     return experiment_clock
 
 
@@ -209,18 +209,27 @@ def draw_instructions(window, mouse, instructions_index):
 
     instruction = visual.ImageStim(window, image=FILEPATH + "images/" + instruction_path, pos=[0.0, 4])
 
+    """ This is for mouse selection
     next_button = visual.Rect(window, width=5.0, height=1.0, lineWidth=1.5, lineColor='black', pos=[10.5, -10])
     next_button_text = visual.TextStim(window, text='Next', color='black', pos=[10.5, -10])
 
     instruction.draw()
     next_button.draw()
     next_button_text.draw()
+    """
+
+    keyboard_message = visual.TextStim(window, text="Press a button to continue", pos=[0.0, -10], color='black')
+    instruction.draw()
+    keyboard_message.draw()
 
     window.flip()
 
+    """ This is for mouse selection
     while True:
         if mouse.isPressedIn(next_button, buttons=[0]):
             break
+    """
+    event.waitKeys(keyList=['2', '3', '4', '6', '7', '8'])
 
 
 def draw_study_images(window, painting_path, context_path):
@@ -259,8 +268,11 @@ def draw_rec_test_image(window, painting_path, context_paths):
     Returns: A list containing the ImageStims for each of the context images.
     """
 
+
     painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=12, pos=[0.0, 8])
     context_images = []
+
+    """
     x_positions = [-8.5, 0, 8.5]
     y_positions = [-2.5, -11]
 
@@ -268,6 +280,16 @@ def draw_rec_test_image(window, painting_path, context_paths):
     for context_path in context_paths:
         context_images.append(visual.ImageStim(window, image=FILEPATH + context_path, size=8,
                                                pos=[x_positions[i % 3], y_positions[i/3]]))
+        i = i + 1
+    """
+
+    x_positions = [-22.5, -13.5, -4.5, 4.5, 13.5, 22.5]
+    y_positions = [-2.5, -11]
+
+    i = 0
+    for context_path in context_paths:
+        context_images.append(visual.ImageStim(window, image=FILEPATH + context_path, size=8,
+                                               pos=[x_positions[i % 6], y_positions[i/6]]))
         i = i + 1
 
     painting.draw()
@@ -298,6 +320,7 @@ def create_buttons(window, num_artists):
     Returns: An array containing the button objects.
     """
 
+    """ This is for mouse selection
     button_array = []
     x_positions = [-10.5, 0, 10.5]
     y_positions = [-5, -7.5, -10, -12.5, -15]
@@ -305,6 +328,15 @@ def create_buttons(window, num_artists):
     for i in range(0, num_artists):
         button_array.append(visual.Rect(window, width=5.0, height=1.0, lineWidth=1.5, lineColor='black',
                                         pos=[x_positions[i % 3], y_positions[i // 3]]))
+    """
+
+    button_array = []
+    x_positions = [-20, -12, -4, 4, 12, 20]
+    y_positions = [-5, -7.5, -10, -12.5, -15]
+
+    for i in range(0, num_artists):
+        button_array.append(visual.Rect(window, width=5.0, height=1.0, lineWidth=1.5, lineColor='black',
+                                        pos=[x_positions[i % 6], y_positions[i // 6]]))
 
     return button_array
 
@@ -317,12 +349,22 @@ def create_artist_button_text(window, artists):
     Returns: An array containing the text objects to be placed on top of the buttons.
     """
 
+    """ This is for mouse selection
     button_text_array = []
     x_positions = [-10.5, 0, 10.5]
     y_positions = [-5, -7.5, -10, -12.5, -15]
 
     for i in range(0, len(artists)):
         button_text_array.append(visual.TextStim(window, pos=[x_positions[i % 3], y_positions[i // 3]], text=artists[i],
+                                                 color='black'))
+    """
+
+    button_text_array = []
+    x_positions = [-20, -12, -4, 4, 12, 20]
+    y_positions = [-5, -7.5, -10, -12.5, -15]
+
+    for i in range(0, len(artists)):
+        button_text_array.append(visual.TextStim(window, pos=[x_positions[i % 6], y_positions[i // 6]], text=artists[i],
                                                  color='black'))
 
     return button_text_array
@@ -345,7 +387,7 @@ def start_trial(window, experiment_clock):
     """
     Starts a trial, displaying the stimuli and buttons and returning the time at which they were displayed.
     Inputs: window = The window object being used for the experiment.
-            experiment_clock = The MonotonicClock being used for the experiment.
+            experiment_clock = The Clock being used for the experiment.
     Returns: The time at which the trial started.
     """
 
@@ -357,16 +399,16 @@ def start_trial(window, experiment_clock):
 
 def get_response(mouse, button_array, artist_array, wait_time, experiment_clock):
     """
-
     Inputs: mouse = The mouse object being used for the experiment.
             button_array = The array of buttons being used for the trial.
             artist_array = The array of artists that was used for creating the button text for the trial.
             wait_time = The amount of time to wait until ending the trial.
-            experiment_clock = The MonotonicClock being used for the experiment.
+            experiment_clock = The Clock being used for the experiment.
     Returns: An array containing the time at which the response was recorded and the artist that was selected.
              Returns 0, 'No answer' if no answer is given.
     """
 
+    """ This is for mouse selection
     timer = core.Clock()
     timer.add(wait_time)
 
@@ -380,10 +422,28 @@ def get_response(mouse, button_array, artist_array, wait_time, experiment_clock)
                 response_array.append(time_of_response)
                 response_array.append(response)
                 return response_array
+    """
+    selected_artist = []
+    if len(button_array) == 6:
+        selection = event.waitKeys(maxWait=wait_time, keyList=['2', '3', '4', '6', '7', '8'],
+                                   timeStamped=experiment_clock)
+        if selection is None:
+            response_array = [0, 'No answer']
+            return response_array
+        elif selection[0][0] == '2':
+            selected_artist = artist_array[0]
+        elif selection[0][0] == '3':
+            selected_artist = artist_array[1]
+        elif selection[0][0] == '4':
+            selected_artist = artist_array[2]
+        elif selection[0][0] == '6':
+            selected_artist = artist_array[3]
+        elif selection[0][0] == '7':
+            selected_artist = artist_array[4]
+        elif selection[0][0] == '8':
+            selected_artist = artist_array[5]
 
-    response_array.append(0)
-    response_array.append('No answer')
-
+    response_array = [selection[0][1], selected_artist]
     return response_array
 
 
@@ -489,7 +549,7 @@ def study_trial(window, mouse, current_trial, experiment_clock, artists, buttons
     Inputs: window = The window object being used for the experiment.
             mouse = The mouse object being used for the experiment.
             current_trial = The row from the procedural file containing the information for this trial.
-            experiment_clock = The MonotonicClock being used for the experiment.
+            experiment_clock = The Clock being used for the experiment.
             artists = The list of artists being used for the experiment.
             buttons = The buttons being used for the trial.
     Returns: None.
@@ -515,7 +575,7 @@ def gen_test_trial(window, mouse, current_trial, experiment_clock, artists, butt
     Inputs: window = The window object being used for the experiment.
             mouse = The mouse object being used for the experiment.
             current_trial = The row from the procedural file containing the information for this trial.
-            experiment_clock = The MonotonicClock being used for the experiment.
+            experiment_clock = The Clock being used for the experiment.
             artists = The list of artists being used for the experiment.
             buttons = The buttons being used for the trial.
     Returns: None.
@@ -538,7 +598,7 @@ def rec_test_trial(window, mouse, current_trial, experiment_clock, context_list)
     Inputs: window = The window object being used for the experiment.
             mouse = The mouse object being used for the experiment.
             current_trial = The row from the procedural file containing the information for this trial.
-            experiment_clock = The MonotonicClock being used for the experiment.
+            experiment_clock = The Clock being used for the experiment.
             context_list =
     Returns: None.
     """
@@ -559,7 +619,7 @@ def genrec_test_trial(window, mouse, current_trial, experiment_clock, artists, b
     Inputs: window = The window object being used for the experiment.
             mouse = The mouse object being used for the experiment.
             current_trial = The row from the procedural file containing the information for this trial.
-            experiment_clock = The MonotonicClock being used for the experiment.
+            experiment_clock = The Clock being used for the experiment.
             artists = The list of artists being used for the experiment.
             buttons = The buttons being used for the trial.
     Returns: None.
@@ -637,6 +697,9 @@ def main():
             break
 
         elif current_trial[0] == 'Session1':
+            write_trial(current_trial, "NA", "NA", "NA")
+
+        elif current_trial[1] == 'NA':
             write_trial(current_trial, "NA", "NA", "NA")
 
 
