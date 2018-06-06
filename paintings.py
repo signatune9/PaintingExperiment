@@ -241,9 +241,14 @@ def draw_study_images(window, painting_path, context_path):
     Returns: None.
     """
 
-    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=15, pos=[-9.0, 4])
-    context = visual.ImageStim(window, image=FILEPATH + context_path, size=15, pos=[9.0, 4])
+    painting_text = visual.TextStim(window, pos=[-9.0, 11.5], text="Painting:", color='black')
+    context_text = visual.TextStim(window, pos=[9.0, 11.5], text="Location:", color='black')
 
+    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-9.0, 4])
+    context = visual.ImageStim(window, image=FILEPATH + context_path, size=13, pos=[9.0, 4])
+
+    painting_text.draw()
+    context_text.draw()
     painting.draw()
     context.draw()
 
@@ -254,8 +259,10 @@ def draw_gen_test_image(window, painting_path):
     Inputs: window = The window object being used for the experiment.
             painting_path = The path to the painting image to draw.
     """
-    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=15, pos=[0.0, 4])
+    painting_text = visual.TextStim(window, pos=[0.0, 11.5], text="Painting:", color='black')
+    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[0.0, 4])
 
+    painting_text.draw()
     painting.draw()
 
 
@@ -268,8 +275,8 @@ def draw_rec_test_image(window, painting_path, context_paths):
     Returns: A list containing the ImageStims for each of the context images.
     """
 
-
-    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=12, pos=[0.0, 8])
+    painting_text = visual.TextStim(window, pos=[0.0, 11.5], text="Painting:", color='black')
+    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[0.0, 4])
     context_images = []
 
     """
@@ -284,7 +291,7 @@ def draw_rec_test_image(window, painting_path, context_paths):
     """
 
     x_positions = [-22.5, -13.5, -4.5, 4.5, 13.5, 22.5]
-    y_positions = [-2.5, -11]
+    y_positions = [-8]
 
     i = 0
     for context_path in context_paths:
@@ -292,6 +299,7 @@ def draw_rec_test_image(window, painting_path, context_paths):
                                                pos=[x_positions[i % 6], y_positions[i/6]]))
         i = i + 1
 
+    painting_text.draw()
     painting.draw()
 
     for contextImage in context_images:
@@ -307,8 +315,10 @@ def draw_genrec_test_image(window, context_path):
             context_path = The path to the context image to draw.
     """
 
-    context = visual.ImageStim(window, image=FILEPATH + context_path, size=15, pos=[0.0, 4])
+    context_text = visual.TextStim(window, pos=[0.0, 11.5], text="Location:", color='black')
+    context = visual.ImageStim(window, image=FILEPATH + context_path, size=13, pos=[0.0, 4])
 
+    context_text.draw()
     context.draw()
 
 
@@ -508,7 +518,7 @@ def show_feedback(window, correct_artist, painting_path):
 
     response_text = visual.TextStim(window, pos=[0, -5], text="The correct artist is: \n" + correct_artist,
                                     color='black')
-    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=15, pos=[0, 4])
+    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[0, 4])
 
     painting.draw()
     response_text.draw()
