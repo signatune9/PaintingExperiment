@@ -229,7 +229,7 @@ def draw_instructions(window, mouse, instructions_index):
         if mouse.isPressedIn(next_button, buttons=[0]):
             break
     """
-    event.waitKeys(keyList=['2', '3', '4', '6', '7', '8'])
+    event.waitKeys(keyList=['1', '2', '3', '6', '7', '8'])
 
 
 def draw_study_images(window, painting_path, context_path):
@@ -434,24 +434,24 @@ def get_response(mouse, button_array, artist_array, wait_time, experiment_clock)
                 return response_array
     """
     selected_artist = []
-    if len(button_array) == 6:
-        selection = event.waitKeys(maxWait=wait_time, keyList=['2', '3', '4', '6', '7', '8'],
-                                   timeStamped=experiment_clock)
-        if selection is None:
-            response_array = [0, 'No answer']
-            return response_array
-        elif selection[0][0] == '2':
-            selected_artist = artist_array[0]
-        elif selection[0][0] == '3':
-            selected_artist = artist_array[1]
-        elif selection[0][0] == '4':
-            selected_artist = artist_array[2]
-        elif selection[0][0] == '6':
-            selected_artist = artist_array[3]
-        elif selection[0][0] == '7':
-            selected_artist = artist_array[4]
-        elif selection[0][0] == '8':
-            selected_artist = artist_array[5]
+
+    selection = event.waitKeys(maxWait=wait_time, keyList=['1', '2', '3', '6', '7', '8'],
+                               timeStamped=experiment_clock)
+    if selection is None:
+        response_array = [0, 'No answer']
+        return response_array
+    elif selection[0][0] == '8':
+        selected_artist = artist_array[0]
+    elif selection[0][0] == '7':
+        selected_artist = artist_array[1]
+    elif selection[0][0] == '6':
+        selected_artist = artist_array[2]
+    elif selection[0][0] == '1':
+        selected_artist = artist_array[3]
+    elif selection[0][0] == '2':
+        selected_artist = artist_array[4]
+    elif selection[0][0] == '3':
+        selected_artist = artist_array[5]
 
     response_array = [selection[0][1], selected_artist]
     return response_array
@@ -636,7 +636,7 @@ def genrec_test_trial(window, mouse, current_trial, experiment_clock, artists, b
     """
 
     artist_button_text = create_artist_button_text(window, artists)
-    draw_gen_test_image(window, current_trial[5])
+    draw_genrec_test_image(window, current_trial[5])
     draw_buttons(buttons, artist_button_text)
     start_time = start_trial(window, experiment_clock)
     response = get_response(mouse, buttons, artists, 10.0, experiment_clock)
