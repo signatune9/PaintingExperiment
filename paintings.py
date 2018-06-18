@@ -7,8 +7,7 @@ import os
 # Import settings from params file.
 from params import CONDITION, SUBJECT_ID, HRES, VRES, EXPHRES, EXPVRES, SCREENDISTANCE, SCREENWIDTH, FILEPATH
 
-# To Do: Cleaner buttons, keyboard input
-# 8 7 6 1 2 3
+# To Do: Split phases up into separate trials, Choice indicator
 
 
 def read_procedural_csv():
@@ -508,7 +507,7 @@ def write_trial(trial_row, accuracy, response_time, response):
             procedure_file_writer.writerow(results_row)
 
 
-def show_feedback(window, correct_artist, painting_path):
+def show_feedback(window, correct_artist, painting_path, context_path):
     """
     Displays feedback for the current trial.
     Inputs: window = The window object being used for the experiment.
@@ -518,13 +517,43 @@ def show_feedback(window, correct_artist, painting_path):
 
     response_text = visual.TextStim(window, pos=[0, -5], text="The correct artist is: \n" + correct_artist,
                                     color='black')
-    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[0, 4])
-
-    painting.draw()
     response_text.draw()
+
+    draw_study_images(window, painting_path, context_path)
 
     window.flip()
     core.wait(2.5)
+
+
+def show_response(window, artist_array, selected_artist, button_text_array):
+    """
+    :param window:
+    :param artist_array:
+    :param selected_artist:
+    :param button_text_array:
+    :return:
+    """
+
+    index_loc = artist_array.index(selected_artist)
+
+    box_array = []
+    x_positions = [-20, -12, -4, 4, 12, 20]
+    y_positions = [-5, -7.5, -10, -12.5, -15]
+
+    for i in range(0, len(button_text_array)):
+        if i == index_loc:
+            box_array.append(visual.Rect(window, width=5.0, height=1.0, lineWidth=1.5, lineColor='red',
+                                         pos=[x_positions[index_loc % 6], y_positions[index_loc // 6]]))
+        else:
+            box_array.append(visual.Rect(window, width=5.0, height=1.0, lineWidth=1.5, lineColor='black',
+                                         pos=[x_positions[i % 6], y_positions[i // 6]]))
+
+    for i in range(0, len(button_text_array)):
+        box_array[i].draw()
+        button_text_array[i].draw()
+
+    window.flip()
+    core.wait(0.5)
 
 
 def show_buffer_screen(window):
@@ -574,7 +603,11 @@ def study_trial(window, mouse, current_trial, experiment_clock, artists, buttons
     response = get_response(mouse, buttons, random_artists, 10.0, experiment_clock)
     reaction_time = get_reaction_time(response[0], start_time)
     accuracy = get_accuracy(response[1], current_trial[3])
-    show_feedback(window, current_trial[3], current_trial[2])
+
+    draw_study_images(window, current_trial[2], current_trial[5])
+    show_response(window, random_artists, response[1], random_artist_button_text)
+
+    show_feedback(window, current_trial[3], current_trial[2], current_trial[5])
     write_trial(current_trial, accuracy, reaction_time, response[1])
     show_buffer_screen(window)
 
@@ -703,6 +736,10 @@ def main():
             genrec_test_trial(window, mouse, current_trial, experiment_clock, artists, buttons)
 
         elif current_trial[0] == 'Session2':
+            write_trial(current_trial, "NA", "NA", "NA")
+            break
+
+        elif current_trial[0] == 'Session3':
             write_trial(current_trial, "NA", "NA", "NA")
             break
 
