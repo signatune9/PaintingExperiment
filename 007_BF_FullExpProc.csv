@@ -1,0 +1,138 @@
+ItemNum,Phase,Painting,Artist,Schedule,ConDir,ConName,ConCat,Block,Notes,Subj,Stimset,Stimsubset,Order
+Session1,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,35,b,BF
+1,instruct,NA,NA,NA,NA,NA,NA,NA,D1intro,3,35,b,BF
+2,instruct,NA,NA,NA,NA,NA,NA,NA,study,3,35,b,BF
+19,Study,Images/Walter/Walter4.jpg,Walter,Blocked,Images/Context/nat/Niagra_Falls.jpg,Niagra Falls,nat,1,NA,3,35,b,BF
+20,Study,Images/Walter/Walter2.jpg,Walter,Blocked,Images/Context/mm/Golden_Gate_Bridge.jpg,Golden Gate Bridge,mm,1,NA,3,35,b,BF
+21,Study,Images/Walter/Walter3.jpg,Walter,Blocked,Images/Context/nat/Angel's_Landing.jpg,Angel's Landing,nat,1,NA,3,35,b,BF
+23,Study,Images/Walter/Walter6.jpg,Walter,Blocked,Images/Context/mm/Washington_Monument.jpg,Washington Monument,mm,1,NA,3,35,b,BF
+24,Study,Images/Walter/Walter5.jpg,Walter,Blocked,Images/Context/nat/Death_Valley.jpg,Death Valley,nat,1,NA,3,35,b,BF
+22,Study,Images/Walter/Walter1.jpg,Walter,Blocked,Images/Context/mm/Taj_Mahal.jpg,Taj Mahal,mm,1,NA,3,35,b,BF
+13,Study,Images/Schwartz/Schwartz6.jpg,Schwartz,Interleaved,Images/Context/mm/Space_Needle.jpg,Space Needle,mm,2,NA,3,35,b,BF
+7,Study,Images/Schlorff/Schlorff3.jpg,Schlorff,Interleaved,Images/Context/nat/Red_Beach.jpg,Red Beach,nat,2,NA,3,35,b,BF
+4,Study,Images/Grossman/Grossman4.jpg,Grossman,Interleaved,Images/Context/nat/Yellowstone.jpg,Yellowstone,nat,2,NA,3,35,b,BF
+10,Study,Images/Schlorff/Schlorff6.jpg,Schlorff,Interleaved,Images/Context/mm/Carnegie_Hall.jpg,Carnegie Hall,mm,2,NA,3,35,b,BF
+16,Study,Images/Schwartz/Schwartz3.jpg,Schwartz,Interleaved,Images/Context/mm/Rock_and_Roll_Hall_of_Fame.jpg,Rock and Roll Hall of Fame,mm,2,NA,3,35,b,BF
+1,Study,Images/Grossman/Grossman5.jpg,Grossman,Interleaved,Images/Context/nat/Arashiyama_Bamboo_Forest.jpg,Arashiyama Bamboo Forest,nat,2,NA,3,35,b,BF
+25,Study,Images/Lindenberg/Lindenberg5.jpg,Lindenberg,Blocked,Images/Context/mm/Dome_of_the_Rock.jpg,Dome of the Rock,mm,3,NA,3,35,b,BF
+26,Study,Images/Lindenberg/Lindenberg1.jpg,Lindenberg,Blocked,Images/Context/nat/Zhangye_Danxia_Park.jpg,Zhangye Danxia Park,nat,3,NA,3,35,b,BF
+30,Study,Images/Lindenberg/Lindenberg3.jpg,Lindenberg,Blocked,Images/Context/nat/Paria_Canyon.jpg,Paria Canyon,nat,3,NA,3,35,b,BF
+29,Study,Images/Lindenberg/Lindenberg4.jpg,Lindenberg,Blocked,Images/Context/nat/Lake_Tahoe.jpg,Lake Tahoe,nat,3,NA,3,35,b,BF
+27,Study,Images/Lindenberg/Lindenberg6.jpg,Lindenberg,Blocked,Images/Context/mm/Bellagio_Fountains.jpg,Bellagio Fountains,mm,3,NA,3,35,b,BF
+28,Study,Images/Lindenberg/Lindenberg2.jpg,Lindenberg,Blocked,Images/Context/mm/Forbidden_City.jpg,Forbidden City,mm,3,NA,3,35,b,BF
+5,Study,Images/Grossman/Grossman1.jpg,Grossman,Interleaved,Images/Context/mm/Tower_of_Pisa.jpg,Tower of Pisa,mm,4,NA,3,35,b,BF
+17,Study,Images/Schwartz/Schwartz1.jpg,Schwartz,Interleaved,Images/Context/mm/Gateway_Arch.jpg,Gateway Arch,mm,4,NA,3,35,b,BF
+8,Study,Images/Schlorff/Schlorff2.jpg,Schlorff,Interleaved,Images/Context/nat/Carlsbad_Caverns.jpg,Carlsbad Caverns,nat,4,NA,3,35,b,BF
+11,Study,Images/Schlorff/Schlorff1.jpg,Schlorff,Interleaved,Images/Context/nat/Amazon_River.jpg,Amazon River,nat,4,NA,3,35,b,BF
+14,Study,Images/Schwartz/Schwartz4.jpg,Schwartz,Interleaved,Images/Context/nat/Devil's_Tower.jpg,Devil's Tower,nat,4,NA,3,35,b,BF
+2,Study,Images/Grossman/Grossman2.jpg,Grossman,Interleaved,Images/Context/nat/Bryce_Canyon.jpg,Bryce Canyon,nat,4,NA,3,35,b,BF
+36,Study,Images/McKinley/McKinley1.jpg,McKinley,Blocked,Images/Context/nat/Mount_Fuji.jpg,Mount Fuji,nat,5,NA,3,35,b,BF
+31,Study,Images/McKinley/McKinley4.jpg,McKinley,Blocked,Images/Context/nat/Kilauea_Volcano.jpg,Kilauea Volcano,nat,5,NA,3,35,b,BF
+35,Study,Images/McKinley/McKinley3.jpg,McKinley,Blocked,Images/Context/nat/Grand_Canyon.jpg,Grand Canyon,nat,5,NA,3,35,b,BF
+33,Study,Images/McKinley/McKinley6.jpg,McKinley,Blocked,Images/Context/mm/Louvre.jpg,Louvre,mm,5,NA,3,35,b,BF
+34,Study,Images/McKinley/McKinley5.jpg,McKinley,Blocked,Images/Context/mm/Sydney_Opera_House.jpg,Sydney Opera House,mm,5,NA,3,35,b,BF
+32,Study,Images/McKinley/McKinley2.jpg,McKinley,Blocked,Images/Context/mm/Pentagon.jpg,Pentagon,mm,5,NA,3,35,b,BF
+12,Study,Images/Schlorff/Schlorff5.jpg,Schlorff,Interleaved,Images/Context/mm/Epcot_Center.jpg,Epcot Center,mm,6,NA,3,35,b,BF
+3,Study,Images/Grossman/Grossman6.jpg,Grossman,Interleaved,Images/Context/mm/Boston_Common.jpg,Boston Common,mm,6,NA,3,35,b,BF
+18,Study,Images/Schwartz/Schwartz5.jpg,Schwartz,Interleaved,Images/Context/nat/Zion_Subway.jpg,Zion Subway,nat,6,NA,3,35,b,BF
+9,Study,Images/Schlorff/Schlorff4.jpg,Schlorff,Interleaved,Images/Context/mm/Atomium.jpg,Atomium,mm,6,NA,3,35,b,BF
+6,Study,Images/Grossman/Grossman3.jpg,Grossman,Interleaved,Images/Context/mm/Eiffel_Tower.jpg,Eiffel Tower,mm,6,NA,3,35,b,BF
+15,Study,Images/Schwartz/Schwartz2.jpg,Schwartz,Interleaved,Images/Context/nat/Himalayas.jpg,Himalayas,nat,6,NA,3,35,b,BF
+3,instruct,NA,NA,NA,NA,NA,NA,NA,D1G,3,35,b,BF
+13,GenTest,Images/Schwartz/Schwartz12.jpg,Schwartz,Interleaved,NA,NA,NA,1,NA,3,35,b,BF
+25,GenTest,Images/McKinley/McKinley10.jpg,McKinley,Blocked,NA,NA,NA,1,NA,3,35,b,BF
+61,GenTest,Images/Schlorff/Schlorff11.jpg,Schlorff,Interleaved,NA,NA,NA,1,NA,3,35,b,BF
+49,GenTest,Images/Grossman/Grossman16.jpg,Grossman,Interleaved,NA,NA,NA,1,NA,3,35,b,BF
+1,GenTest,Images/Lindenberg/Lindenberg16.jpg,Lindenberg,Blocked,NA,NA,NA,1,NA,3,35,b,BF
+37,GenTest,Images/Walter/Walter11.jpg,Walter,Blocked,NA,NA,NA,1,NA,3,35,b,BF
+5,instruct,NA,NA,NA,NA,NA,NA,NA,D1GR,3,35,b,BF
+35,GenRecTest,Images/McKinley/McKinley3.jpg,McKinley,Blocked,Images/Context/nat/Grand_Canyon.jpg,Grand Canyon,nat,NA,NA,3,35,b,BF
+29,GenRecTest,Images/Lindenberg/Lindenberg4.jpg,Lindenberg,Blocked,Images/Context/nat/Lake_Tahoe.jpg,Lake Tahoe,nat,NA,NA,3,35,b,BF
+33,GenRecTest,Images/McKinley/McKinley6.jpg,McKinley,Blocked,Images/Context/mm/Louvre.jpg,Louvre,mm,NA,NA,3,35,b,BF
+34,GenRecTest,Images/McKinley/McKinley5.jpg,McKinley,Blocked,Images/Context/mm/Sydney_Opera_House.jpg,Sydney Opera House,mm,NA,NA,3,35,b,BF
+30,GenRecTest,Images/Lindenberg/Lindenberg3.jpg,Lindenberg,Blocked,Images/Context/nat/Paria_Canyon.jpg,Paria Canyon,nat,NA,NA,3,35,b,BF
+26,GenRecTest,Images/Lindenberg/Lindenberg1.jpg,Lindenberg,Blocked,Images/Context/nat/Zhangye_Danxia_Park.jpg,Zhangye Danxia Park,nat,NA,NA,3,35,b,BF
+4,instruct,NA,NA,NA,NA,NA,NA,NA,D1R,3,35,b,BF
+30,RecTest,Images/Lindenberg/Lindenberg3.jpg,Lindenberg,Blocked,Images/Context/nat/Paria_Canyon.jpg,Paria Canyon,nat,NA,NA,3,35,b,BF
+28,RecTest,Images/Lindenberg/Lindenberg2.jpg,Lindenberg,Blocked,Images/Context/mm/Forbidden_City.jpg,Forbidden City,mm,NA,NA,3,35,b,BF
+19,RecTest,Images/Walter/Walter4.jpg,Walter,Blocked,Images/Context/nat/Niagra_Falls.jpg,Niagra Falls,nat,NA,NA,3,35,b,BF
+32,RecTest,Images/McKinley/McKinley2.jpg,McKinley,Blocked,Images/Context/mm/Pentagon.jpg,Pentagon,mm,NA,NA,3,35,b,BF
+29,RecTest,Images/Lindenberg/Lindenberg4.jpg,Lindenberg,Blocked,Images/Context/nat/Lake_Tahoe.jpg,Lake Tahoe,nat,NA,NA,3,35,b,BF
+25,RecTest,Images/Lindenberg/Lindenberg5.jpg,Lindenberg,Blocked,Images/Context/mm/Dome_of_the_Rock.jpg,Dome of the Rock,mm,NA,NA,3,35,b,BF
+Session2,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,35,b,BF
+6,instruct,NA,NA,NA,NA,NA,NA,NA,D2intro,3,35,b,BF
+7,instruct,NA,NA,NA,NA,NA,NA,NA,D2G,3,35,b,BF
+43,GenTest,Images/Walter/Walter17.jpg,Walter,Blocked,NA,NA,NA,1,NA,3,35,b,BF
+31,GenTest,Images/McKinley/McKinley8.jpg,McKinley,Blocked,NA,NA,NA,1,NA,3,35,b,BF
+7,GenTest,Images/Lindenberg/Lindenberg11.jpg,Lindenberg,Blocked,NA,NA,NA,1,NA,3,35,b,BF
+67,GenTest,Images/Schlorff/Schlorff10.jpg,Schlorff,Interleaved,NA,NA,NA,1,NA,3,35,b,BF
+19,GenTest,Images/Schwartz/Schwartz9.jpg,Schwartz,Interleaved,NA,NA,NA,1,NA,3,35,b,BF
+55,GenTest,Images/Grossman/Grossman13.jpg,Grossman,Interleaved,NA,NA,NA,1,NA,3,35,b,BF
+20,GenTest,Images/Schwartz/Schwartz17.jpg,Schwartz,Interleaved,NA,NA,NA,2,NA,3,35,b,BF
+56,GenTest,Images/Grossman/Grossman17.jpg,Grossman,Interleaved,NA,NA,NA,2,NA,3,35,b,BF
+44,GenTest,Images/Walter/Walter15.jpg,Walter,Blocked,NA,NA,NA,2,NA,3,35,b,BF
+68,GenTest,Images/Schlorff/Schlorff14.jpg,Schlorff,Interleaved,NA,NA,NA,2,NA,3,35,b,BF
+8,GenTest,Images/Lindenberg/Lindenberg17.jpg,Lindenberg,Blocked,NA,NA,NA,2,NA,3,35,b,BF
+32,GenTest,Images/McKinley/McKinley7.jpg,McKinley,Blocked,NA,NA,NA,2,NA,3,35,b,BF
+21,GenTest,Images/Schwartz/Schwartz15.jpg,Schwartz,Interleaved,NA,NA,NA,3,NA,3,35,b,BF
+69,GenTest,Images/Schlorff/Schlorff9.jpg,Schlorff,Interleaved,NA,NA,NA,3,NA,3,35,b,BF
+57,GenTest,Images/Grossman/Grossman7.jpg,Grossman,Interleaved,NA,NA,NA,3,NA,3,35,b,BF
+9,GenTest,Images/Lindenberg/Lindenberg18.jpg,Lindenberg,Blocked,NA,NA,NA,3,NA,3,35,b,BF
+33,GenTest,Images/McKinley/McKinley17.jpg,McKinley,Blocked,NA,NA,NA,3,NA,3,35,b,BF
+45,GenTest,Images/Walter/Walter9.jpg,Walter,Blocked,NA,NA,NA,3,NA,3,35,b,BF
+58,GenTest,Images/Grossman/Grossman9.jpg,Grossman,Interleaved,NA,NA,NA,4,NA,3,35,b,BF
+34,GenTest,Images/McKinley/McKinley12.jpg,McKinley,Blocked,NA,NA,NA,4,NA,3,35,b,BF
+70,GenTest,Images/Schlorff/Schlorff18.jpg,Schlorff,Interleaved,NA,NA,NA,4,NA,3,35,b,BF
+46,GenTest,Images/Walter/Walter10.jpg,Walter,Blocked,NA,NA,NA,4,NA,3,35,b,BF
+22,GenTest,Images/Schwartz/Schwartz13.jpg,Schwartz,Interleaved,NA,NA,NA,4,NA,3,35,b,BF
+10,GenTest,Images/Lindenberg/Lindenberg13.jpg,Lindenberg,Blocked,NA,NA,NA,4,NA,3,35,b,BF
+35,GenTest,Images/McKinley/McKinley15.jpg,McKinley,Blocked,NA,NA,NA,5,NA,3,35,b,BF
+59,GenTest,Images/Grossman/Grossman15.jpg,Grossman,Interleaved,NA,NA,NA,5,NA,3,35,b,BF
+11,GenTest,Images/Lindenberg/Lindenberg12.jpg,Lindenberg,Blocked,NA,NA,NA,5,NA,3,35,b,BF
+71,GenTest,Images/Schlorff/Schlorff12.jpg,Schlorff,Interleaved,NA,NA,NA,5,NA,3,35,b,BF
+23,GenTest,Images/Schwartz/Schwartz14.jpg,Schwartz,Interleaved,NA,NA,NA,5,NA,3,35,b,BF
+47,GenTest,Images/Walter/Walter14.jpg,Walter,Blocked,NA,NA,NA,5,NA,3,35,b,BF
+24,GenTest,Images/Schwartz/Schwartz16.jpg,Schwartz,Interleaved,NA,NA,NA,6,NA,3,35,b,BF
+12,GenTest,Images/Lindenberg/Lindenberg8.jpg,Lindenberg,Blocked,NA,NA,NA,6,NA,3,35,b,BF
+36,GenTest,Images/McKinley/McKinley18.jpg,McKinley,Blocked,NA,NA,NA,6,NA,3,35,b,BF
+48,GenTest,Images/Walter/Walter8.jpg,Walter,Blocked,NA,NA,NA,6,NA,3,35,b,BF
+60,GenTest,Images/Grossman/Grossman12.jpg,Grossman,Interleaved,NA,NA,NA,6,NA,3,35,b,BF
+72,GenTest,Images/Schlorff/Schlorff15.jpg,Schlorff,Interleaved,NA,NA,NA,6,NA,3,35,b,BF
+9,instruct,NA,NA,NA,NA,NA,NA,NA,D2GR,3,35,b,BF
+17,GenRecTest,Images/Schwartz/Schwartz1.jpg,Schwartz,Interleaved,Images/Context/mm/Gateway_Arch.jpg,Gateway Arch,mm,NA,NA,3,35,b,BF
+15,GenRecTest,Images/Schwartz/Schwartz2.jpg,Schwartz,Interleaved,Images/Context/nat/Himalayas.jpg,Himalayas,nat,NA,NA,3,35,b,BF
+12,GenRecTest,Images/Schlorff/Schlorff5.jpg,Schlorff,Interleaved,Images/Context/mm/Epcot_Center.jpg,Epcot Center,mm,NA,NA,3,35,b,BF
+3,GenRecTest,Images/Grossman/Grossman6.jpg,Grossman,Interleaved,Images/Context/mm/Boston_Common.jpg,Boston Common,mm,NA,NA,3,35,b,BF
+11,GenRecTest,Images/Schlorff/Schlorff1.jpg,Schlorff,Interleaved,Images/Context/nat/Amazon_River.jpg,Amazon River,nat,NA,NA,3,35,b,BF
+4,GenRecTest,Images/Grossman/Grossman4.jpg,Grossman,Interleaved,Images/Context/nat/Yellowstone.jpg,Yellowstone,nat,NA,NA,3,35,b,BF
+16,GenRecTest,Images/Schwartz/Schwartz3.jpg,Schwartz,Interleaved,Images/Context/mm/Rock_and_Roll_Hall_of_Fame.jpg,Rock and Roll Hall of Fame,mm,NA,NA,3,35,b,BF
+6,GenRecTest,Images/Grossman/Grossman3.jpg,Grossman,Interleaved,Images/Context/mm/Eiffel_Tower.jpg,Eiffel Tower,mm,NA,NA,3,35,b,BF
+14,GenRecTest,Images/Schwartz/Schwartz4.jpg,Schwartz,Interleaved,Images/Context/nat/Devil's_Tower.jpg,Devil's Tower,nat,NA,NA,3,35,b,BF
+13,GenRecTest,Images/Schwartz/Schwartz6.jpg,Schwartz,Interleaved,Images/Context/mm/Space_Needle.jpg,Space Needle,mm,NA,NA,3,35,b,BF
+2,GenRecTest,Images/Grossman/Grossman2.jpg,Grossman,Interleaved,Images/Context/nat/Bryce_Canyon.jpg,Bryce Canyon,nat,NA,NA,3,35,b,BF
+5,GenRecTest,Images/Grossman/Grossman1.jpg,Grossman,Interleaved,Images/Context/mm/Tower_of_Pisa.jpg,Tower of Pisa,mm,NA,NA,3,35,b,BF
+9,GenRecTest,Images/Schlorff/Schlorff4.jpg,Schlorff,Interleaved,Images/Context/mm/Atomium.jpg,Atomium,mm,NA,NA,3,35,b,BF
+10,GenRecTest,Images/Schlorff/Schlorff6.jpg,Schlorff,Interleaved,Images/Context/mm/Carnegie_Hall.jpg,Carnegie Hall,mm,NA,NA,3,35,b,BF
+8,GenRecTest,Images/Schlorff/Schlorff2.jpg,Schlorff,Interleaved,Images/Context/nat/Carlsbad_Caverns.jpg,Carlsbad Caverns,nat,NA,NA,3,35,b,BF
+1,GenRecTest,Images/Grossman/Grossman5.jpg,Grossman,Interleaved,Images/Context/nat/Arashiyama_Bamboo_Forest.jpg,Arashiyama Bamboo Forest,nat,NA,NA,3,35,b,BF
+7,GenRecTest,Images/Schlorff/Schlorff3.jpg,Schlorff,Interleaved,Images/Context/nat/Red_Beach.jpg,Red Beach,nat,NA,NA,3,35,b,BF
+18,GenRecTest,Images/Schwartz/Schwartz5.jpg,Schwartz,Interleaved,Images/Context/nat/Zion_Subway.jpg,Zion Subway,nat,NA,NA,3,35,b,BF
+8,instruct,NA,NA,NA,NA,NA,NA,NA,D2R,3,35,b,BF
+14,RecTest,Images/Schwartz/Schwartz4.jpg,Schwartz,Interleaved,Images/Context/nat/Devil's_Tower.jpg,Devil's Tower,nat,NA,NA,3,35,b,BF
+12,RecTest,Images/Schlorff/Schlorff5.jpg,Schlorff,Interleaved,Images/Context/mm/Epcot_Center.jpg,Epcot Center,mm,NA,NA,3,35,b,BF
+7,RecTest,Images/Schlorff/Schlorff3.jpg,Schlorff,Interleaved,Images/Context/nat/Red_Beach.jpg,Red Beach,nat,NA,NA,3,35,b,BF
+10,RecTest,Images/Schlorff/Schlorff6.jpg,Schlorff,Interleaved,Images/Context/mm/Carnegie_Hall.jpg,Carnegie Hall,mm,NA,NA,3,35,b,BF
+5,RecTest,Images/Grossman/Grossman1.jpg,Grossman,Interleaved,Images/Context/mm/Tower_of_Pisa.jpg,Tower of Pisa,mm,NA,NA,3,35,b,BF
+9,RecTest,Images/Schlorff/Schlorff4.jpg,Schlorff,Interleaved,Images/Context/mm/Atomium.jpg,Atomium,mm,NA,NA,3,35,b,BF
+16,RecTest,Images/Schwartz/Schwartz3.jpg,Schwartz,Interleaved,Images/Context/mm/Rock_and_Roll_Hall_of_Fame.jpg,Rock and Roll Hall of Fame,mm,NA,NA,3,35,b,BF
+2,RecTest,Images/Grossman/Grossman2.jpg,Grossman,Interleaved,Images/Context/nat/Bryce_Canyon.jpg,Bryce Canyon,nat,NA,NA,3,35,b,BF
+6,RecTest,Images/Grossman/Grossman3.jpg,Grossman,Interleaved,Images/Context/mm/Eiffel_Tower.jpg,Eiffel Tower,mm,NA,NA,3,35,b,BF
+8,RecTest,Images/Schlorff/Schlorff2.jpg,Schlorff,Interleaved,Images/Context/nat/Carlsbad_Caverns.jpg,Carlsbad Caverns,nat,NA,NA,3,35,b,BF
+11,RecTest,Images/Schlorff/Schlorff1.jpg,Schlorff,Interleaved,Images/Context/nat/Amazon_River.jpg,Amazon River,nat,NA,NA,3,35,b,BF
+17,RecTest,Images/Schwartz/Schwartz1.jpg,Schwartz,Interleaved,Images/Context/mm/Gateway_Arch.jpg,Gateway Arch,mm,NA,NA,3,35,b,BF
+13,RecTest,Images/Schwartz/Schwartz6.jpg,Schwartz,Interleaved,Images/Context/mm/Space_Needle.jpg,Space Needle,mm,NA,NA,3,35,b,BF
+15,RecTest,Images/Schwartz/Schwartz2.jpg,Schwartz,Interleaved,Images/Context/nat/Himalayas.jpg,Himalayas,nat,NA,NA,3,35,b,BF
+4,RecTest,Images/Grossman/Grossman4.jpg,Grossman,Interleaved,Images/Context/nat/Yellowstone.jpg,Yellowstone,nat,NA,NA,3,35,b,BF
+3,RecTest,Images/Grossman/Grossman6.jpg,Grossman,Interleaved,Images/Context/mm/Boston_Common.jpg,Boston Common,mm,NA,NA,3,35,b,BF
+1,RecTest,Images/Grossman/Grossman5.jpg,Grossman,Interleaved,Images/Context/nat/Arashiyama_Bamboo_Forest.jpg,Arashiyama Bamboo Forest,nat,NA,NA,3,35,b,BF
+18,RecTest,Images/Schwartz/Schwartz5.jpg,Schwartz,Interleaved,Images/Context/nat/Zion_Subway.jpg,Zion Subway,nat,NA,NA,3,35,b,BF

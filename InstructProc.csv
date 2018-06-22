@@ -2,9 +2,9 @@ ItemNum,Phase,Painting,Artist,Schedule,ConDir,ConName,ConCat,Block,Notes
 1,instruct,NA,NA,NA,NA,NA,NA,NA,D1intro
 2,instruct,NA,NA,NA,NA,NA,NA,NA,study
 3,instruct,NA,NA,NA,NA,NA,NA,NA,D1G
-4,instruct,NA,NA,NA,NA,NA,NA,NA,D1R
-5,instruct,NA,NA,NA,NA,NA,NA,NA,D1GR
+4,instruct,NA,NA,NA,NA,NA,NA,NA,D1GR
+5,instruct,NA,NA,NA,NA,NA,NA,NA,D1R
 6,instruct,NA,NA,NA,NA,NA,NA,NA,D2intro
 7,instruct,NA,NA,NA,NA,NA,NA,NA,D2G
-8,instruct,NA,NA,NA,NA,NA,NA,NA,D2R
-9,instruct,NA,NA,NA,NA,NA,NA,NA,D2GR
+8,instruct,NA,NA,NA,NA,NA,NA,NA,D2GR
+9,instruct,NA,NA,NA,NA,NA,NA,NA,D2R
