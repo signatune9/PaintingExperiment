@@ -218,7 +218,7 @@ def draw_instructions(window, mouse, instructions_index):
 
     instruction_path = instructions_file_list[instructions_index][0]
 
-    instruction = visual.ImageStim(window, image=FILEPATH + "images/" + instruction_path, pos=[-4.0, 4])
+    instruction = visual.ImageStim(window, image=FILEPATH + "images/" + instruction_path, pos=[-2.5, 4])
 
     if INPUT_MODE == 0:
         next_button = visual.Rect(window, width=5.0, height=1.0, lineWidth=1.5, lineColor='black', pos=[10.5, -10])
@@ -229,7 +229,7 @@ def draw_instructions(window, mouse, instructions_index):
         next_button_text.draw()
 
     else:
-        keyboard_message = visual.TextStim(window, text="Press a button to continue", pos=[-4.0, -10], color='black')
+        keyboard_message = visual.TextStim(window, text="Press a button to continue", pos=[-2.5, -10], color='black')
         keyboard_message.draw()
 
     instruction.draw()
@@ -256,11 +256,11 @@ def draw_study_images(window, painting_path, context_path):
     Returns: None.
     """
 
-    painting_text = visual.TextStim(window, pos=[-13.0, 11.5], text="Painting:", color='black')
-    context_text = visual.TextStim(window, pos=[5.0, 11.5], text="Location:", color='black')
+    painting_text = visual.TextStim(window, pos=[-11.5, 11.5], text="Painting:", color='black')
+    context_text = visual.TextStim(window, pos=[6.5, 11.5], text="Location:", color='black')
 
-    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-13.0, 4])
-    context = visual.ImageStim(window, image=FILEPATH + context_path, size=13, pos=[5.0, 4])
+    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-11.5, 4])
+    context = visual.ImageStim(window, image=FILEPATH + context_path, size=13, pos=[6.5, 4])
 
     painting_text.draw()
     context_text.draw()
@@ -274,8 +274,8 @@ def draw_gen_test_image(window, painting_path):
     Inputs: window = The window object being used for the experiment.
             painting_path = The path to the painting image to draw.
     """
-    painting_text = visual.TextStim(window, pos=[-4.0, 11.5], text="Painting:", color='black')
-    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-4.0, 4])
+    painting_text = visual.TextStim(window, pos=[-2.5, 11.5], text="Painting:", color='black')
+    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-2.5, 4])
 
     painting_text.draw()
     painting.draw()
@@ -290,8 +290,8 @@ def draw_rec_test_image(window, painting_path, context_paths):
     Returns: A list containing the ImageStims for each of the context images.
     """
 
-    painting_text = visual.TextStim(window, pos=[-4.0, 11.5], text="Painting:", color='black')
-    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-4.0, 4])
+    painting_text = visual.TextStim(window, pos=[-2.5, 11.5], text="Painting:", color='black')
+    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-2.5, 4])
     context_images = []
 
     if INPUT_MODE == 0:
@@ -305,7 +305,7 @@ def draw_rec_test_image(window, painting_path, context_paths):
             i = i + 1
 
     else:
-        x_positions = [-26.5, -17.5, -8.5, 0.5, 9.5, 18.5]
+        x_positions = [-25, -16, -7, 2, 11, 20]
         y_positions = [-8]
 
         i = 0
@@ -330,8 +330,8 @@ def draw_genrec_test_image(window, context_path):
             context_path = The path to the context image to draw.
     """
 
-    context_text = visual.TextStim(window, pos=[-4.0, 11.5], text="Location:", color='black')
-    context = visual.ImageStim(window, image=FILEPATH + context_path, size=13, pos=[-4.0, 4])
+    context_text = visual.TextStim(window, pos=[-2.5, 11.5], text="Location:", color='black')
+    context = visual.ImageStim(window, image=FILEPATH + context_path, size=13, pos=[-2.5, 4])
 
     context_text.draw()
     context.draw()
@@ -356,7 +356,7 @@ def create_buttons(window, num_artists):
 
     else:
         button_array = []
-        x_positions = [-24, -17, -10, -3, 4, 11]
+        x_positions = [-21.25, -14.75, -8.25, -1.75, 4.75, 11.25]
         y_positions = [-5, -7.5, -10, -12.5, -15]
 
         for i in range(0, num_artists):
@@ -385,7 +385,7 @@ def create_artist_button_text(window, artists):
 
     else:
         button_text_array = []
-        x_positions = [-24, -17, -10, -3, 4, 11]
+        x_positions = [-21.25, -14.75, -8.25, -1.75, 4.75, 11.25]
         y_positions = [-5, -7.5, -10, -12.5, -15]
 
         for i in range(0, len(artists)):
@@ -559,7 +559,7 @@ def show_feedback(window, correct_artist, painting_path, context_path):
     Returns: None
     """
 
-    response_text = visual.TextStim(window, pos=[-4.0, -5], text="The correct artist is: \n" + correct_artist,
+    response_text = visual.TextStim(window, pos=[-2.5, -5], text="The correct artist is: \n" + correct_artist,
                                     color='black')
     response_text.draw()
 
@@ -583,7 +583,7 @@ def show_response(window, artist_array, selected_artist, button_text_array):
     index_loc = artist_array.index(selected_artist)
 
     box_array = []
-    x_positions = [-24, -17, -10, -3, 4, 11]
+    x_positions = [-21.25, -14.75, -8.25, -1.75, 4.75, 11.25]
     y_positions = [-5, -7.5, -10, -12.5, -15]
 
     for i in range(0, len(button_text_array)):
@@ -612,7 +612,7 @@ def show_rec_test_response(window, context_images, response):
     Returns: None.
     """
 
-    x_positions = [-22.5, -13.5, -4.5, 4.5, 13.5, 22.5]
+    x_positions = [-25, -16, -7, 2, 11, 20]
     y_positions = [-8]
 
     for i in range(0, len(context_images)):
