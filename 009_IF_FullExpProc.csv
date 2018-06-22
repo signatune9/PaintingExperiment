@@ -1,0 +1,40 @@
+ItemNum,Phase,Painting,Artist,Schedule,ConDir,ConName,ConCat,Block,Notes,Subj,Stimset,Stimsubset,Order
+Session1,NA,NA,NA,NA,NA,NA,NA,NA,NA,9,37,a,IF
+1,instruct,NA,NA,NA,NA,NA,NA,NA,D1intro,9,37,a,IF
+2,instruct,NA,NA,NA,NA,NA,NA,NA,study,9,37,a,IF
+22,Study,Images/Grossman/Grossman6.jpg,Grossman,Interleaved,Images/Context/mm/Boston_Common.jpg,Boston Common,mm,1,NA,9,37,a,IF
+31,Study,Images/Hawkins/Hawkins1.jpg,Hawkins,Interleaved,Images/Context/mm/Eiffel_Tower.jpg,Eiffel Tower,mm,1,NA,9,37,a,IF
+25,Study,Images/Petro/Petro6.jpg,Petro,Interleaved,Images/Context/nat/Zhangye_Danxia_Park.jpg,Zhangye Danxia Park,nat,1,NA,9,37,a,IF
+28,Study,Images/Petro/Petro1.jpg,Petro,Interleaved,Images/Context/nat/Angel's_Landing.jpg,Angel's Landing,nat,1,NA,9,37,a,IF
+34,Study,Images/Hawkins/Hawkins6.jpg,Hawkins,Interleaved,Images/Context/nat/Yellowstone.jpg,Yellowstone,nat,1,NA,9,37,a,IF
+19,Study,Images/Grossman/Grossman2.jpg,Grossman,Interleaved,Images/Context/mm/Golden_Gate_Bridge.jpg,Golden Gate Bridge,mm,1,NA,9,37,a,IF
+6,Study,Images/McNamara/McNamara3.jpg,McNamara,Blocked,Images/Context/nat/Mount_Fuji.jpg,Mount Fuji,nat,2,NA,9,37,a,IF
+1,Study,Images/McNamara/McNamara5.jpg,McNamara,Blocked,Images/Context/mm/Taj_Mahal.jpg,Taj Mahal,mm,2,NA,9,37,a,IF
+2,Study,Images/McNamara/McNamara4.jpg,McNamara,Blocked,Images/Context/nat/Kilauea_Volcano.jpg,Kilauea Volcano,nat,2,NA,9,37,a,IF
+4,Study,Images/McNamara/McNamara1.jpg,McNamara,Blocked,Images/Context/mm/Space_Needle.jpg,Space Needle,mm,2,NA,9,37,a,IF
+5,Study,Images/McNamara/McNamara6.jpg,McNamara,Blocked,Images/Context/mm/Atomium.jpg,Atomium,mm,2,NA,9,37,a,IF
+3,Study,Images/McNamara/McNamara2.jpg,McNamara,Blocked,Images/Context/nat/Carlsbad_Caverns.jpg,Carlsbad Caverns,nat,2,NA,9,37,a,IF
+23,Study,Images/Grossman/Grossman1.jpg,Grossman,Interleaved,Images/Context/nat/Lake_Tahoe.jpg,Lake Tahoe,nat,3,NA,9,37,a,IF
+29,Study,Images/Petro/Petro4.jpg,Petro,Interleaved,Images/Context/mm/Rock_and_Roll_Hall_of_Fame.jpg,Rock and Roll Hall of Fame,mm,3,NA,9,37,a,IF
+32,Study,Images/Hawkins/Hawkins5.jpg,Hawkins,Interleaved,Images/Context/nat/Paria_Canyon.jpg,Paria Canyon,nat,3,NA,9,37,a,IF
+26,Study,Images/Petro/Petro5.jpg,Petro,Interleaved,Images/Context/mm/Tower_of_Pisa.jpg,Tower of Pisa,mm,3,NA,9,37,a,IF
+35,Study,Images/Hawkins/Hawkins4.jpg,Hawkins,Interleaved,Images/Context/nat/Amazon_River.jpg,Amazon River,nat,3,NA,9,37,a,IF
+20,Study,Images/Grossman/Grossman4.jpg,Grossman,Interleaved,Images/Context/nat/Zion_Subway.jpg,Zion Subway,nat,3,NA,9,37,a,IF
+12,Study,Images/Schlorff/Schlorff6.jpg,Schlorff,Blocked,Images/Context/mm/Dome_of_the_Rock.jpg,Dome of the Rock,mm,4,NA,9,37,a,IF
+7,Study,Images/Schlorff/Schlorff5.jpg,Schlorff,Blocked,Images/Context/nat/Himalayas.jpg,Himalayas,nat,4,NA,9,37,a,IF
+11,Study,Images/Schlorff/Schlorff3.jpg,Schlorff,Blocked,Images/Context/nat/Niagra_Falls.jpg,Niagra Falls,nat,4,NA,9,37,a,IF
+10,Study,Images/Schlorff/Schlorff4.jpg,Schlorff,Blocked,Images/Context/nat/Red_Beach.jpg,Red Beach,nat,4,NA,9,37,a,IF
+8,Study,Images/Schlorff/Schlorff1.jpg,Schlorff,Blocked,Images/Context/mm/Louvre.jpg,Louvre,mm,4,NA,9,37,a,IF
+9,Study,Images/Schlorff/Schlorff2.jpg,Schlorff,Blocked,Images/Context/mm/Epcot_Center.jpg,Epcot Center,mm,4,NA,9,37,a,IF
+30,Study,Images/Petro/Petro3.jpg,Petro,Interleaved,Images/Context/mm/Bellagio_Fountains.jpg,Bellagio Fountains,mm,5,NA,9,37,a,IF
+24,Study,Images/Grossman/Grossman5.jpg,Grossman,Interleaved,Images/Context/mm/Pentagon.jpg,Pentagon,mm,5,NA,9,37,a,IF
+33,Study,Images/Hawkins/Hawkins2.jpg,Hawkins,Interleaved,Images/Context/mm/Carnegie_Hall.jpg,Carnegie Hall,mm,5,NA,9,37,a,IF
+21,Study,Images/Grossman/Grossman3.jpg,Grossman,Interleaved,Images/Context/nat/Bryce_Canyon.jpg,Bryce Canyon,nat,5,NA,9,37,a,IF
+36,Study,Images/Hawkins/Hawkins3.jpg,Hawkins,Interleaved,Images/Context/mm/Washington_Monument.jpg,Washington Monument,mm,5,NA,9,37,a,IF
+27,Study,Images/Petro/Petro2.jpg,Petro,Interleaved,Images/Context/nat/Devil's_Tower.jpg,Devil's Tower,nat,5,NA,9,37,a,IF
+15,Study,Images/Wexler/Wexler2.jpg,Wexler,Blocked,Images/Context/nat/Death_Valley.jpg,Death Valley,nat,6,NA,9,37,a,IF
+14,Study,Images/Wexler/Wexler4.jpg,Wexler,Blocked,Images/Context/mm/Sydney_Opera_House.jpg,Sydney Opera House,mm,6,NA,9,37,a,IF
+16,Study,Images/Wexler/Wexler5.jpg,Wexler,Blocked,Images/Context/nat/Grand_Canyon.jpg,Grand Canyon,nat,6,NA,9,37,a,IF
+17,Study,Images/Wexler/Wexler1.jpg,Wexler,Blocked,Images/Context/nat/Arashiyama_Bamboo_Forest.jpg,Arashiyama Bamboo Forest,nat,6,NA,9,37,a,IF
+13,Study,Images/Wexler/Wexler6.jpg,Wexler,Blocked,Images/Context/mm/Forbidden_City.jpg,Forbidden City,mm,6,NA,9,37,a,IF
+18,Study,Images/Wexler/Wexler3.jpg,Wexler,Blocked,Images/Context/mm/Gateway_Arch.jpg,Gateway Arch,mm,6,NA,9,37,a,IF
