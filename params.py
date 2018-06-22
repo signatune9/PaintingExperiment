@@ -1,7 +1,7 @@
 # 0 for blocked, 1 for interleaved
-CONDITION = 0
+CONDITION = 1
 
-SUBJECT_ID = '007'
+SUBJECT_ID = '009'
 
 # Horizontal and vertical resolution for the physical monitor
 HRES = 1920
@@ -20,4 +20,4 @@ SCREENWIDTH = 30
 FILEPATH = ''
 
 # 0 for mouse, 1 for MRI button mapping (876 123), 2 for SDF JKL
-INPUT_MODE = 2
+INPUT_MODE = 1
