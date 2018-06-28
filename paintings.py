@@ -6,9 +6,10 @@ import os
 
 # Import settings from params file.
 from params import CONDITION, SUBJECT_ID, HRES, VRES, EXPHRES, EXPVRES, SCREENDISTANCE, SCREENWIDTH, FILEPATH, \
-    INPUT_MODE
+    INPUT_MODE, OFFSET
 
-# To Do: Split phases up into separate trials, Fix instruction logic on restart
+# To Do: Fix instruction logic on restart, increase buttons vertically, shift horizontally, position logic for MRI
+#   scans vs. normal keyboard tests
 
 
 def read_procedural_csv():
@@ -60,9 +61,9 @@ def create_results_file():
 
 def get_results_status():
     """
-    If the results file already exists, continue from the next trial.
+    If the results file already exists, finds the next trial to continue from.
     Inputs: None.
-    Return: The trial number to continue from.
+    Return: The trial number to continue from and the index of the next instruction to show.
     """
 
     if CONDITION == 0:
@@ -76,6 +77,7 @@ def get_results_status():
             results_list = list(results_reader)
 
     instructions_index = 0
+
     for trial in results_list:
         if trial[1] == 'instruct':
             instructions_index += 1
@@ -87,7 +89,7 @@ def get_results_status():
 
 def start_experiment_clock():
     """
-    Creates and starts a monotonic clock for the experiment, to be used for recording timings.
+    Creates and starts a clock for the experiment, to be used for recording timings.
     Inputs: None.
     Returns: The Clock object.
     """
@@ -104,19 +106,19 @@ def get_artists(procedural_file_list):
     """
 
     artists = []
-    done_flag = 0
+    done_flag = False
 
     for trial in procedural_file_list:
-        if trial[1] != 'Study' and done_flag == 1:
+        if trial[1] != 'Study' and done_flag:
             break
 
         elif trial[1] != 'Study':
             continue
 
         else:
-            done_flag = 1
             if trial[3] not in artists:
                 artists.append(trial[3])
+            done_flag = True
 
     return artists
 
@@ -133,19 +135,19 @@ def read_trial(procedural_file_list, trial_num):
     return trial_line
 
 
-# To do: Improve docstring for get_context_list
 def get_context_list(procedural_file_list):
     """
-    Gets a sorted list of (painting_path, context_path) pairs being used for the experiment.
+    Gets a list of [painting_path, artist, context_path, context_type] entries being used for the experiment, sorted
+        by painting_path.
     Inputs: procedural_file_list = The list containing the procedural file entries.
-    Returns: A list containing (painting_path, context_path) pairs for all the paintings in the study phase.
+    Returns: A list containing the context entries for all the paintings in the study phase.
     """
 
     context_list = []
-    done_flag = 0
+    done_flag = False
 
     for trial in procedural_file_list:
-        if trial[1] != 'Study' and done_flag == 1:
+        if trial[1] != 'Study' and done_flag:
             break
 
         elif trial[1] != 'Study':
@@ -155,13 +157,16 @@ def get_context_list(procedural_file_list):
             context_list_entry = [trial[2], trial[3], trial[5], trial[7]]
             if context_list_entry not in context_list:
                 context_list.insert(bisect(context_list, context_list_entry), context_list_entry)
+            done_flag = True
 
     return context_list
 
 
 def get_context_images(current_painting, current_artist, context_category, context_list):
     """
-    Gets a list of context images to show during recognition tests.
+    Gets a list of six context images to show during recognition tests. One of the images is the matching context image
+        for the current painting. The other five images are randomly selected context matches from the artist's other
+        paintings. Three of the context images returned will be manmade, the other three will be natural.
     Inputs: current_painting = The correct painting to be shown for this trial.
             current_artist = The artist of the paintings for this trial.
             context_category = The context category of the correct painting.
@@ -179,6 +184,7 @@ def get_context_images(current_painting, current_artist, context_category, conte
         num_natural = 1
 
     other_artist_paintings = []
+    done_flag = False
 
     for context_entry in context_list:
         if current_artist == context_entry[1]:
@@ -186,6 +192,9 @@ def get_context_images(current_painting, current_artist, context_category, conte
                 other_artist_paintings.append(context_entry)
             else:
                 context_path_list.append(context_entry[2])
+            done_flag = True
+        elif done_flag:
+            break
 
     random.shuffle(other_artist_paintings)
     for context_entry in other_artist_paintings:
@@ -218,7 +227,10 @@ def draw_instructions(window, mouse, instructions_index):
 
     instruction_path = instructions_file_list[instructions_index][0]
 
-    instruction = visual.ImageStim(window, image=FILEPATH + "images/" + instruction_path, pos=[-2.5, 4])
+    if OFFSET == 1:
+        instruction = visual.ImageStim(window, image=FILEPATH + "images/" + instruction_path, pos=[-2.5, 4])
+    else:
+        instruction = visual.ImageStim(window, image=FILEPATH + "images/" + instruction_path, pos=[0.0, 4])
 
     if INPUT_MODE == 0:
         next_button = visual.Rect(window, width=5.0, height=1.0, lineWidth=1.5, lineColor='black', pos=[10.5, -10])
@@ -227,9 +239,13 @@ def draw_instructions(window, mouse, instructions_index):
         instruction.draw()
         next_button.draw()
         next_button_text.draw()
-
     else:
-        keyboard_message = visual.TextStim(window, text="Press a button to continue", pos=[-2.5, -10], color='black')
+        if OFFSET == 1:
+            keyboard_message = visual.TextStim(window, text="Press a button to continue", pos=[-2.5, -10],
+                                               color='black')
+        else:
+            keyboard_message = visual.TextStim(window, text="Press a button to continue", pos=[0.0, -10],
+                                               color='black')
         keyboard_message.draw()
 
     instruction.draw()
@@ -256,11 +272,19 @@ def draw_study_images(window, painting_path, context_path):
     Returns: None.
     """
 
-    painting_text = visual.TextStim(window, pos=[-11.5, 11.5], text="Painting:", color='black')
-    context_text = visual.TextStim(window, pos=[6.5, 11.5], text="Location:", color='black')
+    if OFFSET == 1:
+        painting_text = visual.TextStim(window, pos=[-11.5, 11.5], text="Painting:", color='black')
+        context_text = visual.TextStim(window, pos=[6.5, 11.5], text="Location:", color='black')
 
-    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-11.5, 4])
-    context = visual.ImageStim(window, image=FILEPATH + context_path, size=13, pos=[6.5, 4])
+        painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-11.5, 4])
+        context = visual.ImageStim(window, image=FILEPATH + context_path, size=13, pos=[6.5, 4])
+
+    else:
+        painting_text = visual.TextStim(window, pos=[-7.3, 11.5], text="Painting:", color='black')
+        context_text = visual.TextStim(window, pos=[10.7, 11.5], text="Location:", color='black')
+
+        painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-7.3, 4])
+        context = visual.ImageStim(window, image=FILEPATH + context_path, size=13, pos=[10.7, 4])
 
     painting_text.draw()
     context_text.draw()
@@ -274,8 +298,12 @@ def draw_gen_test_image(window, painting_path):
     Inputs: window = The window object being used for the experiment.
             painting_path = The path to the painting image to draw.
     """
-    painting_text = visual.TextStim(window, pos=[-2.5, 11.5], text="Painting:", color='black')
-    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-2.5, 4])
+    if OFFSET == 1:
+        painting_text = visual.TextStim(window, pos=[-2.5, 11.5], text="Painting:", color='black')
+        painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-2.5, 4])
+    else:
+        painting_text = visual.TextStim(window, pos=[0.0, 11.5], text="Painting:", color='black')
+        painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[0.0, 4])
 
     painting_text.draw()
     painting.draw()
@@ -290,8 +318,13 @@ def draw_rec_test_image(window, painting_path, context_paths):
     Returns: A list containing the ImageStims for each of the context images.
     """
 
-    painting_text = visual.TextStim(window, pos=[-2.5, 11.5], text="Painting:", color='black')
-    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-2.5, 4])
+    if OFFSET == 1:
+        painting_text = visual.TextStim(window, pos=[-2.5, 11.5], text="Painting:", color='black')
+        painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-2.5, 4])
+    else:
+        painting_text = visual.TextStim(window, pos=[0.0, 11.5], text="Painting:", color='black')
+        painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[0.0, 4])
+
     context_images = []
 
     if INPUT_MODE == 0:
@@ -305,12 +338,15 @@ def draw_rec_test_image(window, painting_path, context_paths):
             i = i + 1
 
     else:
-        x_positions = [-25, -16, -7, 2, 11, 20]
+        if OFFSET == 1:
+            x_positions = [-21.25, -13.75, -6.25, 1.25, 8.75, 16.25]
+        else:
+            x_positions = [-18.75, -11.25, -3.75, 3.75, 11.25, 18.75]
         y_positions = [-8]
 
         i = 0
         for context_path in context_paths:
-            context_images.append(visual.ImageStim(window, image=FILEPATH + context_path, size=8,
+            context_images.append(visual.ImageStim(window, image=FILEPATH + context_path, size=7,
                                                    pos=[x_positions[i % 6], y_positions[i/6]]))
             i = i + 1
 
@@ -330,8 +366,12 @@ def draw_genrec_test_image(window, context_path):
             context_path = The path to the context image to draw.
     """
 
-    context_text = visual.TextStim(window, pos=[-2.5, 11.5], text="Location:", color='black')
-    context = visual.ImageStim(window, image=FILEPATH + context_path, size=13, pos=[-2.5, 4])
+    if OFFSET == 1:
+        context_text = visual.TextStim(window, pos=[-2.5, 11.5], text="Location:", color='black')
+        context = visual.ImageStim(window, image=FILEPATH + context_path, size=13, pos=[-2.5, 4])
+    else:
+        context_text = visual.TextStim(window, pos=[0.0, 11.5], text="Location:", color='black')
+        context = visual.ImageStim(window, image=FILEPATH + context_path, size=13, pos=[0.0, 4])
 
     context_text.draw()
     context.draw()
@@ -347,20 +387,25 @@ def create_buttons(window, num_artists):
 
     if INPUT_MODE == 0:
         button_array = []
+
         x_positions = [-10.5, 0, 10.5]
         y_positions = [-5, -7.5, -10, -12.5, -15]
 
         for i in range(0, num_artists):
-            button_array.append(visual.Rect(window, width=5.0, height=1.0, lineWidth=1.5, lineColor='black',
+            button_array.append(visual.Rect(window, width=5.0, height=1.5, lineWidth=1.5, lineColor='black',
                                             pos=[x_positions[i % 3], y_positions[i // 3]]))
 
     else:
         button_array = []
-        x_positions = [-21.25, -14.75, -8.25, -1.75, 4.75, 11.25]
+
+        if OFFSET == 1:
+            x_positions = [-21.25, -14.75, -8.25, -1.75, 4.75, 11.25]
+        else:
+            x_positions = [-15, -9, -3, 3, 9, 15]
         y_positions = [-5, -7.5, -10, -12.5, -15]
 
         for i in range(0, num_artists):
-            button_array.append(visual.Rect(window, width=5.0, height=1.0, lineWidth=1.5, lineColor='black',
+            button_array.append(visual.Rect(window, width=5.0, height=1.5, lineWidth=1.5, lineColor='black',
                                             pos=[x_positions[i % 6], y_positions[i // 6]]))
 
     return button_array
@@ -385,7 +430,10 @@ def create_artist_button_text(window, artists):
 
     else:
         button_text_array = []
-        x_positions = [-21.25, -14.75, -8.25, -1.75, 4.75, 11.25]
+        if OFFSET == 1:
+            x_positions = [-21.25, -14.75, -8.25, -1.75, 4.75, 11.25]
+        else:
+            x_positions = [-15, -9, -3, 3, 9, 15]
         y_positions = [-5, -7.5, -10, -12.5, -15]
 
         for i in range(0, len(artists)):
@@ -559,8 +607,12 @@ def show_feedback(window, correct_artist, painting_path, context_path):
     Returns: None
     """
 
-    response_text = visual.TextStim(window, pos=[-2.5, -5], text="The correct artist is: \n" + correct_artist,
-                                    color='black')
+    if OFFSET == 1:
+        response_text = visual.TextStim(window, pos=[-2.5, -5], text="The correct artist is: \n" + correct_artist,
+                                        color='black')
+    else:
+        response_text = visual.TextStim(window, pos=[0.0, -5], text="The correct artist is: \n" + correct_artist,
+                                        color='black')
     response_text.draw()
 
     draw_study_images(window, painting_path, context_path)
@@ -583,15 +635,18 @@ def show_response(window, artist_array, selected_artist, button_text_array):
     index_loc = artist_array.index(selected_artist)
 
     box_array = []
-    x_positions = [-21.25, -14.75, -8.25, -1.75, 4.75, 11.25]
+    if OFFSET == 1:
+        x_positions = [-21.25, -14.75, -8.25, -1.75, 4.75, 11.25]
+    else:
+        x_positions = [-15, -9, -3, 3, 9, 15]
     y_positions = [-5, -7.5, -10, -12.5, -15]
 
     for i in range(0, len(button_text_array)):
         if i == index_loc:
-            box_array.append(visual.Rect(window, width=5.0, height=1.0, lineWidth=3.0, lineColor='red',
+            box_array.append(visual.Rect(window, width=5.0, height=1.5, lineWidth=3.0, lineColor='red',
                                          pos=[x_positions[index_loc % 6], y_positions[index_loc // 6]]))
         else:
-            box_array.append(visual.Rect(window, width=5.0, height=1.0, lineWidth=1.5, lineColor='black',
+            box_array.append(visual.Rect(window, width=5.0, height=1.5, lineWidth=1.5, lineColor='black',
                                          pos=[x_positions[i % 6], y_positions[i // 6]]))
 
     for i in range(0, len(button_text_array)):
@@ -612,12 +667,15 @@ def show_rec_test_response(window, context_images, response):
     Returns: None.
     """
 
-    x_positions = [-25, -16, -7, 2, 11, 20]
+    if OFFSET == 1:
+        x_positions = [-21.25, -13.75, -6.25, 1.25, 8.75, 16.25]
+    else:
+        x_positions = [-18.75, -11.25, -3.75, 3.75, 11.25, 18.75]
     y_positions = [-8]
 
     for i in range(0, len(context_images)):
         if response == context_images[i]:
-            response_box = visual.Rect(window, width=8.0, height=8.0, lineWidth=3.0, lineColor='red',
+            response_box = visual.Rect(window, width=7.0, height=7.0, lineWidth=3.0, lineColor='red',
                                        pos=[x_positions[i % 6], y_positions[i // 6]])
 
     response_box.draw()
