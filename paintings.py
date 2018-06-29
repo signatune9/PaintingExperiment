@@ -865,6 +865,7 @@ def main():
     experiment_monitor.setSizePix((EXPHRES, EXPVRES))
     experiment_monitor.saveMon()
     window = visual.Window([HRES, VRES], allowGUI=True, monitor=experiment_monitor, units='height', color='white')
+                           #fullscr=True, screen=0)
 
     # Initialize mouse object.
     mouse = event.Mouse(visible=True, newPos=None, win=window)
@@ -902,16 +903,16 @@ def main():
             instructions_trial(window, mouse, current_trial, instructions_index)
             instructions_index = instructions_index + 1
 
-        elif current_trial[1] == 'Study!':
+        elif current_trial[1] == 'Study':
             study_trial(window, mouse, current_trial, experiment_clock, artists, buttons)
 
-        elif current_trial[1] == 'GenTest!':
+        elif current_trial[1] == 'GenTest':
             gen_test_trial(window, mouse, current_trial, experiment_clock, artists, buttons)
 
         elif current_trial[1] == 'RecTest':
             rec_test_trial(window, mouse, current_trial, experiment_clock, context_list)
 
-        elif current_trial[1] == 'GenRecTest!':
+        elif current_trial[1] == 'GenRecTest':
             genrec_test_trial(window, mouse, current_trial, experiment_clock, artists, buttons)
 
         elif current_trial[0] == 'Session1':
