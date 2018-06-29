@@ -4,8 +4,8 @@ CONDITION = 1
 SUBJECT_ID = '011'
 
 # Horizontal and vertical resolution for the physical monitor
-HRES = 1920
-VRES = 1080
+HRES = 1024
+VRES = 768
 
 # Horizontal and vertical resolution for the experiment to be displayed in
 EXPHRES = 1024
