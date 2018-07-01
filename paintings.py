@@ -10,15 +10,15 @@ from params import CONDITION, SUBJECT_ID, HRES, VRES, EXPHRES, EXPVRES, SCREENDI
 
 # To Do: Fix instruction logic on restart
 
-PAINTING_ALIGN_LEFT_POS = (-0.19, 0.1)
-PAINTING_TEXT_LEFT_POS = (-0.19, 0.3)
-PAINTING_TEXT_CENTER_POS = (0.0, 0.3)
-PAINTING_ALIGN_CENTER_POS = (0, 0.1)
-PAINTING_SIZE = (0.5, 0.333)
-CONTEXT_ALIGN_RIGHT_POS = (0.27, 0.1)
-CONTEXT_TEXT_RIGHT_POS = (0.27, 0.3)
-CONTEXT_ALIGN_CENTER_POS = (0, 0.1)
-CONTEXT_SIZE = (0.333, 0.333)
+PAINTING_ALIGN_LEFT_POS = (-0.24, 0.15)
+PAINTING_TEXT_LEFT_POS = (-0.24, 0.4)
+PAINTING_TEXT_CENTER_POS = (0.0, 0.4)
+PAINTING_ALIGN_CENTER_POS = (0, 0.15)
+PAINTING_SIZE = (0.69, 0.46)
+CONTEXT_ALIGN_RIGHT_POS = (0.36, 0.15)
+CONTEXT_TEXT_RIGHT_POS = (0.36, 0.4)
+CONTEXT_ALIGN_CENTER_POS = (0, 0.15)
+CONTEXT_SIZE = (0.46, 0.46)
 TEXT_HEIGHT = 0.025
 X_POSITIONS = [-0.4, -0.24, -0.08, 0.08, 0.24, 0.4]
 Y_POSITIONS = [-0.13]
@@ -498,9 +498,10 @@ def start_trial(window, experiment_clock):
     return start_time
 
 
-def get_response(mouse, button_array, artist_array, wait_time, experiment_clock):
+def get_response(window, mouse, button_array, artist_array, wait_time, experiment_clock):
     """
-    Inputs: mouse = The mouse object being used for the experiment.
+    Inputs: window = The window object being used for the experiment.
+            mouse = The mouse object being used for the experiment.
             button_array = The array of buttons being used for the trial.
             artist_array = The array of artists that was used for creating the button text for the trial.
             wait_time = The amount of time to wait until ending the trial.
@@ -529,7 +530,7 @@ def get_response(mouse, button_array, artist_array, wait_time, experiment_clock)
     elif INPUT_MODE == 1:
         selected_artist = []
 
-        selection = event.waitKeys(maxWait=wait_time, keyList=['1', '2', '3', '6', '7', '8'],
+        selection = event.waitKeys(maxWait=wait_time, keyList=['1', '2', '3', '6', '7', '8', 'q'],
                                    timeStamped=experiment_clock)
         if selection is None:
             response_array = [0, 'No answer']
@@ -546,6 +547,9 @@ def get_response(mouse, button_array, artist_array, wait_time, experiment_clock)
             selected_artist = artist_array[4]
         elif selection[0][0] == '3':
             selected_artist = artist_array[5]
+        elif selection[0][0] == 'q':
+            window.close()
+            core.quit()
 
         response_array = [selection[0][1], selected_artist]
         return response_array
@@ -553,7 +557,7 @@ def get_response(mouse, button_array, artist_array, wait_time, experiment_clock)
     else:
         selected_artist = []
 
-        selection = event.waitKeys(maxWait=wait_time, keyList=['s', 'd', 'f', 'j', 'k', 'l'],
+        selection = event.waitKeys(maxWait=wait_time, keyList=['s', 'd', 'f', 'j', 'k', 'l', 'q'],
                                    timeStamped=experiment_clock)
         if selection is None:
             response_array = [0, 'No answer']
@@ -570,6 +574,9 @@ def get_response(mouse, button_array, artist_array, wait_time, experiment_clock)
             selected_artist = artist_array[4]
         elif selection[0][0] == 'l':
             selected_artist = artist_array[5]
+        elif selection[0][0] == 'q':
+            window.close()
+            core.quit()
 
         response_array = [selection[0][1], selected_artist]
         return response_array
@@ -756,7 +763,7 @@ def study_trial(window, mouse, current_trial, experiment_clock, artists, buttons
     draw_study_images(window, current_trial[2], current_trial[5])
     draw_buttons(buttons, random_artist_button_text)
     start_time = start_trial(window, experiment_clock)
-    response = get_response(mouse, buttons, random_artists, 10.0, experiment_clock)
+    response = get_response(window, mouse, buttons, random_artists, 10.0, experiment_clock)
     reaction_time = get_reaction_time(response[0], start_time)
     accuracy = get_accuracy(response[1], current_trial[3])
 
@@ -786,7 +793,7 @@ def gen_test_trial(window, mouse, current_trial, experiment_clock, artists, butt
     draw_gen_test_image(window, current_trial[2])
     draw_buttons(buttons, artist_button_text)
     start_time = start_trial(window, experiment_clock)
-    response = get_response(mouse, buttons, artists, 10.0, experiment_clock)
+    response = get_response(window, mouse, buttons, artists, 10.0, experiment_clock)
     reaction_time = get_reaction_time(response[0], start_time)
     accuracy = get_accuracy(response[1], current_trial[3])
 
@@ -813,7 +820,7 @@ def rec_test_trial(window, mouse, current_trial, experiment_clock, context_list)
     context_images = get_context_images(current_trial[2], current_trial[3], current_trial[7], context_list)
     image_buttons = draw_rec_test_image(window, current_trial[2], context_images)
     start_time = start_trial(window, experiment_clock)
-    response = get_response(mouse, image_buttons, context_images, 10.0, experiment_clock)
+    response = get_response(window, mouse, image_buttons, context_images, 10.0, experiment_clock)
     reaction_time = get_reaction_time(response[0], start_time)
     accuracy = get_accuracy(response[1], current_trial[5])
 
@@ -842,7 +849,7 @@ def genrec_test_trial(window, mouse, current_trial, experiment_clock, artists, b
     draw_genrec_test_image(window, current_trial[5])
     draw_buttons(buttons, artist_button_text)
     start_time = start_trial(window, experiment_clock)
-    response = get_response(mouse, buttons, artists, 10.0, experiment_clock)
+    response = get_response(window, mouse, buttons, artists, 10.0, experiment_clock)
     reaction_time = get_reaction_time(response[0], start_time)
     accuracy = get_accuracy(response[1], current_trial[3])
 
@@ -864,10 +871,10 @@ def main():
     experiment_monitor = monitors.Monitor('expMonitor', distance=SCREENDISTANCE, width=SCREENWIDTH)
     experiment_monitor.setSizePix((EXPHRES, EXPVRES))
     experiment_monitor.saveMon()
-    window = visual.Window([HRES, VRES], allowGUI=True, monitor=experiment_monitor, units='height', color='white')
-                           #fullscr=True, screen=0)
+    window = visual.Window([HRES, VRES], allowGUI=True, monitor=experiment_monitor, units='height', color='white',
+                           fullscr=True, screen=1)
 
-    # Initialize mouse object.
+   # Initialize mouse object.
     mouse = event.Mouse(visible=True, newPos=None, win=window)
 
     # Read the procedural csv
