@@ -1,336 +1,192 @@
-"ItemNum","Phase","Painting","Artist","Schedule","ConDir","ConName","ConCat","Block","Notes","Subj","Stimset","Stimsubset","Order"
-"Session1",NA,NA,NA,NA,NA,NA,NA,NA,NA,"011",38,"a","IF"
-"1","instruct",NA,NA,NA,NA,NA,NA,NA,"D1intro","011",38,"a","IF"
-"2","instruct",NA,NA,NA,NA,NA,NA,NA,"study","011",38,"a","IF"
-"22","Study","Images/Wexler/Wexler2.jpg","Wexler","Interleaved","Images/Context/mm/Washington_Monument.jpg","Washington Monument","mm","1",NA,"011",38,"a","IF"
-"31","Study","Images/Petro/Petro3.jpg","Petro","Interleaved","Images/Context/nat/Paria_Canyon.jpg","Paria Canyon","nat","1",NA,"011",38,"a","IF"
-"25","Study","Images/Schlorff/Schlorff6.jpg","Schlorff","Interleaved","Images/Context/mm/Atomium.jpg","Atomium","mm","1",NA,"011",38,"a","IF"
-"28","Study","Images/Schlorff/Schlorff3.jpg","Schlorff","Interleaved","Images/Context/nat/Zion_Subway.jpg","Zion Subway","nat","1",NA,"011",38,"a","IF"
-"34","Study","Images/Petro/Petro6.jpg","Petro","Interleaved","Images/Context/mm/Dome_of_the_Rock.jpg","Dome of the Rock","mm","1",NA,"011",38,"a","IF"
-"19","Study","Images/Wexler/Wexler3.jpg","Wexler","Interleaved","Images/Context/nat/Carlsbad_Caverns.jpg","Carlsbad Caverns","nat","1",NA,"011",38,"a","IF"
-"22","Study","Images/Wexler/Wexler2.jpg","Wexler","Interleaved","Images/Context/mm/Washington_Monument.jpg","Washington Monument","mm","1",NA,"011",38,"a","IF"
-"34","Study","Images/Petro/Petro6.jpg","Petro","Interleaved","Images/Context/mm/Dome_of_the_Rock.jpg","Dome of the Rock","mm","1",NA,"011",38,"a","IF"
-"25","Study","Images/Schlorff/Schlorff6.jpg","Schlorff","Interleaved","Images/Context/mm/Atomium.jpg","Atomium","mm","1",NA,"011",38,"a","IF"
-"28","Study","Images/Schlorff/Schlorff3.jpg","Schlorff","Interleaved","Images/Context/nat/Zion_Subway.jpg","Zion Subway","nat","1",NA,"011",38,"a","IF"
-"19","Study","Images/Wexler/Wexler3.jpg","Wexler","Interleaved","Images/Context/nat/Carlsbad_Caverns.jpg","Carlsbad Caverns","nat","1",NA,"011",38,"a","IF"
-"31","Study","Images/Petro/Petro3.jpg","Petro","Interleaved","Images/Context/nat/Paria_Canyon.jpg","Paria Canyon","nat","1",NA,"011",38,"a","IF"
-"28","Study","Images/Schlorff/Schlorff3.jpg","Schlorff","Interleaved","Images/Context/nat/Zion_Subway.jpg","Zion Subway","nat","1",NA,"011",38,"a","IF"
-"31","Study","Images/Petro/Petro3.jpg","Petro","Interleaved","Images/Context/nat/Paria_Canyon.jpg","Paria Canyon","nat","1",NA,"011",38,"a","IF"
-"19","Study","Images/Wexler/Wexler3.jpg","Wexler","Interleaved","Images/Context/nat/Carlsbad_Caverns.jpg","Carlsbad Caverns","nat","1",NA,"011",38,"a","IF"
-"25","Study","Images/Schlorff/Schlorff6.jpg","Schlorff","Interleaved","Images/Context/mm/Atomium.jpg","Atomium","mm","1",NA,"011",38,"a","IF"
-"22","Study","Images/Wexler/Wexler2.jpg","Wexler","Interleaved","Images/Context/mm/Washington_Monument.jpg","Washington Monument","mm","1",NA,"011",38,"a","IF"
-"34","Study","Images/Petro/Petro6.jpg","Petro","Interleaved","Images/Context/mm/Dome_of_the_Rock.jpg","Dome of the Rock","mm","1",NA,"011",38,"a","IF"
-"22","Study","Images/Wexler/Wexler2.jpg","Wexler","Interleaved","Images/Context/mm/Washington_Monument.jpg","Washington Monument","mm","1",NA,"011",38,"a","IF"
-"28","Study","Images/Schlorff/Schlorff3.jpg","Schlorff","Interleaved","Images/Context/nat/Zion_Subway.jpg","Zion Subway","nat","1",NA,"011",38,"a","IF"
-"31","Study","Images/Petro/Petro3.jpg","Petro","Interleaved","Images/Context/nat/Paria_Canyon.jpg","Paria Canyon","nat","1",NA,"011",38,"a","IF"
-"34","Study","Images/Petro/Petro6.jpg","Petro","Interleaved","Images/Context/mm/Dome_of_the_Rock.jpg","Dome of the Rock","mm","1",NA,"011",38,"a","IF"
-"25","Study","Images/Schlorff/Schlorff6.jpg","Schlorff","Interleaved","Images/Context/mm/Atomium.jpg","Atomium","mm","1",NA,"011",38,"a","IF"
-"19","Study","Images/Wexler/Wexler3.jpg","Wexler","Interleaved","Images/Context/nat/Carlsbad_Caverns.jpg","Carlsbad Caverns","nat","1",NA,"011",38,"a","IF"
-"31","Study","Images/Petro/Petro3.jpg","Petro","Interleaved","Images/Context/nat/Paria_Canyon.jpg","Paria Canyon","nat","1",NA,"011",38,"a","IF"
-"19","Study","Images/Wexler/Wexler3.jpg","Wexler","Interleaved","Images/Context/nat/Carlsbad_Caverns.jpg","Carlsbad Caverns","nat","1",NA,"011",38,"a","IF"
-"28","Study","Images/Schlorff/Schlorff3.jpg","Schlorff","Interleaved","Images/Context/nat/Zion_Subway.jpg","Zion Subway","nat","1",NA,"011",38,"a","IF"
-"34","Study","Images/Petro/Petro6.jpg","Petro","Interleaved","Images/Context/mm/Dome_of_the_Rock.jpg","Dome of the Rock","mm","1",NA,"011",38,"a","IF"
-"25","Study","Images/Schlorff/Schlorff6.jpg","Schlorff","Interleaved","Images/Context/mm/Atomium.jpg","Atomium","mm","1",NA,"011",38,"a","IF"
-"22","Study","Images/Wexler/Wexler2.jpg","Wexler","Interleaved","Images/Context/mm/Washington_Monument.jpg","Washington Monument","mm","1",NA,"011",38,"a","IF"
-"6","Study","Images/Grossman/Grossman3.jpg","Grossman","Blocked","Images/Context/mm/Golden_Gate_Bridge.jpg","Golden Gate Bridge","mm","2",NA,"011",38,"a","IF"
-"1","Study","Images/Grossman/Grossman5.jpg","Grossman","Blocked","Images/Context/nat/Red_Beach.jpg","Red Beach","nat","2",NA,"011",38,"a","IF"
-"2","Study","Images/Grossman/Grossman1.jpg","Grossman","Blocked","Images/Context/nat/Lake_Tahoe.jpg","Lake Tahoe","nat","2",NA,"011",38,"a","IF"
-"4","Study","Images/Grossman/Grossman2.jpg","Grossman","Blocked","Images/Context/mm/Tower_of_Pisa.jpg","Tower of Pisa","mm","2",NA,"011",38,"a","IF"
-"5","Study","Images/Grossman/Grossman6.jpg","Grossman","Blocked","Images/Context/mm/Space_Needle.jpg","Space Needle","mm","2",NA,"011",38,"a","IF"
-"3","Study","Images/Grossman/Grossman4.jpg","Grossman","Blocked","Images/Context/nat/Amazon_River.jpg","Amazon River","nat","2",NA,"011",38,"a","IF"
-"1","Study","Images/Grossman/Grossman5.jpg","Grossman","Blocked","Images/Context/nat/Red_Beach.jpg","Red Beach","nat","2",NA,"011",38,"a","IF"
-"6","Study","Images/Grossman/Grossman3.jpg","Grossman","Blocked","Images/Context/mm/Golden_Gate_Bridge.jpg","Golden Gate Bridge","mm","2",NA,"011",38,"a","IF"
-"2","Study","Images/Grossman/Grossman1.jpg","Grossman","Blocked","Images/Context/nat/Lake_Tahoe.jpg","Lake Tahoe","nat","2",NA,"011",38,"a","IF"
-"4","Study","Images/Grossman/Grossman2.jpg","Grossman","Blocked","Images/Context/mm/Tower_of_Pisa.jpg","Tower of Pisa","mm","2",NA,"011",38,"a","IF"
-"5","Study","Images/Grossman/Grossman6.jpg","Grossman","Blocked","Images/Context/mm/Space_Needle.jpg","Space Needle","mm","2",NA,"011",38,"a","IF"
-"3","Study","Images/Grossman/Grossman4.jpg","Grossman","Blocked","Images/Context/nat/Amazon_River.jpg","Amazon River","nat","2",NA,"011",38,"a","IF"
-"1","Study","Images/Grossman/Grossman5.jpg","Grossman","Blocked","Images/Context/nat/Red_Beach.jpg","Red Beach","nat","2",NA,"011",38,"a","IF"
-"5","Study","Images/Grossman/Grossman6.jpg","Grossman","Blocked","Images/Context/mm/Space_Needle.jpg","Space Needle","mm","2",NA,"011",38,"a","IF"
-"6","Study","Images/Grossman/Grossman3.jpg","Grossman","Blocked","Images/Context/mm/Golden_Gate_Bridge.jpg","Golden Gate Bridge","mm","2",NA,"011",38,"a","IF"
-"4","Study","Images/Grossman/Grossman2.jpg","Grossman","Blocked","Images/Context/mm/Tower_of_Pisa.jpg","Tower of Pisa","mm","2",NA,"011",38,"a","IF"
-"2","Study","Images/Grossman/Grossman1.jpg","Grossman","Blocked","Images/Context/nat/Lake_Tahoe.jpg","Lake Tahoe","nat","2",NA,"011",38,"a","IF"
-"3","Study","Images/Grossman/Grossman4.jpg","Grossman","Blocked","Images/Context/nat/Amazon_River.jpg","Amazon River","nat","2",NA,"011",38,"a","IF"
-"6","Study","Images/Grossman/Grossman3.jpg","Grossman","Blocked","Images/Context/mm/Golden_Gate_Bridge.jpg","Golden Gate Bridge","mm","2",NA,"011",38,"a","IF"
-"5","Study","Images/Grossman/Grossman6.jpg","Grossman","Blocked","Images/Context/mm/Space_Needle.jpg","Space Needle","mm","2",NA,"011",38,"a","IF"
-"4","Study","Images/Grossman/Grossman2.jpg","Grossman","Blocked","Images/Context/mm/Tower_of_Pisa.jpg","Tower of Pisa","mm","2",NA,"011",38,"a","IF"
-"2","Study","Images/Grossman/Grossman1.jpg","Grossman","Blocked","Images/Context/nat/Lake_Tahoe.jpg","Lake Tahoe","nat","2",NA,"011",38,"a","IF"
-"1","Study","Images/Grossman/Grossman5.jpg","Grossman","Blocked","Images/Context/nat/Red_Beach.jpg","Red Beach","nat","2",NA,"011",38,"a","IF"
-"3","Study","Images/Grossman/Grossman4.jpg","Grossman","Blocked","Images/Context/nat/Amazon_River.jpg","Amazon River","nat","2",NA,"011",38,"a","IF"
-"6","Study","Images/Grossman/Grossman3.jpg","Grossman","Blocked","Images/Context/mm/Golden_Gate_Bridge.jpg","Golden Gate Bridge","mm","2",NA,"011",38,"a","IF"
-"5","Study","Images/Grossman/Grossman6.jpg","Grossman","Blocked","Images/Context/mm/Space_Needle.jpg","Space Needle","mm","2",NA,"011",38,"a","IF"
-"4","Study","Images/Grossman/Grossman2.jpg","Grossman","Blocked","Images/Context/mm/Tower_of_Pisa.jpg","Tower of Pisa","mm","2",NA,"011",38,"a","IF"
-"1","Study","Images/Grossman/Grossman5.jpg","Grossman","Blocked","Images/Context/nat/Red_Beach.jpg","Red Beach","nat","2",NA,"011",38,"a","IF"
-"3","Study","Images/Grossman/Grossman4.jpg","Grossman","Blocked","Images/Context/nat/Amazon_River.jpg","Amazon River","nat","2",NA,"011",38,"a","IF"
-"2","Study","Images/Grossman/Grossman1.jpg","Grossman","Blocked","Images/Context/nat/Lake_Tahoe.jpg","Lake Tahoe","nat","2",NA,"011",38,"a","IF"
-"23","Study","Images/Wexler/Wexler5.jpg","Wexler","Interleaved","Images/Context/mm/Gateway_Arch.jpg","Gateway Arch","mm","3",NA,"011",38,"a","IF"
-"29","Study","Images/Schlorff/Schlorff5.jpg","Schlorff","Interleaved","Images/Context/nat/Devil's_Tower.jpg","Devil's Tower","nat","3",NA,"011",38,"a","IF"
-"32","Study","Images/Petro/Petro1.jpg","Petro","Interleaved","Images/Context/nat/Himalayas.jpg","Himalayas","nat","3",NA,"011",38,"a","IF"
-"26","Study","Images/Schlorff/Schlorff1.jpg","Schlorff","Interleaved","Images/Context/mm/Pentagon.jpg","Pentagon","mm","3",NA,"011",38,"a","IF"
-"35","Study","Images/Petro/Petro5.jpg","Petro","Interleaved","Images/Context/nat/Angel's_Landing.jpg","Angel's Landing","nat","3",NA,"011",38,"a","IF"
-"20","Study","Images/Wexler/Wexler1.jpg","Wexler","Interleaved","Images/Context/nat/Mount_Fuji.jpg","Mount Fuji","nat","3",NA,"011",38,"a","IF"
-"32","Study","Images/Petro/Petro1.jpg","Petro","Interleaved","Images/Context/nat/Himalayas.jpg","Himalayas","nat","3",NA,"011",38,"a","IF"
-"29","Study","Images/Schlorff/Schlorff5.jpg","Schlorff","Interleaved","Images/Context/nat/Devil's_Tower.jpg","Devil's Tower","nat","3",NA,"011",38,"a","IF"
-"23","Study","Images/Wexler/Wexler5.jpg","Wexler","Interleaved","Images/Context/mm/Gateway_Arch.jpg","Gateway Arch","mm","3",NA,"011",38,"a","IF"
-"26","Study","Images/Schlorff/Schlorff1.jpg","Schlorff","Interleaved","Images/Context/mm/Pentagon.jpg","Pentagon","mm","3",NA,"011",38,"a","IF"
-"20","Study","Images/Wexler/Wexler1.jpg","Wexler","Interleaved","Images/Context/nat/Mount_Fuji.jpg","Mount Fuji","nat","3",NA,"011",38,"a","IF"
-"35","Study","Images/Petro/Petro5.jpg","Petro","Interleaved","Images/Context/nat/Angel's_Landing.jpg","Angel's Landing","nat","3",NA,"011",38,"a","IF"
-"32","Study","Images/Petro/Petro1.jpg","Petro","Interleaved","Images/Context/nat/Himalayas.jpg","Himalayas","nat","3",NA,"011",38,"a","IF"
-"26","Study","Images/Schlorff/Schlorff1.jpg","Schlorff","Interleaved","Images/Context/mm/Pentagon.jpg","Pentagon","mm","3",NA,"011",38,"a","IF"
-"20","Study","Images/Wexler/Wexler1.jpg","Wexler","Interleaved","Images/Context/nat/Mount_Fuji.jpg","Mount Fuji","nat","3",NA,"011",38,"a","IF"
-"23","Study","Images/Wexler/Wexler5.jpg","Wexler","Interleaved","Images/Context/mm/Gateway_Arch.jpg","Gateway Arch","mm","3",NA,"011",38,"a","IF"
-"29","Study","Images/Schlorff/Schlorff5.jpg","Schlorff","Interleaved","Images/Context/nat/Devil's_Tower.jpg","Devil's Tower","nat","3",NA,"011",38,"a","IF"
-"35","Study","Images/Petro/Petro5.jpg","Petro","Interleaved","Images/Context/nat/Angel's_Landing.jpg","Angel's Landing","nat","3",NA,"011",38,"a","IF"
-"29","Study","Images/Schlorff/Schlorff5.jpg","Schlorff","Interleaved","Images/Context/nat/Devil's_Tower.jpg","Devil's Tower","nat","3",NA,"011",38,"a","IF"
-"32","Study","Images/Petro/Petro1.jpg","Petro","Interleaved","Images/Context/nat/Himalayas.jpg","Himalayas","nat","3",NA,"011",38,"a","IF"
-"20","Study","Images/Wexler/Wexler1.jpg","Wexler","Interleaved","Images/Context/nat/Mount_Fuji.jpg","Mount Fuji","nat","3",NA,"011",38,"a","IF"
-"35","Study","Images/Petro/Petro5.jpg","Petro","Interleaved","Images/Context/nat/Angel's_Landing.jpg","Angel's Landing","nat","3",NA,"011",38,"a","IF"
-"23","Study","Images/Wexler/Wexler5.jpg","Wexler","Interleaved","Images/Context/mm/Gateway_Arch.jpg","Gateway Arch","mm","3",NA,"011",38,"a","IF"
-"26","Study","Images/Schlorff/Schlorff1.jpg","Schlorff","Interleaved","Images/Context/mm/Pentagon.jpg","Pentagon","mm","3",NA,"011",38,"a","IF"
-"32","Study","Images/Petro/Petro1.jpg","Petro","Interleaved","Images/Context/nat/Himalayas.jpg","Himalayas","nat","3",NA,"011",38,"a","IF"
-"20","Study","Images/Wexler/Wexler1.jpg","Wexler","Interleaved","Images/Context/nat/Mount_Fuji.jpg","Mount Fuji","nat","3",NA,"011",38,"a","IF"
-"26","Study","Images/Schlorff/Schlorff1.jpg","Schlorff","Interleaved","Images/Context/mm/Pentagon.jpg","Pentagon","mm","3",NA,"011",38,"a","IF"
-"23","Study","Images/Wexler/Wexler5.jpg","Wexler","Interleaved","Images/Context/mm/Gateway_Arch.jpg","Gateway Arch","mm","3",NA,"011",38,"a","IF"
-"29","Study","Images/Schlorff/Schlorff5.jpg","Schlorff","Interleaved","Images/Context/nat/Devil's_Tower.jpg","Devil's Tower","nat","3",NA,"011",38,"a","IF"
-"35","Study","Images/Petro/Petro5.jpg","Petro","Interleaved","Images/Context/nat/Angel's_Landing.jpg","Angel's Landing","nat","3",NA,"011",38,"a","IF"
-"12","Study","Images/Hawkins/Hawkins2.jpg","Hawkins","Blocked","Images/Context/mm/Bellagio_Fountains.jpg","Bellagio Fountains","mm","4",NA,"011",38,"a","IF"
-"7","Study","Images/Hawkins/Hawkins4.jpg","Hawkins","Blocked","Images/Context/mm/Rock_and_Roll_Hall_of_Fame.jpg","Rock and Roll Hall of Fame","mm","4",NA,"011",38,"a","IF"
-"11","Study","Images/Hawkins/Hawkins6.jpg","Hawkins","Blocked","Images/Context/nat/Death_Valley.jpg","Death Valley","nat","4",NA,"011",38,"a","IF"
-"10","Study","Images/Hawkins/Hawkins1.jpg","Hawkins","Blocked","Images/Context/nat/Niagra_Falls.jpg","Niagra Falls","nat","4",NA,"011",38,"a","IF"
-"8","Study","Images/Hawkins/Hawkins3.jpg","Hawkins","Blocked","Images/Context/nat/Bryce_Canyon.jpg","Bryce Canyon","nat","4",NA,"011",38,"a","IF"
-"9","Study","Images/Hawkins/Hawkins5.jpg","Hawkins","Blocked","Images/Context/mm/Epcot_Center.jpg","Epcot Center","mm","4",NA,"011",38,"a","IF"
-"11","Study","Images/Hawkins/Hawkins6.jpg","Hawkins","Blocked","Images/Context/nat/Death_Valley.jpg","Death Valley","nat","4",NA,"011",38,"a","IF"
-"12","Study","Images/Hawkins/Hawkins2.jpg","Hawkins","Blocked","Images/Context/mm/Bellagio_Fountains.jpg","Bellagio Fountains","mm","4",NA,"011",38,"a","IF"
-"7","Study","Images/Hawkins/Hawkins4.jpg","Hawkins","Blocked","Images/Context/mm/Rock_and_Roll_Hall_of_Fame.jpg","Rock and Roll Hall of Fame","mm","4",NA,"011",38,"a","IF"
-"8","Study","Images/Hawkins/Hawkins3.jpg","Hawkins","Blocked","Images/Context/nat/Bryce_Canyon.jpg","Bryce Canyon","nat","4",NA,"011",38,"a","IF"
-"9","Study","Images/Hawkins/Hawkins5.jpg","Hawkins","Blocked","Images/Context/mm/Epcot_Center.jpg","Epcot Center","mm","4",NA,"011",38,"a","IF"
-"10","Study","Images/Hawkins/Hawkins1.jpg","Hawkins","Blocked","Images/Context/nat/Niagra_Falls.jpg","Niagra Falls","nat","4",NA,"011",38,"a","IF"
-"8","Study","Images/Hawkins/Hawkins3.jpg","Hawkins","Blocked","Images/Context/nat/Bryce_Canyon.jpg","Bryce Canyon","nat","4",NA,"011",38,"a","IF"
-"10","Study","Images/Hawkins/Hawkins1.jpg","Hawkins","Blocked","Images/Context/nat/Niagra_Falls.jpg","Niagra Falls","nat","4",NA,"011",38,"a","IF"
-"9","Study","Images/Hawkins/Hawkins5.jpg","Hawkins","Blocked","Images/Context/mm/Epcot_Center.jpg","Epcot Center","mm","4",NA,"011",38,"a","IF"
-"11","Study","Images/Hawkins/Hawkins6.jpg","Hawkins","Blocked","Images/Context/nat/Death_Valley.jpg","Death Valley","nat","4",NA,"011",38,"a","IF"
-"7","Study","Images/Hawkins/Hawkins4.jpg","Hawkins","Blocked","Images/Context/mm/Rock_and_Roll_Hall_of_Fame.jpg","Rock and Roll Hall of Fame","mm","4",NA,"011",38,"a","IF"
-"12","Study","Images/Hawkins/Hawkins2.jpg","Hawkins","Blocked","Images/Context/mm/Bellagio_Fountains.jpg","Bellagio Fountains","mm","4",NA,"011",38,"a","IF"
-"7","Study","Images/Hawkins/Hawkins4.jpg","Hawkins","Blocked","Images/Context/mm/Rock_and_Roll_Hall_of_Fame.jpg","Rock and Roll Hall of Fame","mm","4",NA,"011",38,"a","IF"
-"12","Study","Images/Hawkins/Hawkins2.jpg","Hawkins","Blocked","Images/Context/mm/Bellagio_Fountains.jpg","Bellagio Fountains","mm","4",NA,"011",38,"a","IF"
-"8","Study","Images/Hawkins/Hawkins3.jpg","Hawkins","Blocked","Images/Context/nat/Bryce_Canyon.jpg","Bryce Canyon","nat","4",NA,"011",38,"a","IF"
-"9","Study","Images/Hawkins/Hawkins5.jpg","Hawkins","Blocked","Images/Context/mm/Epcot_Center.jpg","Epcot Center","mm","4",NA,"011",38,"a","IF"
-"11","Study","Images/Hawkins/Hawkins6.jpg","Hawkins","Blocked","Images/Context/nat/Death_Valley.jpg","Death Valley","nat","4",NA,"011",38,"a","IF"
-"10","Study","Images/Hawkins/Hawkins1.jpg","Hawkins","Blocked","Images/Context/nat/Niagra_Falls.jpg","Niagra Falls","nat","4",NA,"011",38,"a","IF"
-"7","Study","Images/Hawkins/Hawkins4.jpg","Hawkins","Blocked","Images/Context/mm/Rock_and_Roll_Hall_of_Fame.jpg","Rock and Roll Hall of Fame","mm","4",NA,"011",38,"a","IF"
-"12","Study","Images/Hawkins/Hawkins2.jpg","Hawkins","Blocked","Images/Context/mm/Bellagio_Fountains.jpg","Bellagio Fountains","mm","4",NA,"011",38,"a","IF"
-"8","Study","Images/Hawkins/Hawkins3.jpg","Hawkins","Blocked","Images/Context/nat/Bryce_Canyon.jpg","Bryce Canyon","nat","4",NA,"011",38,"a","IF"
-"10","Study","Images/Hawkins/Hawkins1.jpg","Hawkins","Blocked","Images/Context/nat/Niagra_Falls.jpg","Niagra Falls","nat","4",NA,"011",38,"a","IF"
-"11","Study","Images/Hawkins/Hawkins6.jpg","Hawkins","Blocked","Images/Context/nat/Death_Valley.jpg","Death Valley","nat","4",NA,"011",38,"a","IF"
-"9","Study","Images/Hawkins/Hawkins5.jpg","Hawkins","Blocked","Images/Context/mm/Epcot_Center.jpg","Epcot Center","mm","4",NA,"011",38,"a","IF"
-"30","Study","Images/Schlorff/Schlorff2.jpg","Schlorff","Interleaved","Images/Context/mm/Taj_Mahal.jpg","Taj Mahal","mm","5",NA,"011",38,"a","IF"
-"24","Study","Images/Wexler/Wexler4.jpg","Wexler","Interleaved","Images/Context/nat/Zhangye_Danxia_Park.jpg","Zhangye Danxia Park","nat","5",NA,"011",38,"a","IF"
-"33","Study","Images/Petro/Petro2.jpg","Petro","Interleaved","Images/Context/mm/Eiffel_Tower.jpg","Eiffel Tower","mm","5",NA,"011",38,"a","IF"
-"21","Study","Images/Wexler/Wexler6.jpg","Wexler","Interleaved","Images/Context/mm/Louvre.jpg","Louvre","mm","5",NA,"011",38,"a","IF"
-"36","Study","Images/Petro/Petro4.jpg","Petro","Interleaved","Images/Context/mm/Sydney_Opera_House.jpg","Sydney Opera House","mm","5",NA,"011",38,"a","IF"
-"27","Study","Images/Schlorff/Schlorff4.jpg","Schlorff","Interleaved","Images/Context/nat/Grand_Canyon.jpg","Grand Canyon","nat","5",NA,"011",38,"a","IF"
-"36","Study","Images/Petro/Petro4.jpg","Petro","Interleaved","Images/Context/mm/Sydney_Opera_House.jpg","Sydney Opera House","mm","5",NA,"011",38,"a","IF"
-"21","Study","Images/Wexler/Wexler6.jpg","Wexler","Interleaved","Images/Context/mm/Louvre.jpg","Louvre","mm","5",NA,"011",38,"a","IF"
-"27","Study","Images/Schlorff/Schlorff4.jpg","Schlorff","Interleaved","Images/Context/nat/Grand_Canyon.jpg","Grand Canyon","nat","5",NA,"011",38,"a","IF"
-"30","Study","Images/Schlorff/Schlorff2.jpg","Schlorff","Interleaved","Images/Context/mm/Taj_Mahal.jpg","Taj Mahal","mm","5",NA,"011",38,"a","IF"
-"33","Study","Images/Petro/Petro2.jpg","Petro","Interleaved","Images/Context/mm/Eiffel_Tower.jpg","Eiffel Tower","mm","5",NA,"011",38,"a","IF"
-"24","Study","Images/Wexler/Wexler4.jpg","Wexler","Interleaved","Images/Context/nat/Zhangye_Danxia_Park.jpg","Zhangye Danxia Park","nat","5",NA,"011",38,"a","IF"
-"36","Study","Images/Petro/Petro4.jpg","Petro","Interleaved","Images/Context/mm/Sydney_Opera_House.jpg","Sydney Opera House","mm","5",NA,"011",38,"a","IF"
-"27","Study","Images/Schlorff/Schlorff4.jpg","Schlorff","Interleaved","Images/Context/nat/Grand_Canyon.jpg","Grand Canyon","nat","5",NA,"011",38,"a","IF"
-"21","Study","Images/Wexler/Wexler6.jpg","Wexler","Interleaved","Images/Context/mm/Louvre.jpg","Louvre","mm","5",NA,"011",38,"a","IF"
-"33","Study","Images/Petro/Petro2.jpg","Petro","Interleaved","Images/Context/mm/Eiffel_Tower.jpg","Eiffel Tower","mm","5",NA,"011",38,"a","IF"
-"30","Study","Images/Schlorff/Schlorff2.jpg","Schlorff","Interleaved","Images/Context/mm/Taj_Mahal.jpg","Taj Mahal","mm","5",NA,"011",38,"a","IF"
-"24","Study","Images/Wexler/Wexler4.jpg","Wexler","Interleaved","Images/Context/nat/Zhangye_Danxia_Park.jpg","Zhangye Danxia Park","nat","5",NA,"011",38,"a","IF"
-"36","Study","Images/Petro/Petro4.jpg","Petro","Interleaved","Images/Context/mm/Sydney_Opera_House.jpg","Sydney Opera House","mm","5",NA,"011",38,"a","IF"
-"27","Study","Images/Schlorff/Schlorff4.jpg","Schlorff","Interleaved","Images/Context/nat/Grand_Canyon.jpg","Grand Canyon","nat","5",NA,"011",38,"a","IF"
-"24","Study","Images/Wexler/Wexler4.jpg","Wexler","Interleaved","Images/Context/nat/Zhangye_Danxia_Park.jpg","Zhangye Danxia Park","nat","5",NA,"011",38,"a","IF"
-"21","Study","Images/Wexler/Wexler6.jpg","Wexler","Interleaved","Images/Context/mm/Louvre.jpg","Louvre","mm","5",NA,"011",38,"a","IF"
-"30","Study","Images/Schlorff/Schlorff2.jpg","Schlorff","Interleaved","Images/Context/mm/Taj_Mahal.jpg","Taj Mahal","mm","5",NA,"011",38,"a","IF"
-"33","Study","Images/Petro/Petro2.jpg","Petro","Interleaved","Images/Context/mm/Eiffel_Tower.jpg","Eiffel Tower","mm","5",NA,"011",38,"a","IF"
-"21","Study","Images/Wexler/Wexler6.jpg","Wexler","Interleaved","Images/Context/mm/Louvre.jpg","Louvre","mm","5",NA,"011",38,"a","IF"
-"27","Study","Images/Schlorff/Schlorff4.jpg","Schlorff","Interleaved","Images/Context/nat/Grand_Canyon.jpg","Grand Canyon","nat","5",NA,"011",38,"a","IF"
-"33","Study","Images/Petro/Petro2.jpg","Petro","Interleaved","Images/Context/mm/Eiffel_Tower.jpg","Eiffel Tower","mm","5",NA,"011",38,"a","IF"
-"36","Study","Images/Petro/Petro4.jpg","Petro","Interleaved","Images/Context/mm/Sydney_Opera_House.jpg","Sydney Opera House","mm","5",NA,"011",38,"a","IF"
-"30","Study","Images/Schlorff/Schlorff2.jpg","Schlorff","Interleaved","Images/Context/mm/Taj_Mahal.jpg","Taj Mahal","mm","5",NA,"011",38,"a","IF"
-"24","Study","Images/Wexler/Wexler4.jpg","Wexler","Interleaved","Images/Context/nat/Zhangye_Danxia_Park.jpg","Zhangye Danxia Park","nat","5",NA,"011",38,"a","IF"
-"15","Study","Images/McNamara/McNamara4.jpg","McNamara","Blocked","Images/Context/mm/Carnegie_Hall.jpg","Carnegie Hall","mm","6",NA,"011",38,"a","IF"
-"14","Study","Images/McNamara/McNamara1.jpg","McNamara","Blocked","Images/Context/nat/Kilauea_Volcano.jpg","Kilauea Volcano","nat","6",NA,"011",38,"a","IF"
-"16","Study","Images/McNamara/McNamara6.jpg","McNamara","Blocked","Images/Context/mm/Boston_Common.jpg","Boston Common","mm","6",NA,"011",38,"a","IF"
-"17","Study","Images/McNamara/McNamara2.jpg","McNamara","Blocked","Images/Context/mm/Forbidden_City.jpg","Forbidden City","mm","6",NA,"011",38,"a","IF"
-"13","Study","Images/McNamara/McNamara3.jpg","McNamara","Blocked","Images/Context/nat/Arashiyama_Bamboo_Forest.jpg","Arashiyama Bamboo Forest","nat","6",NA,"011",38,"a","IF"
-"18","Study","Images/McNamara/McNamara5.jpg","McNamara","Blocked","Images/Context/nat/Yellowstone.jpg","Yellowstone","nat","6",NA,"011",38,"a","IF"
-"17","Study","Images/McNamara/McNamara2.jpg","McNamara","Blocked","Images/Context/mm/Forbidden_City.jpg","Forbidden City","mm","6",NA,"011",38,"a","IF"
-"16","Study","Images/McNamara/McNamara6.jpg","McNamara","Blocked","Images/Context/mm/Boston_Common.jpg","Boston Common","mm","6",NA,"011",38,"a","IF"
-"15","Study","Images/McNamara/McNamara4.jpg","McNamara","Blocked","Images/Context/mm/Carnegie_Hall.jpg","Carnegie Hall","mm","6",NA,"011",38,"a","IF"
-"18","Study","Images/McNamara/McNamara5.jpg","McNamara","Blocked","Images/Context/nat/Yellowstone.jpg","Yellowstone","nat","6",NA,"011",38,"a","IF"
-"13","Study","Images/McNamara/McNamara3.jpg","McNamara","Blocked","Images/Context/nat/Arashiyama_Bamboo_Forest.jpg","Arashiyama Bamboo Forest","nat","6",NA,"011",38,"a","IF"
-"14","Study","Images/McNamara/McNamara1.jpg","McNamara","Blocked","Images/Context/nat/Kilauea_Volcano.jpg","Kilauea Volcano","nat","6",NA,"011",38,"a","IF"
-"15","Study","Images/McNamara/McNamara4.jpg","McNamara","Blocked","Images/Context/mm/Carnegie_Hall.jpg","Carnegie Hall","mm","6",NA,"011",38,"a","IF"
-"17","Study","Images/McNamara/McNamara2.jpg","McNamara","Blocked","Images/Context/mm/Forbidden_City.jpg","Forbidden City","mm","6",NA,"011",38,"a","IF"
-"16","Study","Images/McNamara/McNamara6.jpg","McNamara","Blocked","Images/Context/mm/Boston_Common.jpg","Boston Common","mm","6",NA,"011",38,"a","IF"
-"18","Study","Images/McNamara/McNamara5.jpg","McNamara","Blocked","Images/Context/nat/Yellowstone.jpg","Yellowstone","nat","6",NA,"011",38,"a","IF"
-"13","Study","Images/McNamara/McNamara3.jpg","McNamara","Blocked","Images/Context/nat/Arashiyama_Bamboo_Forest.jpg","Arashiyama Bamboo Forest","nat","6",NA,"011",38,"a","IF"
-"14","Study","Images/McNamara/McNamara1.jpg","McNamara","Blocked","Images/Context/nat/Kilauea_Volcano.jpg","Kilauea Volcano","nat","6",NA,"011",38,"a","IF"
-"16","Study","Images/McNamara/McNamara6.jpg","McNamara","Blocked","Images/Context/mm/Boston_Common.jpg","Boston Common","mm","6",NA,"011",38,"a","IF"
-"18","Study","Images/McNamara/McNamara5.jpg","McNamara","Blocked","Images/Context/nat/Yellowstone.jpg","Yellowstone","nat","6",NA,"011",38,"a","IF"
-"17","Study","Images/McNamara/McNamara2.jpg","McNamara","Blocked","Images/Context/mm/Forbidden_City.jpg","Forbidden City","mm","6",NA,"011",38,"a","IF"
-"14","Study","Images/McNamara/McNamara1.jpg","McNamara","Blocked","Images/Context/nat/Kilauea_Volcano.jpg","Kilauea Volcano","nat","6",NA,"011",38,"a","IF"
-"15","Study","Images/McNamara/McNamara4.jpg","McNamara","Blocked","Images/Context/mm/Carnegie_Hall.jpg","Carnegie Hall","mm","6",NA,"011",38,"a","IF"
-"13","Study","Images/McNamara/McNamara3.jpg","McNamara","Blocked","Images/Context/nat/Arashiyama_Bamboo_Forest.jpg","Arashiyama Bamboo Forest","nat","6",NA,"011",38,"a","IF"
-"15","Study","Images/McNamara/McNamara4.jpg","McNamara","Blocked","Images/Context/mm/Carnegie_Hall.jpg","Carnegie Hall","mm","6",NA,"011",38,"a","IF"
-"13","Study","Images/McNamara/McNamara3.jpg","McNamara","Blocked","Images/Context/nat/Arashiyama_Bamboo_Forest.jpg","Arashiyama Bamboo Forest","nat","6",NA,"011",38,"a","IF"
-"17","Study","Images/McNamara/McNamara2.jpg","McNamara","Blocked","Images/Context/mm/Forbidden_City.jpg","Forbidden City","mm","6",NA,"011",38,"a","IF"
-"16","Study","Images/McNamara/McNamara6.jpg","McNamara","Blocked","Images/Context/mm/Boston_Common.jpg","Boston Common","mm","6",NA,"011",38,"a","IF"
-"18","Study","Images/McNamara/McNamara5.jpg","McNamara","Blocked","Images/Context/nat/Yellowstone.jpg","Yellowstone","nat","6",NA,"011",38,"a","IF"
-"14","Study","Images/McNamara/McNamara1.jpg","McNamara","Blocked","Images/Context/nat/Kilauea_Volcano.jpg","Kilauea Volcano","nat","6",NA,"011",38,"a","IF"
-"3","instruct",NA,NA,NA,NA,NA,NA,NA,"D1G","011",38,"a","IF"
-"49","GenTest","Images/Hawkins/Hawkins17.jpg","Hawkins","Blocked",NA,NA,NA,"1",NA,"011",38,"a","IF"
-"13","GenTest","Images/Schlorff/Schlorff11.jpg","Schlorff","Interleaved",NA,NA,NA,"1",NA,"011",38,"a","IF"
-"61","GenTest","Images/Wexler/Wexler17.jpg","Wexler","Interleaved",NA,NA,NA,"1",NA,"011",38,"a","IF"
-"37","GenTest","Images/McNamara/McNamara16.jpg","McNamara","Blocked",NA,NA,NA,"1",NA,"011",38,"a","IF"
-"1","GenTest","Images/Grossman/Grossman13.jpg","Grossman","Blocked",NA,NA,NA,"1",NA,"011",38,"a","IF"
-"25","GenTest","Images/Petro/Petro7.jpg","Petro","Interleaved",NA,NA,NA,"1",NA,"011",38,"a","IF"
-"50","GenTest","Images/Hawkins/Hawkins13.jpg","Hawkins","Blocked",NA,NA,NA,"2",NA,"011",38,"a","IF"
-"14","GenTest","Images/Schlorff/Schlorff17.jpg","Schlorff","Interleaved",NA,NA,NA,"2",NA,"011",38,"a","IF"
-"2","GenTest","Images/Grossman/Grossman10.jpg","Grossman","Blocked",NA,NA,NA,"2",NA,"011",38,"a","IF"
-"62","GenTest","Images/Wexler/Wexler13.jpg","Wexler","Interleaved",NA,NA,NA,"2",NA,"011",38,"a","IF"
-"38","GenTest","Images/McNamara/McNamara11.jpg","McNamara","Blocked",NA,NA,NA,"2",NA,"011",38,"a","IF"
-"26","GenTest","Images/Petro/Petro8.jpg","Petro","Interleaved",NA,NA,NA,"2",NA,"011",38,"a","IF"
-"63","GenTest","Images/Wexler/Wexler18.jpg","Wexler","Interleaved",NA,NA,NA,"3",NA,"011",38,"a","IF"
-"3","GenTest","Images/Grossman/Grossman16.jpg","Grossman","Blocked",NA,NA,NA,"3",NA,"011",38,"a","IF"
-"51","GenTest","Images/Hawkins/Hawkins16.jpg","Hawkins","Blocked",NA,NA,NA,"3",NA,"011",38,"a","IF"
-"39","GenTest","Images/McNamara/McNamara14.jpg","McNamara","Blocked",NA,NA,NA,"3",NA,"011",38,"a","IF"
-"15","GenTest","Images/Schlorff/Schlorff9.jpg","Schlorff","Interleaved",NA,NA,NA,"3",NA,"011",38,"a","IF"
-"27","GenTest","Images/Petro/Petro12.jpg","Petro","Interleaved",NA,NA,NA,"3",NA,"011",38,"a","IF"
-"16","GenTest","Images/Schlorff/Schlorff8.jpg","Schlorff","Interleaved",NA,NA,NA,"4",NA,"011",38,"a","IF"
-"4","GenTest","Images/Grossman/Grossman15.jpg","Grossman","Blocked",NA,NA,NA,"4",NA,"011",38,"a","IF"
-"40","GenTest","Images/McNamara/McNamara15.jpg","McNamara","Blocked",NA,NA,NA,"4",NA,"011",38,"a","IF"
-"52","GenTest","Images/Hawkins/Hawkins11.jpg","Hawkins","Blocked",NA,NA,NA,"4",NA,"011",38,"a","IF"
-"64","GenTest","Images/Wexler/Wexler8.jpg","Wexler","Interleaved",NA,NA,NA,"4",NA,"011",38,"a","IF"
-"28","GenTest","Images/Petro/Petro17.jpg","Petro","Interleaved",NA,NA,NA,"4",NA,"011",38,"a","IF"
-"53","GenTest","Images/Hawkins/Hawkins14.jpg","Hawkins","Blocked",NA,NA,NA,"5",NA,"011",38,"a","IF"
-"41","GenTest","Images/McNamara/McNamara12.jpg","McNamara","Blocked",NA,NA,NA,"5",NA,"011",38,"a","IF"
-"5","GenTest","Images/Grossman/Grossman11.jpg","Grossman","Blocked",NA,NA,NA,"5",NA,"011",38,"a","IF"
-"29","GenTest","Images/Petro/Petro10.jpg","Petro","Interleaved",NA,NA,NA,"5",NA,"011",38,"a","IF"
-"17","GenTest","Images/Schlorff/Schlorff18.jpg","Schlorff","Interleaved",NA,NA,NA,"5",NA,"011",38,"a","IF"
-"65","GenTest","Images/Wexler/Wexler9.jpg","Wexler","Interleaved",NA,NA,NA,"5",NA,"011",38,"a","IF"
-"30","GenTest","Images/Petro/Petro14.jpg","Petro","Interleaved",NA,NA,NA,"6",NA,"011",38,"a","IF"
-"42","GenTest","Images/McNamara/McNamara18.jpg","McNamara","Blocked",NA,NA,NA,"6",NA,"011",38,"a","IF"
-"6","GenTest","Images/Grossman/Grossman9.jpg","Grossman","Blocked",NA,NA,NA,"6",NA,"011",38,"a","IF"
-"54","GenTest","Images/Hawkins/Hawkins15.jpg","Hawkins","Blocked",NA,NA,NA,"6",NA,"011",38,"a","IF"
-"18","GenTest","Images/Schlorff/Schlorff12.jpg","Schlorff","Interleaved",NA,NA,NA,"6",NA,"011",38,"a","IF"
-"66","GenTest","Images/Wexler/Wexler12.jpg","Wexler","Interleaved",NA,NA,NA,"6",NA,"011",38,"a","IF"
-"5","instruct",NA,NA,NA,NA,NA,NA,NA,"D1GR","011",38,"a","IF"
-"13","GenRecTest","Images/McNamara/McNamara3.jpg","McNamara","Blocked","Images/Context/nat/Arashiyama_Bamboo_Forest.jpg","Arashiyama Bamboo Forest","nat",NA,NA,"011",38,"a","IF"
-"3","GenRecTest","Images/Grossman/Grossman4.jpg","Grossman","Blocked","Images/Context/nat/Amazon_River.jpg","Amazon River","nat",NA,NA,"011",38,"a","IF"
-"19","GenRecTest","Images/Wexler/Wexler3.jpg","Wexler","Interleaved","Images/Context/nat/Carlsbad_Caverns.jpg","Carlsbad Caverns","nat",NA,NA,"011",38,"a","IF"
-"25","GenRecTest","Images/Schlorff/Schlorff6.jpg","Schlorff","Interleaved","Images/Context/mm/Atomium.jpg","Atomium","mm",NA,NA,"011",38,"a","IF"
-"15","GenRecTest","Images/McNamara/McNamara4.jpg","McNamara","Blocked","Images/Context/mm/Carnegie_Hall.jpg","Carnegie Hall","mm",NA,NA,"011",38,"a","IF"
-"33","GenRecTest","Images/Petro/Petro2.jpg","Petro","Interleaved","Images/Context/mm/Eiffel_Tower.jpg","Eiffel Tower","mm",NA,NA,"011",38,"a","IF"
-"5","GenRecTest","Images/Grossman/Grossman6.jpg","Grossman","Blocked","Images/Context/mm/Space_Needle.jpg","Space Needle","mm",NA,NA,"011",38,"a","IF"
-"9","GenRecTest","Images/Hawkins/Hawkins5.jpg","Hawkins","Blocked","Images/Context/mm/Epcot_Center.jpg","Epcot Center","mm",NA,NA,"011",38,"a","IF"
-"7","GenRecTest","Images/Hawkins/Hawkins4.jpg","Hawkins","Blocked","Images/Context/mm/Rock_and_Roll_Hall_of_Fame.jpg","Rock and Roll Hall of Fame","mm",NA,NA,"011",38,"a","IF"
-"1","GenRecTest","Images/Grossman/Grossman5.jpg","Grossman","Blocked","Images/Context/nat/Red_Beach.jpg","Red Beach","nat",NA,NA,"011",38,"a","IF"
-"23","GenRecTest","Images/Wexler/Wexler5.jpg","Wexler","Interleaved","Images/Context/mm/Gateway_Arch.jpg","Gateway Arch","mm",NA,NA,"011",38,"a","IF"
-"29","GenRecTest","Images/Schlorff/Schlorff5.jpg","Schlorff","Interleaved","Images/Context/nat/Devil's_Tower.jpg","Devil's Tower","nat",NA,NA,"011",38,"a","IF"
-"17","GenRecTest","Images/McNamara/McNamara2.jpg","McNamara","Blocked","Images/Context/mm/Forbidden_City.jpg","Forbidden City","mm",NA,NA,"011",38,"a","IF"
-"21","GenRecTest","Images/Wexler/Wexler6.jpg","Wexler","Interleaved","Images/Context/mm/Louvre.jpg","Louvre","mm",NA,NA,"011",38,"a","IF"
-"35","GenRecTest","Images/Petro/Petro5.jpg","Petro","Interleaved","Images/Context/nat/Angel's_Landing.jpg","Angel's Landing","nat",NA,NA,"011",38,"a","IF"
-"27","GenRecTest","Images/Schlorff/Schlorff4.jpg","Schlorff","Interleaved","Images/Context/nat/Grand_Canyon.jpg","Grand Canyon","nat",NA,NA,"011",38,"a","IF"
-"31","GenRecTest","Images/Petro/Petro3.jpg","Petro","Interleaved","Images/Context/nat/Paria_Canyon.jpg","Paria Canyon","nat",NA,NA,"011",38,"a","IF"
-"11","GenRecTest","Images/Hawkins/Hawkins6.jpg","Hawkins","Blocked","Images/Context/nat/Death_Valley.jpg","Death Valley","nat",NA,NA,"011",38,"a","IF"
-"4","instruct",NA,NA,NA,NA,NA,NA,NA,"D1R","011",38,"a","IF"
-"25","RecTest","Images/Schlorff/Schlorff6.jpg","Schlorff","Interleaved","Images/Context/mm/Atomium.jpg","Atomium","mm",NA,NA,"011",38,"a","IF"
-"17","RecTest","Images/McNamara/McNamara2.jpg","McNamara","Blocked","Images/Context/mm/Forbidden_City.jpg","Forbidden City","mm",NA,NA,"011",38,"a","IF"
-"27","RecTest","Images/Schlorff/Schlorff4.jpg","Schlorff","Interleaved","Images/Context/nat/Grand_Canyon.jpg","Grand Canyon","nat",NA,NA,"011",38,"a","IF"
-"21","RecTest","Images/Wexler/Wexler6.jpg","Wexler","Interleaved","Images/Context/mm/Louvre.jpg","Louvre","mm",NA,NA,"011",38,"a","IF"
-"15","RecTest","Images/McNamara/McNamara4.jpg","McNamara","Blocked","Images/Context/mm/Carnegie_Hall.jpg","Carnegie Hall","mm",NA,NA,"011",38,"a","IF"
-"29","RecTest","Images/Schlorff/Schlorff5.jpg","Schlorff","Interleaved","Images/Context/nat/Devil's_Tower.jpg","Devil's Tower","nat",NA,NA,"011",38,"a","IF"
-"3","RecTest","Images/Grossman/Grossman4.jpg","Grossman","Blocked","Images/Context/nat/Amazon_River.jpg","Amazon River","nat",NA,NA,"011",38,"a","IF"
-"9","RecTest","Images/Hawkins/Hawkins5.jpg","Hawkins","Blocked","Images/Context/mm/Epcot_Center.jpg","Epcot Center","mm",NA,NA,"011",38,"a","IF"
-"35","RecTest","Images/Petro/Petro5.jpg","Petro","Interleaved","Images/Context/nat/Angel's_Landing.jpg","Angel's Landing","nat",NA,NA,"011",38,"a","IF"
-"5","RecTest","Images/Grossman/Grossman6.jpg","Grossman","Blocked","Images/Context/mm/Space_Needle.jpg","Space Needle","mm",NA,NA,"011",38,"a","IF"
-"23","RecTest","Images/Wexler/Wexler5.jpg","Wexler","Interleaved","Images/Context/mm/Gateway_Arch.jpg","Gateway Arch","mm",NA,NA,"011",38,"a","IF"
-"11","RecTest","Images/Hawkins/Hawkins6.jpg","Hawkins","Blocked","Images/Context/nat/Death_Valley.jpg","Death Valley","nat",NA,NA,"011",38,"a","IF"
-"31","RecTest","Images/Petro/Petro3.jpg","Petro","Interleaved","Images/Context/nat/Paria_Canyon.jpg","Paria Canyon","nat",NA,NA,"011",38,"a","IF"
-"7","RecTest","Images/Hawkins/Hawkins4.jpg","Hawkins","Blocked","Images/Context/mm/Rock_and_Roll_Hall_of_Fame.jpg","Rock and Roll Hall of Fame","mm",NA,NA,"011",38,"a","IF"
-"19","RecTest","Images/Wexler/Wexler3.jpg","Wexler","Interleaved","Images/Context/nat/Carlsbad_Caverns.jpg","Carlsbad Caverns","nat",NA,NA,"011",38,"a","IF"
-"1","RecTest","Images/Grossman/Grossman5.jpg","Grossman","Blocked","Images/Context/nat/Red_Beach.jpg","Red Beach","nat",NA,NA,"011",38,"a","IF"
-"33","RecTest","Images/Petro/Petro2.jpg","Petro","Interleaved","Images/Context/mm/Eiffel_Tower.jpg","Eiffel Tower","mm",NA,NA,"011",38,"a","IF"
-"13","RecTest","Images/McNamara/McNamara3.jpg","McNamara","Blocked","Images/Context/nat/Arashiyama_Bamboo_Forest.jpg","Arashiyama Bamboo Forest","nat",NA,NA,"011",38,"a","IF"
-"Session2",NA,NA,NA,NA,NA,NA,NA,NA,NA,"011",38,"a","IF"
-"6","instruct",NA,NA,NA,NA,NA,NA,NA,"D2intro","011",38,"a","IF"
-"7","instruct",NA,NA,NA,NA,NA,NA,NA,"D2G","011",38,"a","IF"
-"43","GenTest","Images/McNamara/McNamara8.jpg","McNamara","Blocked",NA,NA,NA,"1",NA,"011",38,"a","IF"
-"55","GenTest","Images/Hawkins/Hawkins8.jpg","Hawkins","Blocked",NA,NA,NA,"1",NA,"011",38,"a","IF"
-"31","GenTest","Images/Petro/Petro18.jpg","Petro","Interleaved",NA,NA,NA,"1",NA,"011",38,"a","IF"
-"7","GenTest","Images/Grossman/Grossman7.jpg","Grossman","Blocked",NA,NA,NA,"1",NA,"011",38,"a","IF"
-"19","GenTest","Images/Schlorff/Schlorff16.jpg","Schlorff","Interleaved",NA,NA,NA,"1",NA,"011",38,"a","IF"
-"67","GenTest","Images/Wexler/Wexler16.jpg","Wexler","Interleaved",NA,NA,NA,"1",NA,"011",38,"a","IF"
-"20","GenTest","Images/Schlorff/Schlorff10.jpg","Schlorff","Interleaved",NA,NA,NA,"2",NA,"011",38,"a","IF"
-"56","GenTest","Images/Hawkins/Hawkins9.jpg","Hawkins","Blocked",NA,NA,NA,"2",NA,"011",38,"a","IF"
-"44","GenTest","Images/McNamara/McNamara9.jpg","McNamara","Blocked",NA,NA,NA,"2",NA,"011",38,"a","IF"
-"68","GenTest","Images/Wexler/Wexler11.jpg","Wexler","Interleaved",NA,NA,NA,"2",NA,"011",38,"a","IF"
-"8","GenTest","Images/Grossman/Grossman14.jpg","Grossman","Blocked",NA,NA,NA,"2",NA,"011",38,"a","IF"
-"32","GenTest","Images/Petro/Petro11.jpg","Petro","Interleaved",NA,NA,NA,"2",NA,"011",38,"a","IF"
-"21","GenTest","Images/Schlorff/Schlorff13.jpg","Schlorff","Interleaved",NA,NA,NA,"3",NA,"011",38,"a","IF"
-"69","GenTest","Images/Wexler/Wexler10.jpg","Wexler","Interleaved",NA,NA,NA,"3",NA,"011",38,"a","IF"
-"9","GenTest","Images/Grossman/Grossman8.jpg","Grossman","Blocked",NA,NA,NA,"3",NA,"011",38,"a","IF"
-"33","GenTest","Images/Petro/Petro15.jpg","Petro","Interleaved",NA,NA,NA,"3",NA,"011",38,"a","IF"
-"45","GenTest","Images/McNamara/McNamara7.jpg","McNamara","Blocked",NA,NA,NA,"3",NA,"011",38,"a","IF"
-"57","GenTest","Images/Hawkins/Hawkins7.jpg","Hawkins","Blocked",NA,NA,NA,"3",NA,"011",38,"a","IF"
-"10","GenTest","Images/Grossman/Grossman12.jpg","Grossman","Blocked",NA,NA,NA,"4",NA,"011",38,"a","IF"
-"34","GenTest","Images/Petro/Petro13.jpg","Petro","Interleaved",NA,NA,NA,"4",NA,"011",38,"a","IF"
-"22","GenTest","Images/Schlorff/Schlorff7.jpg","Schlorff","Interleaved",NA,NA,NA,"4",NA,"011",38,"a","IF"
-"58","GenTest","Images/Hawkins/Hawkins18.jpg","Hawkins","Blocked",NA,NA,NA,"4",NA,"011",38,"a","IF"
-"46","GenTest","Images/McNamara/McNamara10.jpg","McNamara","Blocked",NA,NA,NA,"4",NA,"011",38,"a","IF"
-"70","GenTest","Images/Wexler/Wexler7.jpg","Wexler","Interleaved",NA,NA,NA,"4",NA,"011",38,"a","IF"
-"35","GenTest","Images/Petro/Petro9.jpg","Petro","Interleaved",NA,NA,NA,"5",NA,"011",38,"a","IF"
-"47","GenTest","Images/McNamara/McNamara13.jpg","McNamara","Blocked",NA,NA,NA,"5",NA,"011",38,"a","IF"
-"23","GenTest","Images/Schlorff/Schlorff14.jpg","Schlorff","Interleaved",NA,NA,NA,"5",NA,"011",38,"a","IF"
-"11","GenTest","Images/Grossman/Grossman17.jpg","Grossman","Blocked",NA,NA,NA,"5",NA,"011",38,"a","IF"
-"71","GenTest","Images/Wexler/Wexler14.jpg","Wexler","Interleaved",NA,NA,NA,"5",NA,"011",38,"a","IF"
-"59","GenTest","Images/Hawkins/Hawkins10.jpg","Hawkins","Blocked",NA,NA,NA,"5",NA,"011",38,"a","IF"
-"48","GenTest","Images/McNamara/McNamara17.jpg","McNamara","Blocked",NA,NA,NA,"6",NA,"011",38,"a","IF"
-"12","GenTest","Images/Grossman/Grossman18.jpg","Grossman","Blocked",NA,NA,NA,"6",NA,"011",38,"a","IF"
-"72","GenTest","Images/Wexler/Wexler15.jpg","Wexler","Interleaved",NA,NA,NA,"6",NA,"011",38,"a","IF"
-"60","GenTest","Images/Hawkins/Hawkins12.jpg","Hawkins","Blocked",NA,NA,NA,"6",NA,"011",38,"a","IF"
-"24","GenTest","Images/Schlorff/Schlorff15.jpg","Schlorff","Interleaved",NA,NA,NA,"6",NA,"011",38,"a","IF"
-"36","GenTest","Images/Petro/Petro16.jpg","Petro","Interleaved",NA,NA,NA,"6",NA,"011",38,"a","IF"
-"9","instruct",NA,NA,NA,NA,NA,NA,NA,"D2GR","011",38,"a","IF"
-"8","GenRecTest","Images/Hawkins/Hawkins3.jpg","Hawkins","Blocked","Images/Context/nat/Bryce_Canyon.jpg","Bryce Canyon","nat",NA,NA,"011",38,"a","IF"
-"4","GenRecTest","Images/Grossman/Grossman2.jpg","Grossman","Blocked","Images/Context/mm/Tower_of_Pisa.jpg","Tower of Pisa","mm",NA,NA,"011",38,"a","IF"
-"34","GenRecTest","Images/Petro/Petro6.jpg","Petro","Interleaved","Images/Context/mm/Dome_of_the_Rock.jpg","Dome of the Rock","mm",NA,NA,"011",38,"a","IF"
-"2","GenRecTest","Images/Grossman/Grossman1.jpg","Grossman","Blocked","Images/Context/nat/Lake_Tahoe.jpg","Lake Tahoe","nat",NA,NA,"011",38,"a","IF"
-"20","GenRecTest","Images/Wexler/Wexler1.jpg","Wexler","Interleaved","Images/Context/nat/Mount_Fuji.jpg","Mount Fuji","nat",NA,NA,"011",38,"a","IF"
-"22","GenRecTest","Images/Wexler/Wexler2.jpg","Wexler","Interleaved","Images/Context/mm/Washington_Monument.jpg","Washington Monument","mm",NA,NA,"011",38,"a","IF"
-"36","GenRecTest","Images/Petro/Petro4.jpg","Petro","Interleaved","Images/Context/mm/Sydney_Opera_House.jpg","Sydney Opera House","mm",NA,NA,"011",38,"a","IF"
-"16","GenRecTest","Images/McNamara/McNamara6.jpg","McNamara","Blocked","Images/Context/mm/Boston_Common.jpg","Boston Common","mm",NA,NA,"011",38,"a","IF"
-"24","GenRecTest","Images/Wexler/Wexler4.jpg","Wexler","Interleaved","Images/Context/nat/Zhangye_Danxia_Park.jpg","Zhangye Danxia Park","nat",NA,NA,"011",38,"a","IF"
-"28","GenRecTest","Images/Schlorff/Schlorff3.jpg","Schlorff","Interleaved","Images/Context/nat/Zion_Subway.jpg","Zion Subway","nat",NA,NA,"011",38,"a","IF"
-"6","GenRecTest","Images/Grossman/Grossman3.jpg","Grossman","Blocked","Images/Context/mm/Golden_Gate_Bridge.jpg","Golden Gate Bridge","mm",NA,NA,"011",38,"a","IF"
-"12","GenRecTest","Images/Hawkins/Hawkins2.jpg","Hawkins","Blocked","Images/Context/mm/Bellagio_Fountains.jpg","Bellagio Fountains","mm",NA,NA,"011",38,"a","IF"
-"18","GenRecTest","Images/McNamara/McNamara5.jpg","McNamara","Blocked","Images/Context/nat/Yellowstone.jpg","Yellowstone","nat",NA,NA,"011",38,"a","IF"
-"14","GenRecTest","Images/McNamara/McNamara1.jpg","McNamara","Blocked","Images/Context/nat/Kilauea_Volcano.jpg","Kilauea Volcano","nat",NA,NA,"011",38,"a","IF"
-"30","GenRecTest","Images/Schlorff/Schlorff2.jpg","Schlorff","Interleaved","Images/Context/mm/Taj_Mahal.jpg","Taj Mahal","mm",NA,NA,"011",38,"a","IF"
-"10","GenRecTest","Images/Hawkins/Hawkins1.jpg","Hawkins","Blocked","Images/Context/nat/Niagra_Falls.jpg","Niagra Falls","nat",NA,NA,"011",38,"a","IF"
-"32","GenRecTest","Images/Petro/Petro1.jpg","Petro","Interleaved","Images/Context/nat/Himalayas.jpg","Himalayas","nat",NA,NA,"011",38,"a","IF"
-"26","GenRecTest","Images/Schlorff/Schlorff1.jpg","Schlorff","Interleaved","Images/Context/mm/Pentagon.jpg","Pentagon","mm",NA,NA,"011",38,"a","IF"
-"8","instruct",NA,NA,NA,NA,NA,NA,NA,"D2R","011",38,"a","IF"
-"20","RecTest","Images/Wexler/Wexler1.jpg","Wexler","Interleaved","Images/Context/nat/Mount_Fuji.jpg","Mount Fuji","nat",NA,NA,"011",38,"a","IF"
-"26","RecTest","Images/Schlorff/Schlorff1.jpg","Schlorff","Interleaved","Images/Context/mm/Pentagon.jpg","Pentagon","mm",NA,NA,"011",38,"a","IF"
-"32","RecTest","Images/Petro/Petro1.jpg","Petro","Interleaved","Images/Context/nat/Himalayas.jpg","Himalayas","nat",NA,NA,"011",38,"a","IF"
-"8","RecTest","Images/Hawkins/Hawkins3.jpg","Hawkins","Blocked","Images/Context/nat/Bryce_Canyon.jpg","Bryce Canyon","nat",NA,NA,"011",38,"a","IF"
-"34","RecTest","Images/Petro/Petro6.jpg","Petro","Interleaved","Images/Context/mm/Dome_of_the_Rock.jpg","Dome of the Rock","mm",NA,NA,"011",38,"a","IF"
-"14","RecTest","Images/McNamara/McNamara1.jpg","McNamara","Blocked","Images/Context/nat/Kilauea_Volcano.jpg","Kilauea Volcano","nat",NA,NA,"011",38,"a","IF"
-"2","RecTest","Images/Grossman/Grossman1.jpg","Grossman","Blocked","Images/Context/nat/Lake_Tahoe.jpg","Lake Tahoe","nat",NA,NA,"011",38,"a","IF"
-"36","RecTest","Images/Petro/Petro4.jpg","Petro","Interleaved","Images/Context/mm/Sydney_Opera_House.jpg","Sydney Opera House","mm",NA,NA,"011",38,"a","IF"
-"24","RecTest","Images/Wexler/Wexler4.jpg","Wexler","Interleaved","Images/Context/nat/Zhangye_Danxia_Park.jpg","Zhangye Danxia Park","nat",NA,NA,"011",38,"a","IF"
-"18","RecTest","Images/McNamara/McNamara5.jpg","McNamara","Blocked","Images/Context/nat/Yellowstone.jpg","Yellowstone","nat",NA,NA,"011",38,"a","IF"
-"22","RecTest","Images/Wexler/Wexler2.jpg","Wexler","Interleaved","Images/Context/mm/Washington_Monument.jpg","Washington Monument","mm",NA,NA,"011",38,"a","IF"
-"28","RecTest","Images/Schlorff/Schlorff3.jpg","Schlorff","Interleaved","Images/Context/nat/Zion_Subway.jpg","Zion Subway","nat",NA,NA,"011",38,"a","IF"
-"16","RecTest","Images/McNamara/McNamara6.jpg","McNamara","Blocked","Images/Context/mm/Boston_Common.jpg","Boston Common","mm",NA,NA,"011",38,"a","IF"
-"6","RecTest","Images/Grossman/Grossman3.jpg","Grossman","Blocked","Images/Context/mm/Golden_Gate_Bridge.jpg","Golden Gate Bridge","mm",NA,NA,"011",38,"a","IF"
-"10","RecTest","Images/Hawkins/Hawkins1.jpg","Hawkins","Blocked","Images/Context/nat/Niagra_Falls.jpg","Niagra Falls","nat",NA,NA,"011",38,"a","IF"
-"30","RecTest","Images/Schlorff/Schlorff2.jpg","Schlorff","Interleaved","Images/Context/mm/Taj_Mahal.jpg","Taj Mahal","mm",NA,NA,"011",38,"a","IF"
-"12","RecTest","Images/Hawkins/Hawkins2.jpg","Hawkins","Blocked","Images/Context/mm/Bellagio_Fountains.jpg","Bellagio Fountains","mm",NA,NA,"011",38,"a","IF"
-"4","RecTest","Images/Grossman/Grossman2.jpg","Grossman","Blocked","Images/Context/mm/Tower_of_Pisa.jpg","Tower of Pisa","mm",NA,NA,"011",38,"a","IF"
+ItemNum,Phase,Painting,Artist,Schedule,ConDir,ConName,ConCat,Block,Notes,Subj,Stimset,Stimsubset,Order
+Session1,NA,NA,NA,NA,NA,NA,NA,NA,NA,11,38,a,IF
+1,instruct,NA,NA,NA,NA,NA,NA,NA,D1intro,11,38,a,IF
+2,instruct,NA,NA,NA,NA,NA,NA,NA,study,11,38,a,IF
+22,Study,Images/Wexler/Wexler2.jpg,Wexler,Interleaved,Images/Context/mm/Washington_Monument.jpg,Washington Monument,mm,1,NA,11,38,a,IF
+31,Study,Images/Petro/Petro3.jpg,Petro,Interleaved,Images/Context/nat/Paria_Canyon.jpg,Paria Canyon,nat,1,NA,11,38,a,IF
+25,Study,Images/Schlorff/Schlorff6.jpg,Schlorff,Interleaved,Images/Context/mm/Atomium.jpg,Atomium,mm,1,NA,11,38,a,IF
+28,Study,Images/Schlorff/Schlorff3.jpg,Schlorff,Interleaved,Images/Context/nat/Zion_Subway.jpg,Zion Subway,nat,1,NA,11,38,a,IF
+34,Study,Images/Petro/Petro6.jpg,Petro,Interleaved,Images/Context/mm/Dome_of_the_Rock.jpg,Dome of the Rock,mm,1,NA,11,38,a,IF
+19,Study,Images/Wexler/Wexler3.jpg,Wexler,Interleaved,Images/Context/nat/Carlsbad_Caverns.jpg,Carlsbad Caverns,nat,1,NA,11,38,a,IF
+6,Study,Images/Grossman/Grossman3.jpg,Grossman,Blocked,Images/Context/mm/Golden_Gate_Bridge.jpg,Golden Gate Bridge,mm,2,NA,11,38,a,IF
+1,Study,Images/Grossman/Grossman5.jpg,Grossman,Blocked,Images/Context/nat/Red_Beach.jpg,Red Beach,nat,2,NA,11,38,a,IF
+2,Study,Images/Grossman/Grossman1.jpg,Grossman,Blocked,Images/Context/nat/Lake_Tahoe.jpg,Lake Tahoe,nat,2,NA,11,38,a,IF
+4,Study,Images/Grossman/Grossman2.jpg,Grossman,Blocked,Images/Context/mm/Tower_of_Pisa.jpg,Tower of Pisa,mm,2,NA,11,38,a,IF
+5,Study,Images/Grossman/Grossman6.jpg,Grossman,Blocked,Images/Context/mm/Space_Needle.jpg,Space Needle,mm,2,NA,11,38,a,IF
+3,Study,Images/Grossman/Grossman4.jpg,Grossman,Blocked,Images/Context/nat/Amazon_River.jpg,Amazon River,nat,2,NA,11,38,a,IF
+23,Study,Images/Wexler/Wexler5.jpg,Wexler,Interleaved,Images/Context/mm/Gateway_Arch.jpg,Gateway Arch,mm,3,NA,11,38,a,IF
+29,Study,Images/Schlorff/Schlorff5.jpg,Schlorff,Interleaved,Images/Context/nat/Devil's_Tower.jpg,Devil's Tower,nat,3,NA,11,38,a,IF
+32,Study,Images/Petro/Petro1.jpg,Petro,Interleaved,Images/Context/nat/Himalayas.jpg,Himalayas,nat,3,NA,11,38,a,IF
+26,Study,Images/Schlorff/Schlorff1.jpg,Schlorff,Interleaved,Images/Context/mm/Pentagon.jpg,Pentagon,mm,3,NA,11,38,a,IF
+35,Study,Images/Petro/Petro5.jpg,Petro,Interleaved,Images/Context/nat/Angel's_Landing.jpg,Angel's Landing,nat,3,NA,11,38,a,IF
+20,Study,Images/Wexler/Wexler1.jpg,Wexler,Interleaved,Images/Context/nat/Mount_Fuji.jpg,Mount Fuji,nat,3,NA,11,38,a,IF
+12,Study,Images/Hawkins/Hawkins2.jpg,Hawkins,Blocked,Images/Context/mm/Bellagio_Fountains.jpg,Bellagio Fountains,mm,4,NA,11,38,a,IF
+7,Study,Images/Hawkins/Hawkins4.jpg,Hawkins,Blocked,Images/Context/mm/Rock_and_Roll_Hall_of_Fame.jpg,Rock and Roll Hall of Fame,mm,4,NA,11,38,a,IF
+11,Study,Images/Hawkins/Hawkins6.jpg,Hawkins,Blocked,Images/Context/nat/Death_Valley.jpg,Death Valley,nat,4,NA,11,38,a,IF
+10,Study,Images/Hawkins/Hawkins1.jpg,Hawkins,Blocked,Images/Context/nat/Niagra_Falls.jpg,Niagra Falls,nat,4,NA,11,38,a,IF
+8,Study,Images/Hawkins/Hawkins3.jpg,Hawkins,Blocked,Images/Context/nat/Bryce_Canyon.jpg,Bryce Canyon,nat,4,NA,11,38,a,IF
+9,Study,Images/Hawkins/Hawkins5.jpg,Hawkins,Blocked,Images/Context/mm/Epcot_Center.jpg,Epcot Center,mm,4,NA,11,38,a,IF
+30,Study,Images/Schlorff/Schlorff2.jpg,Schlorff,Interleaved,Images/Context/mm/Taj_Mahal.jpg,Taj Mahal,mm,5,NA,11,38,a,IF
+24,Study,Images/Wexler/Wexler4.jpg,Wexler,Interleaved,Images/Context/nat/Zhangye_Danxia_Park.jpg,Zhangye Danxia Park,nat,5,NA,11,38,a,IF
+33,Study,Images/Petro/Petro2.jpg,Petro,Interleaved,Images/Context/mm/Eiffel_Tower.jpg,Eiffel Tower,mm,5,NA,11,38,a,IF
+21,Study,Images/Wexler/Wexler6.jpg,Wexler,Interleaved,Images/Context/mm/Louvre.jpg,Louvre,mm,5,NA,11,38,a,IF
+36,Study,Images/Petro/Petro4.jpg,Petro,Interleaved,Images/Context/mm/Sydney_Opera_House.jpg,Sydney Opera House,mm,5,NA,11,38,a,IF
+27,Study,Images/Schlorff/Schlorff4.jpg,Schlorff,Interleaved,Images/Context/nat/Grand_Canyon.jpg,Grand Canyon,nat,5,NA,11,38,a,IF
+15,Study,Images/McNamara/McNamara4.jpg,McNamara,Blocked,Images/Context/mm/Carnegie_Hall.jpg,Carnegie Hall,mm,6,NA,11,38,a,IF
+14,Study,Images/McNamara/McNamara1.jpg,McNamara,Blocked,Images/Context/nat/Kilauea_Volcano.jpg,Kilauea Volcano,nat,6,NA,11,38,a,IF
+16,Study,Images/McNamara/McNamara6.jpg,McNamara,Blocked,Images/Context/mm/Boston_Common.jpg,Boston Common,mm,6,NA,11,38,a,IF
+17,Study,Images/McNamara/McNamara2.jpg,McNamara,Blocked,Images/Context/mm/Forbidden_City.jpg,Forbidden City,mm,6,NA,11,38,a,IF
+13,Study,Images/McNamara/McNamara3.jpg,McNamara,Blocked,Images/Context/nat/Arashiyama_Bamboo_Forest.jpg,Arashiyama Bamboo Forest,nat,6,NA,11,38,a,IF
+18,Study,Images/McNamara/McNamara5.jpg,McNamara,Blocked,Images/Context/nat/Yellowstone.jpg,Yellowstone,nat,6,NA,11,38,a,IF
+3,instruct,NA,NA,NA,NA,NA,NA,NA,D1G,11,38,a,IF
+49,GenTest,Images/Hawkins/Hawkins17.jpg,Hawkins,Blocked,NA,NA,NA,1,NA,11,38,a,IF
+13,GenTest,Images/Schlorff/Schlorff11.jpg,Schlorff,Interleaved,NA,NA,NA,1,NA,11,38,a,IF
+61,GenTest,Images/Wexler/Wexler17.jpg,Wexler,Interleaved,NA,NA,NA,1,NA,11,38,a,IF
+37,GenTest,Images/McNamara/McNamara16.jpg,McNamara,Blocked,NA,NA,NA,1,NA,11,38,a,IF
+1,GenTest,Images/Grossman/Grossman13.jpg,Grossman,Blocked,NA,NA,NA,1,NA,11,38,a,IF
+25,GenTest,Images/Petro/Petro7.jpg,Petro,Interleaved,NA,NA,NA,1,NA,11,38,a,IF
+50,GenTest,Images/Hawkins/Hawkins13.jpg,Hawkins,Blocked,NA,NA,NA,2,NA,11,38,a,IF
+14,GenTest,Images/Schlorff/Schlorff17.jpg,Schlorff,Interleaved,NA,NA,NA,2,NA,11,38,a,IF
+2,GenTest,Images/Grossman/Grossman10.jpg,Grossman,Blocked,NA,NA,NA,2,NA,11,38,a,IF
+62,GenTest,Images/Wexler/Wexler13.jpg,Wexler,Interleaved,NA,NA,NA,2,NA,11,38,a,IF
+38,GenTest,Images/McNamara/McNamara11.jpg,McNamara,Blocked,NA,NA,NA,2,NA,11,38,a,IF
+26,GenTest,Images/Petro/Petro8.jpg,Petro,Interleaved,NA,NA,NA,2,NA,11,38,a,IF
+63,GenTest,Images/Wexler/Wexler18.jpg,Wexler,Interleaved,NA,NA,NA,3,NA,11,38,a,IF
+3,GenTest,Images/Grossman/Grossman16.jpg,Grossman,Blocked,NA,NA,NA,3,NA,11,38,a,IF
+51,GenTest,Images/Hawkins/Hawkins16.jpg,Hawkins,Blocked,NA,NA,NA,3,NA,11,38,a,IF
+39,GenTest,Images/McNamara/McNamara14.jpg,McNamara,Blocked,NA,NA,NA,3,NA,11,38,a,IF
+15,GenTest,Images/Schlorff/Schlorff9.jpg,Schlorff,Interleaved,NA,NA,NA,3,NA,11,38,a,IF
+27,GenTest,Images/Petro/Petro12.jpg,Petro,Interleaved,NA,NA,NA,3,NA,11,38,a,IF
+16,GenTest,Images/Schlorff/Schlorff8.jpg,Schlorff,Interleaved,NA,NA,NA,4,NA,11,38,a,IF
+4,GenTest,Images/Grossman/Grossman15.jpg,Grossman,Blocked,NA,NA,NA,4,NA,11,38,a,IF
+40,GenTest,Images/McNamara/McNamara15.jpg,McNamara,Blocked,NA,NA,NA,4,NA,11,38,a,IF
+52,GenTest,Images/Hawkins/Hawkins11.jpg,Hawkins,Blocked,NA,NA,NA,4,NA,11,38,a,IF
+64,GenTest,Images/Wexler/Wexler8.jpg,Wexler,Interleaved,NA,NA,NA,4,NA,11,38,a,IF
+28,GenTest,Images/Petro/Petro17.jpg,Petro,Interleaved,NA,NA,NA,4,NA,11,38,a,IF
+53,GenTest,Images/Hawkins/Hawkins14.jpg,Hawkins,Blocked,NA,NA,NA,5,NA,11,38,a,IF
+41,GenTest,Images/McNamara/McNamara12.jpg,McNamara,Blocked,NA,NA,NA,5,NA,11,38,a,IF
+5,GenTest,Images/Grossman/Grossman11.jpg,Grossman,Blocked,NA,NA,NA,5,NA,11,38,a,IF
+29,GenTest,Images/Petro/Petro10.jpg,Petro,Interleaved,NA,NA,NA,5,NA,11,38,a,IF
+17,GenTest,Images/Schlorff/Schlorff18.jpg,Schlorff,Interleaved,NA,NA,NA,5,NA,11,38,a,IF
+65,GenTest,Images/Wexler/Wexler9.jpg,Wexler,Interleaved,NA,NA,NA,5,NA,11,38,a,IF
+30,GenTest,Images/Petro/Petro14.jpg,Petro,Interleaved,NA,NA,NA,6,NA,11,38,a,IF
+42,GenTest,Images/McNamara/McNamara18.jpg,McNamara,Blocked,NA,NA,NA,6,NA,11,38,a,IF
+6,GenTest,Images/Grossman/Grossman9.jpg,Grossman,Blocked,NA,NA,NA,6,NA,11,38,a,IF
+54,GenTest,Images/Hawkins/Hawkins15.jpg,Hawkins,Blocked,NA,NA,NA,6,NA,11,38,a,IF
+18,GenTest,Images/Schlorff/Schlorff12.jpg,Schlorff,Interleaved,NA,NA,NA,6,NA,11,38,a,IF
+66,GenTest,Images/Wexler/Wexler12.jpg,Wexler,Interleaved,NA,NA,NA,6,NA,11,38,a,IF
+5,instruct,NA,NA,NA,NA,NA,NA,NA,D1GR,11,38,a,IF
+13,GenRecTest,Images/McNamara/McNamara3.jpg,McNamara,Blocked,Images/Context/nat/Arashiyama_Bamboo_Forest.jpg,Arashiyama Bamboo Forest,nat,NA,NA,11,38,a,IF
+3,GenRecTest,Images/Grossman/Grossman4.jpg,Grossman,Blocked,Images/Context/nat/Amazon_River.jpg,Amazon River,nat,NA,NA,11,38,a,IF
+19,GenRecTest,Images/Wexler/Wexler3.jpg,Wexler,Interleaved,Images/Context/nat/Carlsbad_Caverns.jpg,Carlsbad Caverns,nat,NA,NA,11,38,a,IF
+25,GenRecTest,Images/Schlorff/Schlorff6.jpg,Schlorff,Interleaved,Images/Context/mm/Atomium.jpg,Atomium,mm,NA,NA,11,38,a,IF
+15,GenRecTest,Images/McNamara/McNamara4.jpg,McNamara,Blocked,Images/Context/mm/Carnegie_Hall.jpg,Carnegie Hall,mm,NA,NA,11,38,a,IF
+33,GenRecTest,Images/Petro/Petro2.jpg,Petro,Interleaved,Images/Context/mm/Eiffel_Tower.jpg,Eiffel Tower,mm,NA,NA,11,38,a,IF
+5,GenRecTest,Images/Grossman/Grossman6.jpg,Grossman,Blocked,Images/Context/mm/Space_Needle.jpg,Space Needle,mm,NA,NA,11,38,a,IF
+9,GenRecTest,Images/Hawkins/Hawkins5.jpg,Hawkins,Blocked,Images/Context/mm/Epcot_Center.jpg,Epcot Center,mm,NA,NA,11,38,a,IF
+7,GenRecTest,Images/Hawkins/Hawkins4.jpg,Hawkins,Blocked,Images/Context/mm/Rock_and_Roll_Hall_of_Fame.jpg,Rock and Roll Hall of Fame,mm,NA,NA,11,38,a,IF
+1,GenRecTest,Images/Grossman/Grossman5.jpg,Grossman,Blocked,Images/Context/nat/Red_Beach.jpg,Red Beach,nat,NA,NA,11,38,a,IF
+23,GenRecTest,Images/Wexler/Wexler5.jpg,Wexler,Interleaved,Images/Context/mm/Gateway_Arch.jpg,Gateway Arch,mm,NA,NA,11,38,a,IF
+29,GenRecTest,Images/Schlorff/Schlorff5.jpg,Schlorff,Interleaved,Images/Context/nat/Devil's_Tower.jpg,Devil's Tower,nat,NA,NA,11,38,a,IF
+17,GenRecTest,Images/McNamara/McNamara2.jpg,McNamara,Blocked,Images/Context/mm/Forbidden_City.jpg,Forbidden City,mm,NA,NA,11,38,a,IF
+21,GenRecTest,Images/Wexler/Wexler6.jpg,Wexler,Interleaved,Images/Context/mm/Louvre.jpg,Louvre,mm,NA,NA,11,38,a,IF
+35,GenRecTest,Images/Petro/Petro5.jpg,Petro,Interleaved,Images/Context/nat/Angel's_Landing.jpg,Angel's Landing,nat,NA,NA,11,38,a,IF
+27,GenRecTest,Images/Schlorff/Schlorff4.jpg,Schlorff,Interleaved,Images/Context/nat/Grand_Canyon.jpg,Grand Canyon,nat,NA,NA,11,38,a,IF
+31,GenRecTest,Images/Petro/Petro3.jpg,Petro,Interleaved,Images/Context/nat/Paria_Canyon.jpg,Paria Canyon,nat,NA,NA,11,38,a,IF
+11,GenRecTest,Images/Hawkins/Hawkins6.jpg,Hawkins,Blocked,Images/Context/nat/Death_Valley.jpg,Death Valley,nat,NA,NA,11,38,a,IF
+4,instruct,NA,NA,NA,NA,NA,NA,NA,D1R,11,38,a,IF
+25,RecTest,Images/Schlorff/Schlorff6.jpg,Schlorff,Interleaved,Images/Context/mm/Atomium.jpg,Atomium,mm,NA,NA,11,38,a,IF
+17,RecTest,Images/McNamara/McNamara2.jpg,McNamara,Blocked,Images/Context/mm/Forbidden_City.jpg,Forbidden City,mm,NA,NA,11,38,a,IF
+27,RecTest,Images/Schlorff/Schlorff4.jpg,Schlorff,Interleaved,Images/Context/nat/Grand_Canyon.jpg,Grand Canyon,nat,NA,NA,11,38,a,IF
+21,RecTest,Images/Wexler/Wexler6.jpg,Wexler,Interleaved,Images/Context/mm/Louvre.jpg,Louvre,mm,NA,NA,11,38,a,IF
+15,RecTest,Images/McNamara/McNamara4.jpg,McNamara,Blocked,Images/Context/mm/Carnegie_Hall.jpg,Carnegie Hall,mm,NA,NA,11,38,a,IF
+29,RecTest,Images/Schlorff/Schlorff5.jpg,Schlorff,Interleaved,Images/Context/nat/Devil's_Tower.jpg,Devil's Tower,nat,NA,NA,11,38,a,IF
+3,RecTest,Images/Grossman/Grossman4.jpg,Grossman,Blocked,Images/Context/nat/Amazon_River.jpg,Amazon River,nat,NA,NA,11,38,a,IF
+9,RecTest,Images/Hawkins/Hawkins5.jpg,Hawkins,Blocked,Images/Context/mm/Epcot_Center.jpg,Epcot Center,mm,NA,NA,11,38,a,IF
+35,RecTest,Images/Petro/Petro5.jpg,Petro,Interleaved,Images/Context/nat/Angel's_Landing.jpg,Angel's Landing,nat,NA,NA,11,38,a,IF
+5,RecTest,Images/Grossman/Grossman6.jpg,Grossman,Blocked,Images/Context/mm/Space_Needle.jpg,Space Needle,mm,NA,NA,11,38,a,IF
+23,RecTest,Images/Wexler/Wexler5.jpg,Wexler,Interleaved,Images/Context/mm/Gateway_Arch.jpg,Gateway Arch,mm,NA,NA,11,38,a,IF
+11,RecTest,Images/Hawkins/Hawkins6.jpg,Hawkins,Blocked,Images/Context/nat/Death_Valley.jpg,Death Valley,nat,NA,NA,11,38,a,IF
+31,RecTest,Images/Petro/Petro3.jpg,Petro,Interleaved,Images/Context/nat/Paria_Canyon.jpg,Paria Canyon,nat,NA,NA,11,38,a,IF
+7,RecTest,Images/Hawkins/Hawkins4.jpg,Hawkins,Blocked,Images/Context/mm/Rock_and_Roll_Hall_of_Fame.jpg,Rock and Roll Hall of Fame,mm,NA,NA,11,38,a,IF
+19,RecTest,Images/Wexler/Wexler3.jpg,Wexler,Interleaved,Images/Context/nat/Carlsbad_Caverns.jpg,Carlsbad Caverns,nat,NA,NA,11,38,a,IF
+1,RecTest,Images/Grossman/Grossman5.jpg,Grossman,Blocked,Images/Context/nat/Red_Beach.jpg,Red Beach,nat,NA,NA,11,38,a,IF
+33,RecTest,Images/Petro/Petro2.jpg,Petro,Interleaved,Images/Context/mm/Eiffel_Tower.jpg,Eiffel Tower,mm,NA,NA,11,38,a,IF
+13,RecTest,Images/McNamara/McNamara3.jpg,McNamara,Blocked,Images/Context/nat/Arashiyama_Bamboo_Forest.jpg,Arashiyama Bamboo Forest,nat,NA,NA,11,38,a,IF
+Session2,NA,NA,NA,NA,NA,NA,NA,NA,NA,11,38,a,IF
+6,instruct,NA,NA,NA,NA,NA,NA,NA,D2intro,11,38,a,IF
+7,instruct,NA,NA,NA,NA,NA,NA,NA,D2G,11,38,a,IF
+43,GenTest,Images/McNamara/McNamara8.jpg,McNamara,Blocked,NA,NA,NA,1,NA,11,38,a,IF
+55,GenTest,Images/Hawkins/Hawkins8.jpg,Hawkins,Blocked,NA,NA,NA,1,NA,11,38,a,IF
+31,GenTest,Images/Petro/Petro18.jpg,Petro,Interleaved,NA,NA,NA,1,NA,11,38,a,IF
+7,GenTest,Images/Grossman/Grossman7.jpg,Grossman,Blocked,NA,NA,NA,1,NA,11,38,a,IF
+19,GenTest,Images/Schlorff/Schlorff16.jpg,Schlorff,Interleaved,NA,NA,NA,1,NA,11,38,a,IF
+67,GenTest,Images/Wexler/Wexler16.jpg,Wexler,Interleaved,NA,NA,NA,1,NA,11,38,a,IF
+20,GenTest,Images/Schlorff/Schlorff10.jpg,Schlorff,Interleaved,NA,NA,NA,2,NA,11,38,a,IF
+56,GenTest,Images/Hawkins/Hawkins9.jpg,Hawkins,Blocked,NA,NA,NA,2,NA,11,38,a,IF
+44,GenTest,Images/McNamara/McNamara9.jpg,McNamara,Blocked,NA,NA,NA,2,NA,11,38,a,IF
+68,GenTest,Images/Wexler/Wexler11.jpg,Wexler,Interleaved,NA,NA,NA,2,NA,11,38,a,IF
+8,GenTest,Images/Grossman/Grossman14.jpg,Grossman,Blocked,NA,NA,NA,2,NA,11,38,a,IF
+32,GenTest,Images/Petro/Petro11.jpg,Petro,Interleaved,NA,NA,NA,2,NA,11,38,a,IF
+21,GenTest,Images/Schlorff/Schlorff13.jpg,Schlorff,Interleaved,NA,NA,NA,3,NA,11,38,a,IF
+69,GenTest,Images/Wexler/Wexler10.jpg,Wexler,Interleaved,NA,NA,NA,3,NA,11,38,a,IF
+9,GenTest,Images/Grossman/Grossman8.jpg,Grossman,Blocked,NA,NA,NA,3,NA,11,38,a,IF
+33,GenTest,Images/Petro/Petro15.jpg,Petro,Interleaved,NA,NA,NA,3,NA,11,38,a,IF
+45,GenTest,Images/McNamara/McNamara7.jpg,McNamara,Blocked,NA,NA,NA,3,NA,11,38,a,IF
+57,GenTest,Images/Hawkins/Hawkins7.jpg,Hawkins,Blocked,NA,NA,NA,3,NA,11,38,a,IF
+10,GenTest,Images/Grossman/Grossman12.jpg,Grossman,Blocked,NA,NA,NA,4,NA,11,38,a,IF
+34,GenTest,Images/Petro/Petro13.jpg,Petro,Interleaved,NA,NA,NA,4,NA,11,38,a,IF
+22,GenTest,Images/Schlorff/Schlorff7.jpg,Schlorff,Interleaved,NA,NA,NA,4,NA,11,38,a,IF
+58,GenTest,Images/Hawkins/Hawkins18.jpg,Hawkins,Blocked,NA,NA,NA,4,NA,11,38,a,IF
+46,GenTest,Images/McNamara/McNamara10.jpg,McNamara,Blocked,NA,NA,NA,4,NA,11,38,a,IF
+70,GenTest,Images/Wexler/Wexler7.jpg,Wexler,Interleaved,NA,NA,NA,4,NA,11,38,a,IF
+35,GenTest,Images/Petro/Petro9.jpg,Petro,Interleaved,NA,NA,NA,5,NA,11,38,a,IF
+47,GenTest,Images/McNamara/McNamara13.jpg,McNamara,Blocked,NA,NA,NA,5,NA,11,38,a,IF
+23,GenTest,Images/Schlorff/Schlorff14.jpg,Schlorff,Interleaved,NA,NA,NA,5,NA,11,38,a,IF
+11,GenTest,Images/Grossman/Grossman17.jpg,Grossman,Blocked,NA,NA,NA,5,NA,11,38,a,IF
+71,GenTest,Images/Wexler/Wexler14.jpg,Wexler,Interleaved,NA,NA,NA,5,NA,11,38,a,IF
+59,GenTest,Images/Hawkins/Hawkins10.jpg,Hawkins,Blocked,NA,NA,NA,5,NA,11,38,a,IF
+48,GenTest,Images/McNamara/McNamara17.jpg,McNamara,Blocked,NA,NA,NA,6,NA,11,38,a,IF
+12,GenTest,Images/Grossman/Grossman18.jpg,Grossman,Blocked,NA,NA,NA,6,NA,11,38,a,IF
+72,GenTest,Images/Wexler/Wexler15.jpg,Wexler,Interleaved,NA,NA,NA,6,NA,11,38,a,IF
+60,GenTest,Images/Hawkins/Hawkins12.jpg,Hawkins,Blocked,NA,NA,NA,6,NA,11,38,a,IF
+24,GenTest,Images/Schlorff/Schlorff15.jpg,Schlorff,Interleaved,NA,NA,NA,6,NA,11,38,a,IF
+36,GenTest,Images/Petro/Petro16.jpg,Petro,Interleaved,NA,NA,NA,6,NA,11,38,a,IF
+9,instruct,NA,NA,NA,NA,NA,NA,NA,D2GR,11,38,a,IF
+8,GenRecTest,Images/Hawkins/Hawkins3.jpg,Hawkins,Blocked,Images/Context/nat/Bryce_Canyon.jpg,Bryce Canyon,nat,NA,NA,11,38,a,IF
+4,GenRecTest,Images/Grossman/Grossman2.jpg,Grossman,Blocked,Images/Context/mm/Tower_of_Pisa.jpg,Tower of Pisa,mm,NA,NA,11,38,a,IF
+34,GenRecTest,Images/Petro/Petro6.jpg,Petro,Interleaved,Images/Context/mm/Dome_of_the_Rock.jpg,Dome of the Rock,mm,NA,NA,11,38,a,IF
+2,GenRecTest,Images/Grossman/Grossman1.jpg,Grossman,Blocked,Images/Context/nat/Lake_Tahoe.jpg,Lake Tahoe,nat,NA,NA,11,38,a,IF
+20,GenRecTest,Images/Wexler/Wexler1.jpg,Wexler,Interleaved,Images/Context/nat/Mount_Fuji.jpg,Mount Fuji,nat,NA,NA,11,38,a,IF
+22,GenRecTest,Images/Wexler/Wexler2.jpg,Wexler,Interleaved,Images/Context/mm/Washington_Monument.jpg,Washington Monument,mm,NA,NA,11,38,a,IF
+36,GenRecTest,Images/Petro/Petro4.jpg,Petro,Interleaved,Images/Context/mm/Sydney_Opera_House.jpg,Sydney Opera House,mm,NA,NA,11,38,a,IF
+16,GenRecTest,Images/McNamara/McNamara6.jpg,McNamara,Blocked,Images/Context/mm/Boston_Common.jpg,Boston Common,mm,NA,NA,11,38,a,IF
+24,GenRecTest,Images/Wexler/Wexler4.jpg,Wexler,Interleaved,Images/Context/nat/Zhangye_Danxia_Park.jpg,Zhangye Danxia Park,nat,NA,NA,11,38,a,IF
+28,GenRecTest,Images/Schlorff/Schlorff3.jpg,Schlorff,Interleaved,Images/Context/nat/Zion_Subway.jpg,Zion Subway,nat,NA,NA,11,38,a,IF
+6,GenRecTest,Images/Grossman/Grossman3.jpg,Grossman,Blocked,Images/Context/mm/Golden_Gate_Bridge.jpg,Golden Gate Bridge,mm,NA,NA,11,38,a,IF
+12,GenRecTest,Images/Hawkins/Hawkins2.jpg,Hawkins,Blocked,Images/Context/mm/Bellagio_Fountains.jpg,Bellagio Fountains,mm,NA,NA,11,38,a,IF
+18,GenRecTest,Images/McNamara/McNamara5.jpg,McNamara,Blocked,Images/Context/nat/Yellowstone.jpg,Yellowstone,nat,NA,NA,11,38,a,IF
+14,GenRecTest,Images/McNamara/McNamara1.jpg,McNamara,Blocked,Images/Context/nat/Kilauea_Volcano.jpg,Kilauea Volcano,nat,NA,NA,11,38,a,IF
+30,GenRecTest,Images/Schlorff/Schlorff2.jpg,Schlorff,Interleaved,Images/Context/mm/Taj_Mahal.jpg,Taj Mahal,mm,NA,NA,11,38,a,IF
+10,GenRecTest,Images/Hawkins/Hawkins1.jpg,Hawkins,Blocked,Images/Context/nat/Niagra_Falls.jpg,Niagra Falls,nat,NA,NA,11,38,a,IF
+32,GenRecTest,Images/Petro/Petro1.jpg,Petro,Interleaved,Images/Context/nat/Himalayas.jpg,Himalayas,nat,NA,NA,11,38,a,IF
+26,GenRecTest,Images/Schlorff/Schlorff1.jpg,Schlorff,Interleaved,Images/Context/mm/Pentagon.jpg,Pentagon,mm,NA,NA,11,38,a,IF
+8,instruct,NA,NA,NA,NA,NA,NA,NA,D2R,11,38,a,IF
+20,RecTest,Images/Wexler/Wexler1.jpg,Wexler,Interleaved,Images/Context/nat/Mount_Fuji.jpg,Mount Fuji,nat,NA,NA,11,38,a,IF
+26,RecTest,Images/Schlorff/Schlorff1.jpg,Schlorff,Interleaved,Images/Context/mm/Pentagon.jpg,Pentagon,mm,NA,NA,11,38,a,IF
+32,RecTest,Images/Petro/Petro1.jpg,Petro,Interleaved,Images/Context/nat/Himalayas.jpg,Himalayas,nat,NA,NA,11,38,a,IF
+8,RecTest,Images/Hawkins/Hawkins3.jpg,Hawkins,Blocked,Images/Context/nat/Bryce_Canyon.jpg,Bryce Canyon,nat,NA,NA,11,38,a,IF
+34,RecTest,Images/Petro/Petro6.jpg,Petro,Interleaved,Images/Context/mm/Dome_of_the_Rock.jpg,Dome of the Rock,mm,NA,NA,11,38,a,IF
+14,RecTest,Images/McNamara/McNamara1.jpg,McNamara,Blocked,Images/Context/nat/Kilauea_Volcano.jpg,Kilauea Volcano,nat,NA,NA,11,38,a,IF
+2,RecTest,Images/Grossman/Grossman1.jpg,Grossman,Blocked,Images/Context/nat/Lake_Tahoe.jpg,Lake Tahoe,nat,NA,NA,11,38,a,IF
+36,RecTest,Images/Petro/Petro4.jpg,Petro,Interleaved,Images/Context/mm/Sydney_Opera_House.jpg,Sydney Opera House,mm,NA,NA,11,38,a,IF
+24,RecTest,Images/Wexler/Wexler4.jpg,Wexler,Interleaved,Images/Context/nat/Zhangye_Danxia_Park.jpg,Zhangye Danxia Park,nat,NA,NA,11,38,a,IF
+18,RecTest,Images/McNamara/McNamara5.jpg,McNamara,Blocked,Images/Context/nat/Yellowstone.jpg,Yellowstone,nat,NA,NA,11,38,a,IF
+22,RecTest,Images/Wexler/Wexler2.jpg,Wexler,Interleaved,Images/Context/mm/Washington_Monument.jpg,Washington Monument,mm,NA,NA,11,38,a,IF
+28,RecTest,Images/Schlorff/Schlorff3.jpg,Schlorff,Interleaved,Images/Context/nat/Zion_Subway.jpg,Zion Subway,nat,NA,NA,11,38,a,IF
+16,RecTest,Images/McNamara/McNamara6.jpg,McNamara,Blocked,Images/Context/mm/Boston_Common.jpg,Boston Common,mm,NA,NA,11,38,a,IF
+6,RecTest,Images/Grossman/Grossman3.jpg,Grossman,Blocked,Images/Context/mm/Golden_Gate_Bridge.jpg,Golden Gate Bridge,mm,NA,NA,11,38,a,IF
+10,RecTest,Images/Hawkins/Hawkins1.jpg,Hawkins,Blocked,Images/Context/nat/Niagra_Falls.jpg,Niagra Falls,nat,NA,NA,11,38,a,IF
+30,RecTest,Images/Schlorff/Schlorff2.jpg,Schlorff,Interleaved,Images/Context/mm/Taj_Mahal.jpg,Taj Mahal,mm,NA,NA,11,38,a,IF
+12,RecTest,Images/Hawkins/Hawkins2.jpg,Hawkins,Blocked,Images/Context/mm/Bellagio_Fountains.jpg,Bellagio Fountains,mm,NA,NA,11,38,a,IF
+4,RecTest,Images/Grossman/Grossman2.jpg,Grossman,Blocked,Images/Context/mm/Tower_of_Pisa.jpg,Tower of Pisa,mm,NA,NA,11,38,a,IF
