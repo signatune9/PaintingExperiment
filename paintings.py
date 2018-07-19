@@ -249,7 +249,7 @@ def draw_instructions(window, mouse, instruction_name):
     else:
         instruction = visual.ImageStim(window, image=FILEPATH + "images/" + instruction_path,
                                        pos=PAINTING_ALIGN_CENTER_POS)
-        instruction.size = (instruction.size[0]*0.7, instruction.size[1]*0.7)
+        instruction.size = (instruction.size[0]*0.5, instruction.size[1]*0.5)
 
     if INPUT_MODE == 0:
         next_button = visual.Rect(window, width=5.0, height=1.0, lineWidth=1.5, lineColor='black', pos=[10.5, -10])

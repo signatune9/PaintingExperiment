@@ -1,7 +1,7 @@
 # 0 for blocked, 1 for interleaved
-CONDITION = 1
+CONDITION = 0
 
-SUBJECT_ID = '011'
+SUBJECT_ID = '001'
 
 # Horizontal and vertical resolution for the physical monitor
 HRES = 1024
