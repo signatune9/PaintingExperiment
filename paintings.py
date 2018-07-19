@@ -916,7 +916,7 @@ def main():
         elif current_trial[0] == 'Session1':
             write_trial(current_trial, "NA", "NA", "NA")
 
-        elif current_trial[0] == 'Session2':
+        elif current_trial[0] == 'Session2' or current_trial[0] == 'Session1.2':
             write_trial(current_trial, "NA", "NA", "NA")
             break
 
