@@ -227,7 +227,7 @@ def get_context_images(current_painting, current_artist, context_category, conte
     return context_path_list
 
 
-def draw_instructions(window, mouse, instructions_index):
+def draw_instructions(window, mouse, instruction_name):
     """
     Draws the given instructions on the screen and waits for the subject to press the 'Next' button.
     Inputs: window = The window object being used for the experiment.
@@ -240,7 +240,9 @@ def draw_instructions(window, mouse, instructions_index):
         procedural_file_reader = csv.reader(instructions_file, delimiter=',')
         instructions_file_list = list(procedural_file_reader)
 
-    instruction_path = instructions_file_list[instructions_index][0]
+    for row in instructions_file_list:
+        if instruction_name == row[1]:
+            instruction_path = row[0]
 
     if OFFSET == 1:
         instruction = visual.ImageStim(window, image=FILEPATH + "images/" + instruction_path, pos=[-2.5, 4])
@@ -730,7 +732,7 @@ def show_buffer_screen(window):
     core.wait(1.0)
 
 
-def instructions_trial(window, mouse, current_trial, instructions_index):
+def instructions_trial(window, mouse, current_trial):
     """
     Runs an instructions trial of the experiment.
     Inputs: window: The window object being used for the experiment.
@@ -740,7 +742,7 @@ def instructions_trial(window, mouse, current_trial, instructions_index):
     Returns: None.
     """
 
-    draw_instructions(window, mouse, instructions_index)
+    draw_instructions(window, mouse, current_trial[9])
     write_trial(current_trial, "NA", "NA", "NA")
     show_buffer_screen(window)
 
@@ -874,7 +876,7 @@ def main():
     window = visual.Window([HRES, VRES], allowGUI=True, monitor=experiment_monitor, units='height', color='white',
                            fullscr=True, screen=1)
 
-   # Initialize mouse object.
+    # Initialize mouse object.
     mouse = event.Mouse(visible=True, newPos=None, win=window)
 
     # Read the procedural csv
@@ -886,10 +888,8 @@ def main():
     if new_session != 1:
         status = get_results_status()
         current_status = status[0]
-        instructions_index = status[1] + 1
     else:
         current_status = 0
-        instructions_index = 1
 
     # Start the experiment's clock.
     experiment_clock = start_experiment_clock()
@@ -907,8 +907,7 @@ def main():
     for current_trial in procedural_file_list[current_status:]:
 
         if current_trial[1] == 'instruct':
-            instructions_trial(window, mouse, current_trial, instructions_index)
-            instructions_index = instructions_index + 1
+            instructions_trial(window, mouse, current_trial)
 
         elif current_trial[1] == 'Study':
             study_trial(window, mouse, current_trial, experiment_clock, artists, buttons)
