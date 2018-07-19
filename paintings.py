@@ -866,7 +866,7 @@ def main():
     experiment_monitor.setSizePix((EXPHRES, EXPVRES))
     experiment_monitor.saveMon()
     window = visual.Window([HRES, VRES], allowGUI=True, monitor=experiment_monitor, units='height', color='white',
-                           fullscr=True, screen=1)
+                           fullscr=True, screen=0)
 
     # Initialize mouse object.
     mouse = event.Mouse(visible=True, newPos=None, win=window)
