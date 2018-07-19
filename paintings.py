@@ -258,14 +258,6 @@ def draw_instructions(window, mouse, instruction_name):
         instruction.draw()
         next_button.draw()
         next_button_text.draw()
-    else:
-        if OFFSET == 1:
-            keyboard_message = visual.TextStim(window, text="Press a button to continue", pos=[-2.5, -10],
-                                               color='black')
-        else:
-            keyboard_message = visual.TextStim(window, text="Press a button to continue", pos=[0.0, -0.25],
-                                               color='black', height=0.03)
-        keyboard_message.draw()
 
     instruction.draw()
     window.flip()
