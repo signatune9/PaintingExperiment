@@ -871,6 +871,9 @@ def main():
     # Initialize mouse object.
     mouse = event.Mouse(visible=True, newPos=None, win=window)
 
+    if INPUT_MODE != 0:
+        window.mouseVisible = False
+
     # Read the procedural csv
     procedural_file_list = read_procedural_csv()
 
@@ -916,11 +919,7 @@ def main():
         elif current_trial[0] == 'Session1':
             write_trial(current_trial, "NA", "NA", "NA")
 
-        elif current_trial[0] == 'Session2' or current_trial[0] == 'Session1.2':
-            write_trial(current_trial, "NA", "NA", "NA")
-            break
-
-        elif current_trial[0] == 'Session3':
+        elif current_trial[0] == 'Session2' or current_trial[0] == 'Session1.2' or current_trial[0] == 'Session3':
             write_trial(current_trial, "NA", "NA", "NA")
             break
 
