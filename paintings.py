@@ -61,7 +61,7 @@ def create_results_file():
             procedure_file_writer = csv.writer(results_file, delimiter=',')
             procedure_file_writer.writerow(["ItemNum", "Phase", "Painting", "Artist", "Schedule", "ConDir",
                                             "ConName", "ConCat", "Block", "Notes", "Subj", "Stimset", "Stimsubset",
-                                            "Order", "Accuracy", "Reaction Time", "Selected Artist", "Timestamp"])
+                                            "Order", "Accuracy", "Reaction Time", "Selected Artist", "Date", "Time"])
 
     else:
         if os.path.isfile(SUBJECT_ID + '_IF_FullExpResults.csv'):
@@ -70,7 +70,7 @@ def create_results_file():
             procedure_file_writer = csv.writer(results_file, delimiter=',')
             procedure_file_writer.writerow(["ItemNum", "Phase", "Painting", "Artist", "Schedule", "ConDir",
                                             "ConName", "ConCat", "Block", "Notes", "Subj", "Stimset", "Stimsubset",
-                                            "Order", "Accuracy", "Reaction Time", "Selected Artist", "Timestamp"])
+                                            "Order", "Accuracy", "Reaction Time", "Selected Artist", "Date", "Time"])
 
     return 1
 
@@ -606,7 +606,7 @@ def get_reaction_time(response_time, start_time):
         return 0
 
 
-def write_trial(trial_row, accuracy, response_time, response, timestamp):
+def write_trial(trial_row, accuracy, response_time, response, date, time):
     """
     Writes the response, response time, and accuracy to the results file.
     Inputs: trial_row = The information for that trial taken from the procedural file.
@@ -616,7 +616,7 @@ def write_trial(trial_row, accuracy, response_time, response, timestamp):
     Returns: None
     """
     results_row = trial_row
-    results_row.extend((accuracy, response_time, response, timestamp))
+    results_row.extend((accuracy, response_time, response, date, time))
     if CONDITION == 0:
         with open(SUBJECT_ID + '_BF_FullExpResults.csv', 'ab') as experiment_csv:
             procedure_file_writer = csv.writer(experiment_csv, delimiter=',')
@@ -736,7 +736,8 @@ def instructions_trial(window, mouse, current_trial):
     """
 
     draw_instructions(window, mouse, current_trial[9])
-    write_trial(current_trial, "NA", "NA", "NA", datetime.datetime.now())
+    timestamp = datetime.datetime.now()
+    write_trial(current_trial, "NA", "NA", "NA", timestamp.date(), timestamp.time().strftime('%H:%M:%S'))
     show_buffer_screen(window)
 
 
@@ -769,7 +770,7 @@ def study_trial(window, mouse, current_trial, experiment_clock, artists, buttons
             show_response(window, random_artists, response[1], random_artist_button_text)
 
     show_feedback(window, current_trial[3], current_trial[2], current_trial[5])
-    write_trial(current_trial, accuracy, reaction_time, response[1], timestamp)
+    write_trial(current_trial, accuracy, reaction_time, response[1], timestamp.date(), timestamp.time().strftime('%H:%M:%S'))
     show_buffer_screen(window)
 
 
@@ -799,7 +800,7 @@ def gen_test_trial(window, mouse, current_trial, experiment_clock, artists, butt
             draw_gen_test_image(window, current_trial[2])
             show_response(window, artists, response[1], artist_button_text)
 
-    write_trial(current_trial, accuracy, reaction_time, response[1], timestamp)
+    write_trial(current_trial, accuracy, reaction_time, response[1], timestamp.date(), timestamp.time().strftime('%H:%M:%S'))
     show_buffer_screen(window)
 
 
@@ -827,7 +828,7 @@ def rec_test_trial(window, mouse, current_trial, experiment_clock, context_list)
             draw_rec_test_image(window, current_trial[2], context_images)
             show_rec_test_response(window, context_images, response[1])
 
-    write_trial(current_trial, accuracy, reaction_time, response[1], timestamp)
+    write_trial(current_trial, accuracy, reaction_time, response[1], timestamp.date(), timestamp.time().strftime('%H:%M:%S'))
     show_buffer_screen(window)
 
 
@@ -857,7 +858,7 @@ def genrec_test_trial(window, mouse, current_trial, experiment_clock, artists, b
             draw_genrec_test_image(window, current_trial[5])
             show_response(window, artists, response[1], artist_button_text)
 
-    write_trial(current_trial, accuracy, reaction_time, response[1], timestamp)
+    write_trial(current_trial, accuracy, reaction_time, response[1], timestamp.date(), timestamp.time().strftime('%H:%M:%S'))
     show_buffer_screen(window)
 
 
@@ -922,14 +923,16 @@ def main():
             genrec_test_trial(window, mouse, current_trial, experiment_clock, artists, buttons)
 
         elif current_trial[0] == 'Session1':
-            write_trial(current_trial, "NA", "NA", "NA", datetime.datetime.now())
+            timestamp = datetime.datetime.now()
+            write_trial(current_trial, "NA", "NA", "NA", timestamp.date(), timestamp.time().strftime('%H:%M:%S'))
 
         elif current_trial[0] == 'Session2' or current_trial[0] == 'Session1.2' or current_trial[0] == 'Session3':
-            write_trial(current_trial, "NA", "NA", "NA", datetime.datetime.now())
+            timestamp = datetime.datetime.now()
+            write_trial(current_trial, "NA", "NA", "NA", timestamp.date(), timestamp.time().strftime('%H:%M:%S'))
             break
 
         elif current_trial[1] == 'NA':
-            write_trial(current_trial, "NA", "NA", "NA", "NA")
+            write_trial(current_trial, "NA", "NA", "NA", "NA", "NA")
 
 
 if __name__ == '__main__':
