@@ -6,25 +6,25 @@ import os
 import datetime
 
 # Import settings from params file.
-from params import CONDITION, SUBJECT_ID, HRES, VRES, EXPHRES, EXPVRES, SCREENDISTANCE, SCREENWIDTH, FILEPATH, INPUT_MODE
+from params import CONDITION, SUBJECT_ID, HRES, VRES, EXPHRES, EXPVRES, SCREENWIDTH, FILEPATH, INPUT_MODE
 
-IMAGE_SIZE = 4.667
-IMAGE_Y_POS = 1.60
+IMAGE_SIZE = 9.40
+IMAGE_Y_POS = 3
 
 PAINTING_SIZE = (IMAGE_SIZE*(500.0/333), IMAGE_SIZE)
-PAINTING_ALIGN_LEFT_POS = (-2.83, IMAGE_Y_POS)
+PAINTING_ALIGN_LEFT_POS = (-5.2, IMAGE_Y_POS)
 PAINTING_ALIGN_CENTER_POS = (0, IMAGE_Y_POS)
 
 CONTEXT_SIZE = (IMAGE_SIZE, IMAGE_SIZE)
-CONTEXT_ALIGN_RIGHT_POS = (4.00, IMAGE_Y_POS)
+CONTEXT_ALIGN_RIGHT_POS = (7.55, IMAGE_Y_POS)
 CONTEXT_ALIGN_CENTER_POS = (0, IMAGE_Y_POS)
 
-LABEL_Y_POS = 4.50
+LABEL_Y_POS = 8.5
 LABEL_CENTER_POS = (0.0, LABEL_Y_POS)
 LABEL_LEFT_POS = (0.0, LABEL_Y_POS)
 LABEL_RIGHT_POS = (0.36, LABEL_Y_POS)
 
-TEXT_HEIGHT = 0.250
+TEXT_HEIGHT = 0.5
 X_POSITIONS = [-5.00, -3.00, -1.00, 1.00, 3.00, 5.00]
 Y_POSITIONS = [-2]
 
@@ -805,7 +805,7 @@ def main():
     """
 
     # Initialize monitor and window objects.
-    experiment_monitor = monitors.Monitor('expMonitor', distance=SCREENDISTANCE, width=SCREENWIDTH)
+    experiment_monitor = monitors.Monitor('expMonitor', width=SCREENWIDTH)
     experiment_monitor.setSizePix((EXPHRES, EXPVRES))
     experiment_monitor.saveMon()
     window = visual.Window([HRES, VRES], gammaErrorPolicy='warn', allowGUI=True, monitor=experiment_monitor, units='cm', color='white', fullscr=True, screen=0)
