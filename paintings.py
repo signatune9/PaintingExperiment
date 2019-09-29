@@ -6,27 +6,49 @@ import os
 import datetime
 
 # Import settings from params file.
-from params import CONDITION, SUBJECT_ID, HRES, VRES, EXPHRES, EXPVRES, SCREENDISTANCE, SCREENWIDTH, FILEPATH, \
-    INPUT_MODE, OFFSET
+from params import CONDITION, SUBJECT_ID, HRES, VRES, EXPHRES, EXPVRES, SCREENDISTANCE, SCREENWIDTH, FILEPATH, INPUT_MODE
 
-# To Do: Fix instruction logic on restart
+IMAGE_SIZE = 4.667
+IMAGE_Y_POS = 1.60
 
-PAINTING_ALIGN_LEFT_POS = (-0.24, 0.15)
-PAINTING_TEXT_LEFT_POS = (-0.24, 0.4)
-PAINTING_TEXT_CENTER_POS = (0.0, 0.4)
-PAINTING_ALIGN_CENTER_POS = (0, 0.15)
-PAINTING_SIZE = (0.651, 0.434)
-CONTEXT_ALIGN_RIGHT_POS = (0.36, 0.15)
-CONTEXT_TEXT_RIGHT_POS = (0.36, 0.4)
-CONTEXT_ALIGN_CENTER_POS = (0, 0.15)
-CONTEXT_SIZE = (0.434, 0.434)
-TEXT_HEIGHT = 0.025
-X_POSITIONS = [-0.4, -0.24, -0.08, 0.08, 0.24, 0.4]
-Y_POSITIONS = [-0.13]
-REC_X_POSITIONS = [-0.55, -0.33, -0.11, 0.11, 0.33, 0.55]
+PAINTING_SIZE = (IMAGE_SIZE*(500.0/333), IMAGE_SIZE)
+PAINTING_ALIGN_LEFT_POS = (-2.83, IMAGE_Y_POS)
+PAINTING_ALIGN_CENTER_POS = (0, IMAGE_Y_POS)
+
+CONTEXT_SIZE = (IMAGE_SIZE, IMAGE_SIZE)
+CONTEXT_ALIGN_RIGHT_POS = (4.00, IMAGE_Y_POS)
+CONTEXT_ALIGN_CENTER_POS = (0, IMAGE_Y_POS)
+
+LABEL_Y_POS = 4.50
+LABEL_CENTER_POS = (0.0, LABEL_Y_POS)
+LABEL_LEFT_POS = (0.0, LABEL_Y_POS)
+LABEL_RIGHT_POS = (0.36, LABEL_Y_POS)
+
+TEXT_HEIGHT = 0.250
+X_POSITIONS = [-5.00, -3.00, -1.00, 1.00, 3.00, 5.00]
+Y_POSITIONS = [-2]
+
+REC_X_POSITIONS = [-5.50, -3.30, -1.10, 1.10, 3.30, 5.50]
 REC_Y_POSITIONS = [-0.2]
 REC_CONTEXT_SIZE = [0.2, 0.2]
 
+NEXT_BUTTON_POS = [5, -5]
+
+#PAINTING_ALIGN_LEFT_POS = (-0.24, 0.15)
+#LABEL_LEFT_POS = (-0.24, 0.4)
+#LABEL_CENTER_POS = (0.0, 0.4)
+#PAINTING_ALIGN_CENTER_POS = (0, 0.15)
+#PAINTING_SIZE = (0.651, 0.434)
+#CONTEXT_ALIGN_RIGHT_POS = (0.36, 0.15)
+#LABEL_RIGHT_POS = (0.36, 0.4)
+#CONTEXT_ALIGN_CENTER_POS = (0, 0.15)
+#CONTEXT_SIZE = (0.434, 0.434)
+#TEXT_HEIGHT = 0.025
+#X_POSITIONS = [-0.4, -0.24, -0.08, 0.08, 0.24, 0.4]
+#Y_POSITIONS = [-0.13]
+#REC_X_POSITIONS = [-0.55, -0.33, -0.11, 0.11, 0.33, 0.55]
+#REC_Y_POSITIONS = [-0.2]
+#REC_CONTEXT_SIZE = [0.2, 0.2]
 
 def read_procedural_csv():
     """
@@ -59,18 +81,14 @@ def create_results_file():
             return 0
         with open(SUBJECT_ID + '_BF_FullExpResults.csv', 'w+b') as results_file:
             procedure_file_writer = csv.writer(results_file, delimiter=',')
-            procedure_file_writer.writerow(["ItemNum", "Phase", "Painting", "Artist", "Schedule", "ConDir",
-                                            "ConName", "ConCat", "Block", "Notes", "Subj", "Stimset", "Stimsubset",
-                                            "Order", "Accuracy", "Reaction Time", "Selected Artist", "Date", "Time"])
+            procedure_file_writer.writerow(["ItemNum", "Phase", "Painting", "Artist", "Schedule", "ConDir", "ConName", "ConCat", "Block", "Notes", "Subj", "Stimset", "Stimsubset", "Order", "Accuracy", "Reaction Time", "Selected Artist", "Date", "Time"])
 
     else:
         if os.path.isfile(SUBJECT_ID + '_IF_FullExpResults.csv'):
             return 0
         with open(SUBJECT_ID + '_IF_FullExpResults.csv', 'w+b') as results_file:
             procedure_file_writer = csv.writer(results_file, delimiter=',')
-            procedure_file_writer.writerow(["ItemNum", "Phase", "Painting", "Artist", "Schedule", "ConDir",
-                                            "ConName", "ConCat", "Block", "Notes", "Subj", "Stimset", "Stimsubset",
-                                            "Order", "Accuracy", "Reaction Time", "Selected Artist", "Date", "Time"])
+            procedure_file_writer.writerow(["ItemNum", "Phase", "Painting", "Artist", "Schedule", "ConDir", "ConName", "ConCat", "Block", "Notes", "Subj", "Stimset", "Stimsubset", "Order", "Accuracy", "Reaction Time", "Selected Artist", "Date", "Time"])
 
     return 1
 
@@ -227,7 +245,7 @@ def get_context_images(current_painting, current_artist, context_category, conte
 
     return context_path_list
 
-
+# To Do: Fix instruction logic on restart
 def draw_instructions(window, mouse, instruction_name):
     """
     Draws the given instructions on the screen and waits for the subject to press the 'Next' button.
@@ -245,18 +263,13 @@ def draw_instructions(window, mouse, instruction_name):
         if instruction_name == row[1]:
             instruction_path = row[0]
 
-    if OFFSET == 1:
-        instruction = visual.ImageStim(window, image=FILEPATH + "images/" + instruction_path, pos=[-2.5, 4])
-    else:
-        instruction = visual.ImageStim(window, image=FILEPATH + "images/" + instruction_path,
-                                       pos=PAINTING_ALIGN_CENTER_POS)
-        instruction.size = (instruction.size[0]*0.5, instruction.size[1]*0.5)
+    instruction = visual.ImageStim(window, image=FILEPATH + "images/" + instruction_path, pos=PAINTING_ALIGN_CENTER_POS)
+    instruction.size = (instruction.size[0]*0.5, instruction.size[1]*0.5)
 
     if INPUT_MODE == 0:
-        next_button = visual.Rect(window, width=5.0, height=1.0, lineWidth=1.5, lineColor='black', pos=[10.5, -10])
-        next_button_text = visual.TextStim(window, text='Next', color='black', pos=[10.5, -10])
+        next_button = visual.Rect(window, width=1.0, height=0.5, lineWidth=1.5, lineColor='black', pos=NEXT_BUTTON_POS)
+        next_button_text = visual.TextStim(window, text='Next', color='black', pos=NEXT_BUTTON_POS, height=TEXT_HEIGHT)
 
-        instruction.draw()
         next_button.draw()
         next_button_text.draw()
 
@@ -284,24 +297,11 @@ def draw_study_images(window, painting_path, context_path):
     Returns: None.
     """
 
-    if OFFSET == 1:
-        painting_text = visual.TextStim(window, pos=[-11.5, 11.5], text="Painting:", color='black')
-        context_text = visual.TextStim(window, pos=[6.5, 11.5], text="Location:", color='black')
+    painting_text = visual.TextStim(window, pos=LABEL_LEFT_POS, text="Painting:", color='black', height=TEXT_HEIGHT)
+    context_text = visual.TextStim(window, pos=LABEL_RIGHT_POS, text="Location:", color='black', height=TEXT_HEIGHT)
 
-        painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-11.5, 4])
-        context = visual.ImageStim(window, image=FILEPATH + context_path, size=13, pos=[6.5, 4])
-
-    else:
-        painting_text = visual.TextStim(window, pos=PAINTING_TEXT_LEFT_POS, text="Painting:", color='black',
-                                        height=TEXT_HEIGHT)
-        context_text = visual.TextStim(window, pos=CONTEXT_TEXT_RIGHT_POS, text="Location:", color='black',
-                                       height=TEXT_HEIGHT)
-
-        painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=PAINTING_SIZE,
-                                    pos=PAINTING_ALIGN_LEFT_POS)
-
-        context = visual.ImageStim(window, image=FILEPATH + context_path, size=CONTEXT_SIZE,
-                                   pos=CONTEXT_ALIGN_RIGHT_POS)
+    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=PAINTING_SIZE, pos=PAINTING_ALIGN_LEFT_POS)
+    context = visual.ImageStim(window, image=FILEPATH + context_path, size=CONTEXT_SIZE, pos=CONTEXT_ALIGN_RIGHT_POS)
 
     painting_text.draw()
     context_text.draw()
@@ -315,14 +315,8 @@ def draw_gen_test_image(window, painting_path):
     Inputs: window = The window object being used for the experiment.
             painting_path = The path to the painting image to draw.
     """
-    if OFFSET == 1:
-        painting_text = visual.TextStim(window, pos=[-2.5, 11.5], text="Painting:", color='black')
-        painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-2.5, 4])
-    else:
-        painting_text = visual.TextStim(window, pos=PAINTING_TEXT_CENTER_POS, text="Painting:", color='black',
-                                        height=TEXT_HEIGHT)
-        painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=PAINTING_SIZE,
-                                    pos=PAINTING_ALIGN_CENTER_POS)
+    painting_text = visual.TextStim(window, pos=LABEL_CENTER_POS, text="Painting:", color='black', height=TEXT_HEIGHT)
+    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=PAINTING_SIZE, pos=PAINTING_ALIGN_CENTER_POS)
 
     painting_text.draw()
     painting.draw()
@@ -336,15 +330,8 @@ def draw_rec_test_image(window, painting_path, context_paths):
             context_paths = A list containing the paths of all the context images to draw.
     Returns: A list containing the ImageStims for each of the context images.
     """
-
-    if OFFSET == 1:
-        painting_text = visual.TextStim(window, pos=[-2.5, 11.5], text="Painting:", color='black')
-        painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=(19.52, 13), pos=[-2.5, 4])
-    else:
-        painting_text = visual.TextStim(window, pos=PAINTING_TEXT_CENTER_POS, text="Painting:", color='black',
-                                        height=TEXT_HEIGHT)
-        painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=PAINTING_SIZE,
-                                    pos=PAINTING_ALIGN_CENTER_POS)
+    painting_text = visual.TextStim(window, pos=LABEL_CENTER_POS, text="Painting:", color='black', height=TEXT_HEIGHT)
+    painting = visual.ImageStim(window, image=FILEPATH + painting_path, size=PAINTING_SIZE, pos=PAINTING_ALIGN_CENTER_POS)
 
     context_images = []
 
@@ -354,21 +341,13 @@ def draw_rec_test_image(window, painting_path, context_paths):
 
         i = 0
         for context_path in context_paths:
-            context_images.append(visual.ImageStim(window, image=FILEPATH + context_path, size=8,
-                                                   pos=[x_positions[i % 3], y_positions[i/3]]))
+            context_images.append(visual.ImageStim(window, image=FILEPATH + context_path, size=8, pos=[x_positions[i % 3], y_positions[i/3]]))
             i = i + 1
 
     else:
-        if OFFSET == 1:
-            x_positions = [-21.25, -13.75, -6.25, 1.25, 8.75, 16.25]
-        else:
-            x_positions = [-18.75, -11.25, -3.75, 3.75, 11.25, 18.75]
-        y_positions = [-8]
-
         i = 0
         for context_path in context_paths:
-            context_images.append(visual.ImageStim(window, image=FILEPATH + context_path, size=REC_CONTEXT_SIZE,
-                                                   pos=[REC_X_POSITIONS[i % 6], REC_Y_POSITIONS[i/6]]))
+            context_images.append(visual.ImageStim(window, image=FILEPATH + context_path, size=REC_CONTEXT_SIZE, pos=[REC_X_POSITIONS[i % 6], REC_Y_POSITIONS[i/6]]))
             i = i + 1
 
     painting_text.draw()
@@ -386,15 +365,8 @@ def draw_genrec_test_image(window, context_path):
     Inputs: window = The window object being used for the experiment.
             context_path = The path to the context image to draw.
     """
-
-    if OFFSET == 1:
-        context_text = visual.TextStim(window, pos=[-2.5, 11.5], text="Location:", color='black')
-        context = visual.ImageStim(window, image=FILEPATH + context_path, size=13, pos=[-2.5, 4])
-    else:
-        context_text = visual.TextStim(window, pos=PAINTING_TEXT_CENTER_POS, text="Location:", color='black',
-                                       height=TEXT_HEIGHT)
-        context = visual.ImageStim(window, image=FILEPATH + context_path, size=CONTEXT_SIZE,
-                                   pos=CONTEXT_ALIGN_CENTER_POS)
+    context_text = visual.TextStim(window, pos=LABEL_CENTER_POS, text="Location:", color='black', height=TEXT_HEIGHT)
+    context = visual.ImageStim(window, image=FILEPATH + context_path, size=CONTEXT_SIZE, pos=CONTEXT_ALIGN_CENTER_POS)
 
     context_text.draw()
     context.draw()
@@ -415,21 +387,13 @@ def create_buttons(window, num_artists):
         y_positions = [-5, -7.5, -10, -12.5, -15]
 
         for i in range(0, num_artists):
-            button_array.append(visual.Rect(window, width=5.0, height=1.5, lineWidth=1.5, lineColor='black',
-                                            pos=[x_positions[i % 3], y_positions[i // 3]]))
+            button_array.append(visual.Rect(window, width=5.0, height=1.5, lineWidth=1.5, lineColor='black', pos=[x_positions[i % 3], y_positions[i // 3]]))
 
     else:
         button_array = []
 
-        if OFFSET == 1:
-            x_positions = [-21.25, -14.75, -8.25, -1.75, 4.75, 11.25]
-        else:
-            x_positions = [-15, -9, -3, 3, 9, 15]
-        y_positions = [-5, -7.5, -10, -12.5, -15]
-
         for i in range(0, num_artists):
-            button_array.append(visual.Rect(window, width=0.15, height=0.03, lineWidth=1.5, lineColor='black',
-                                            pos=[X_POSITIONS[i % 6], Y_POSITIONS[i // 6]]))
+            button_array.append(visual.Rect(window, width=0.15, height=0.03, lineWidth=1.5, lineColor='black', pos=[X_POSITIONS[i % 6], Y_POSITIONS[i // 6]]))
 
     return button_array
 
@@ -448,20 +412,13 @@ def create_artist_button_text(window, artists):
         y_positions = [-5, -7.5, -10, -12.5, -15]
 
         for i in range(0, len(artists)):
-            button_text_array.append(visual.TextStim(window, pos=[x_positions[i % 3], y_positions[i // 3]],
-                                                     text=artists[i], color='black'))
+            button_text_array.append(visual.TextStim(window, pos=[x_positions[i % 3], y_positions[i // 3]], text=artists[i], color='black'))
 
     else:
         button_text_array = []
-        if OFFSET == 1:
-            x_positions = [-21.25, -14.75, -8.25, -1.75, 4.75, 11.25]
-        else:
-            x_positions = [-15, -9, -3, 3, 9, 15]
-        y_positions = [-5, -7.5, -10, -12.5, -15]
 
         for i in range(0, len(artists)):
-            button_text_array.append(visual.TextStim(window, pos=[X_POSITIONS[i % 6], Y_POSITIONS[i // 6]],
-                                                     text=artists[i], color='black', height=TEXT_HEIGHT))
+            button_text_array.append(visual.TextStim(window, pos=[X_POSITIONS[i % 6], Y_POSITIONS[i // 6]], text=artists[i], color='black', height=TEXT_HEIGHT))
 
     return button_text_array
 
@@ -636,13 +593,7 @@ def show_feedback(window, correct_artist, painting_path, context_path):
             painting_path = The path to the painting image to draw.
     Returns: None
     """
-
-    if OFFSET == 1:
-        response_text = visual.TextStim(window, pos=[-2.5, -5], text="The correct artist is: \n" + correct_artist,
-                                        color='black')
-    else:
-        response_text = visual.TextStim(window, pos=[0.0, -0.15], text="The correct artist is: \n" + correct_artist,
-                                        color='black', height=TEXT_HEIGHT)
+    response_text = visual.TextStim(window, pos=[0.0, -0.15], text="The correct artist is: \n" + correct_artist, color='black', height=TEXT_HEIGHT)
     response_text.draw()
 
     draw_study_images(window, painting_path, context_path)
@@ -665,19 +616,12 @@ def show_response(window, artist_array, selected_artist, button_text_array):
     index_loc = artist_array.index(selected_artist)
 
     box_array = []
-    if OFFSET == 1:
-        x_positions = [-21.25, -14.75, -8.25, -1.75, 4.75, 11.25]
-    else:
-        x_positions = [-15, -9, -3, 3, 9, 15]
-    y_positions = [-5, -7.5, -10, -12.5, -15]
 
     for i in range(0, len(button_text_array)):
         if i == index_loc:
-            box_array.append(visual.Rect(window, width=0.15, height=0.03, lineWidth=3.0, lineColor='red',
-                                         pos=[X_POSITIONS[index_loc % 6], Y_POSITIONS[index_loc // 6]]))
+            box_array.append(visual.Rect(window, width=0.15, height=0.03, lineWidth=3.0, lineColor='red', pos=[X_POSITIONS[index_loc % 6], Y_POSITIONS[index_loc // 6]]))
         else:
-            box_array.append(visual.Rect(window, width=0.15, height=0.03, lineWidth=1.5, lineColor='black',
-                                         pos=[X_POSITIONS[i % 6], Y_POSITIONS[i // 6]]))
+            box_array.append(visual.Rect(window, width=0.15, height=0.03, lineWidth=1.5, lineColor='black', pos=[X_POSITIONS[i % 6], Y_POSITIONS[i // 6]]))
 
     for i in range(0, len(button_text_array)):
         box_array[i].draw()
@@ -697,16 +641,9 @@ def show_rec_test_response(window, context_images, response):
     Returns: None.
     """
 
-    if OFFSET == 1:
-        x_positions = [-21.25, -13.75, -6.25, 1.25, 8.75, 16.25]
-    else:
-        x_positions = [-18.75, -11.25, -3.75, 3.75, 11.25, 18.75]
-    y_positions = [-8]
-
     for i in range(0, len(context_images)):
         if response == context_images[i]:
-            response_box = visual.Rect(window, width=0.2, height=0.2, lineWidth=3.0, lineColor='red',
-                                       pos=[REC_X_POSITIONS[i % 6], REC_Y_POSITIONS[i // 6]])
+            response_box = visual.Rect(window, width=0.2, height=0.2, lineWidth=3.0, lineColor='red', pos=[REC_X_POSITIONS[i % 6], REC_Y_POSITIONS[i // 6]])
 
     response_box.draw()
 
@@ -871,8 +808,7 @@ def main():
     experiment_monitor = monitors.Monitor('expMonitor', distance=SCREENDISTANCE, width=SCREENWIDTH)
     experiment_monitor.setSizePix((EXPHRES, EXPVRES))
     experiment_monitor.saveMon()
-    window = visual.Window([HRES, VRES], allowGUI=True, monitor=experiment_monitor, units='height', color='white',
-                           fullscr=True, screen=0)
+    window = visual.Window([HRES, VRES], gammaErrorPolicy='warn', allowGUI=True, monitor=experiment_monitor, units='cm', color='white', fullscr=True, screen=0)
 
     # Initialize mouse object.
     mouse = event.Mouse(visible=True, newPos=None, win=window)
@@ -912,7 +848,7 @@ def main():
 
         elif current_trial[1] == 'Study':
             study_trial(window, mouse, current_trial, experiment_clock, artists, buttons)
-
+'''
         elif current_trial[1] == 'GenTest':
             gen_test_trial(window, mouse, current_trial, experiment_clock, artists, buttons)
 
@@ -933,7 +869,7 @@ def main():
 
         elif current_trial[1] == 'NA':
             write_trial(current_trial, "NA", "NA", "NA", "NA", "NA")
-
+'''
 
 if __name__ == '__main__':
     main()
