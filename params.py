@@ -12,7 +12,7 @@ EXPHRES = 1920
 EXPVRES = 1080
 
 # The length of the monitor in centimeters
-SCREENWIDTH = 54
+SCREENWIDTH = 33
 
 # Path to the folder containing the images for the experiment. Only needed if the images are in a different folder
 #   than the script
